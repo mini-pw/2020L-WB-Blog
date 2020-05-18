@@ -1,0 +1,67 @@
+---
+date: "2020-05-18"
+title: How to add a post
+authors: ["Alicja Gosiewska"]
+tags:
+- tutorial
+---
+
+Posting is really easy. Blog posts are simple Markdown files.
+
+
+# Files
+
+The `content/post` folder is where blog posts are stored. 
+To create a post, add your markdown file to `content/post` directory with the following format:
+`yyyy-mm-dd-title.md`.
+
+Where `yyyy` is a year, `mm` is a month, and `dd` is a day, and `md` is the file extension representing the format used in the file. 
+For example:
+`2020-05-18-how-to-add-post.md`.
+
+
+# File content
+
+An example of post file you can find [here](https://github.com/mini-pw/2020L-WB-Blog/blob/master/content/post/2020-05-18-how-to-add-post.md).
+
+
+A blog post file begin with front matter which is used to set meta data. For example:
+
+```
+---
+date: "2020-05-18"
+title: How to add a post
+authors: ["Alicja Gosiewska"]
+tags:
+- tutorial
+---
+```
+
+For more authors, add elements to the list, for example `["Alicja Gosiewska", "Second Author"]`.
+Add more tags through the consecutive punctation marks.
+
+
+## Markdown
+
+Posts are written in markdown, to learn more [see, for example, this site](https://www.markdownguide.org/getting-started/).
+
+### Including images
+
+In folder `content/post` you can create a directory to store images and othe necessary files. For example for file `2020-05-18-how-to-add-post.md`. folder name should be `2020-05-18-how-to-add-post`.
+
+To include an image `ALICE_all.jpg` from this directory just use:
+```
+[!Alice](/post/2020-05-18-how-to-add-post/ALICE_all.jpg)
+```
+
+
+![A caption](/post/2020-05-18-how-to-add-post/ALICE_all.jpg)
+
+
+
+
+
+
+
+
+
