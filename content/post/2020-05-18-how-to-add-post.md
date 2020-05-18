@@ -47,15 +47,15 @@ Posts are written in markdown, to learn more [see, for example, this site](https
 
 ### Including images
 
-In folder `content/post` you can create a directory to store images and othe necessary files. For example for file `2020-05-18-how-to-add-post.md`. folder name should be `2020-05-18-how-to-add-post`.
+In folder `static` you can create a directory to store images and other necessary files. For example, for file `2020-05-18-how-to-add-post.md` folder should be `static/2020-05-18-how-to-add-post`([See here](https://github.com/mini-pw/2020L-WB-Blog/tree/master/static)).
 
 To include an image `ALICE_all.jpg` from this directory just use:
 ```
-[!A caption](./2020L-WB-Blog/post/2020-05-18-how-to-add-post/ALICE_all.jpg)
+[!A caption](/2020-05-18-how-to-add-post/ALICE_all.jpg)
 ```
 
 
-![A caption](./2020L-WB-Blog/post/2020-05-18-how-to-add-post/ALICE_all.jpg)
+![A caption](/2020-05-18-how-to-add-post/ALICE_all.jpg)
 
 
 
