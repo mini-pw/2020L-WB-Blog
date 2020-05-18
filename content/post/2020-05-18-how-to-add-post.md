@@ -51,11 +51,11 @@ In folder `static` you can create a directory to store images and other necessar
 
 To include an image `ALICE_all.jpg` from this directory just use:
 ```
-[!A caption](/2020-05-18-how-to-add-post/ALICE_all.jpg)
+[!A caption](/2020L-WB-Blog/2020-05-18-how-to-add-post/ALICE_all.jpg)
 ```
 
 
-![A caption](/2020-05-18-how-to-add-post/ALICE_all.jpg)
+![A caption](/2020L-WB-Blog/2020-05-18-how-to-add-post/ALICE_all.jpg)
 
 
 
