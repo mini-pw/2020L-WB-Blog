@@ -41,6 +41,7 @@ jobs:
       
       - name: Build site
         run: |
+          R -e 'blogdown::install_hugo()'
           R -e 'blogdown::build_site()'
           R -e 'blogdown::serve_site()'
       
