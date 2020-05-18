@@ -3,7 +3,7 @@ on:
     paths-ignore:
     - 'docs/**'
 
-name: bookdown
+name: blogdown
 
 jobs:
   build:
@@ -26,27 +26,21 @@ jobs:
           key: r-${{ hashFiles('renv.lock') }}
           restore-keys: r-
 
-      - name: Cache bookdown results
-        uses: actions/cache@v1
-        with:
-          path: _bookdown_files
-          key: bookdown-${{ hashFiles('**/*Rmd') }}
-          restore-keys: bookdown-
-
       - name: Install packages
         run: |
           R -e 'install.packages("renv")'
           R -e 'install.packages("blogdown")'
           R -e 'renv::restore()'
-      
-      - name: Build site
+      - name: Install hugo
         run: |
           R -e 'blogdown::install_hugo()'
-          R -e 'blogdown::build_site()'
-          R -e 'blogdown::serve_site()'
-      
-      - name: Commit results
+      - name: Build site
         run: |
-          git add .
-          git commit  -m 'Build website' || echo "No changes to commit"
-          git push origin || echo "No changes to commit"
+          R -e 'blogdown::build_site(TRUE)'
+      - name: commit
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git add docs
+            git commit -m 'build site'
+            git push https://${{github.actor}}:${{secrets.GITHUB_TOKEN}}@github.com/${{github.repository}}.git HEAD:${{ github.ref }}
+          fi
