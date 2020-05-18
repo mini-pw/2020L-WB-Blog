@@ -43,7 +43,7 @@ Add more tags through the consecutive punctation marks.
 
 ## Markdown
 
-Posts are written in markdown, to learn more [see, for example, this site](https://www.markdownguide.org/getting-started/).
+Posts are written in markdown, to learn more [see, for example, this site](https://themes.gohugo.io//theme/hugo-theme-fuji/markdown-syntax/).
 
 ### Including images
 
