@@ -40,8 +40,9 @@ jobs:
           R -e 'renv::restore()'
       
       - name: Build site
-        run: Rscript -e 'blogdown::build_site()'
-        run: Rscript -e 'blogdown::serve_site()'
+        run: |
+          R -e 'blogdown::build_site()'
+          R -e 'blogdown::serve_site()'
       
       - name: Commit results
         run: |
