@@ -1,4 +1,4 @@
-baseURL = "https://example.com"
+baseURL = "https://mini-pw.github.io/2020L-WB-Blog"
 title = "Machine Learning Case Studies"
 theme = "hugo-theme-fuji"
 hasCJKLanguage = true
@@ -6,6 +6,7 @@ enableEmoji = true
 enableRobotsTXT = true
 disableKinds = ["taxonomyTerm"]
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+publishDir = "docs"
 
 ## Change this two to switch between different language
 languageCode = "en"  # For RSS, view https://www.rssboard.org/rss-language-codes

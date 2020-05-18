@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: /2020L-WB-Blog/sitemap.xml
