@@ -1,4 +1,4 @@
-baseURL = "https://mini-pw.github.io/2020L-WB-Blog"
+baseURL = "https://mini-pw.github.io/2020L-WB-Blog/"
 title = "Machine Learning Case Studies"
 theme = "hugo-theme-fuji"
 hasCJKLanguage = true
