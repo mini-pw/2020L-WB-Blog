@@ -1,0 +1,47 @@
+[sidebarToc]
+    other = "TOC"
+
+[sidebarPages]
+    other = "Pages"
+
+[sidebarTags]
+    other = "Tags"
+
+[sidebarLinks]
+    other = "Links"
+
+[sidebarBangumiChart]
+    other = "Bangumi"
+
+[footerPoweredFront]
+    other = "Powered by "
+
+[footerPoweredEnd]
+    other = " "
+
+[postMetaNoTag]
+    other = "No tag"
+
+[postMetaWordCount]
+    other = " words"
+
+[postMetaReadingTime]
+    other = " minutes"
+
+[postCopyrightFront]
+    other = "Unless otherwise noted, the content of this site is licensed under "
+
+[postCopyrightEnd]
+    other = "."
+
+[postCommentLoading]
+    other = "Loading comments..."
+
+[postCommentLoadingFailed]
+    other = "Comments failed to load."
+
+[archivesTotalPages]
+    other = "Total posts: "
+
+[tagsCurrentTag]
+    other = "Posts with the tag {{ .Title }}: "

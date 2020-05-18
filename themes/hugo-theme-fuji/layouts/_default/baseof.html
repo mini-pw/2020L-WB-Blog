@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+{{ partial "head.html" . }}
+
+<body class="d-flex flex-column h-100">
+    {{ partial "header.html" . }}
+
+    <main>
+        <div class="container-lg clearfix">
+            <!-- list -->
+            <div class="col-md-9 col-12 float-left" id="content">
+                {{ block "main" . }}{{ end }}
+            </div>
+            <!-- sidebar -->
+            <div class="col-md-3 col-12 float-left link-alter" id="sidebar">
+                {{ partial "sidebar.html" . }}
+            </div>
+            <!-- global APlayer -->
+            {{ if .Site.Params.playerURL }}
+            <div id="aplayer"></div>
+            {{ end }}
+            {{ if .Site.Params.scrollTop }}
+            <div id="scroll-top">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+            {{ end }}
+        </div>
+    </main>
+
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+</body>
+
+</html>
