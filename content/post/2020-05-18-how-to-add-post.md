@@ -22,10 +22,10 @@ For example:
 
 # File content
 
-An example of post file you can find [here](https://github.com/mini-pw/2020L-WB-Blog/blob/master/content/post/2020-05-18-how-to-add-post.md).
+An example of a post file you can find [here](https://github.com/mini-pw/2020L-WB-Blog/blob/master/content/post/2020-05-18-how-to-add-post.md).
 
 
-A blog post file begin with front matter which is used to set meta data. For example:
+A blog post file begins with a front matter which is used to set metadata. For example:
 
 ```
 ---
@@ -38,14 +38,10 @@ tags:
 ```
 
 For more authors, add elements to the list, for example `["Alicja Gosiewska", "Second Author"]`.
-Add more tags through the consecutive punctation marks.
+Add more tags through the consecutive  punctuation marks.
 
 
-## Markdown
-
-Posts are written in markdown, to learn more [see, for example, this site](https://themes.gohugo.io//theme/hugo-theme-fuji/markdown-syntax/).
-
-### Including images
+## Including images
 
 In folder `static` you can create a directory to store images and other necessary files. For example, for file `2020-05-18-how-to-add-post.md` folder should be `static/2020-05-18-how-to-add-post`([See here](https://github.com/mini-pw/2020L-WB-Blog/tree/master/static)).
 
