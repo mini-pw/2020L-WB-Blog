@@ -1,4 +1,4 @@
-ML Case Studies
+# ML Case Studies
 by Evidence Based Machine Learning Lab
 
 Blog: https://mini-pw.github.io/2020L-WB-Blog
@@ -8,7 +8,7 @@ This blog is the result of student projects for Case Studies course at the Warsa
 
 
 
-How to render a blog locally
+## How to render a blog locally
 
 ```
 # to build a site:
