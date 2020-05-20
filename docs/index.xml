@@ -26,12 +26,12 @@ A blog post file begins with a front matter which is used to set metadata. For e
     </item>
     
     <item>
-      <title>About a project</title>
+      <title>About a blog</title>
       <link>/2020L-WB-Blog/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/2020L-WB-Blog/about/</guid>
-      <description></description>
+      <description>This blog is the result of student projects for Case Studies course at the Warsaw University of Technology. Each team prepared a post on the baisis of one article from the ML Case Studies ebook</description>
     </item>
     
   </channel>
