@@ -10,9 +10,9 @@ tags:
 
 ### Black vs white
 
-Machine learning seems to be all about creating a model with *best* performance - balancing well its variance and accuracy. Unfortunately, the pursuit of that balance makes us forget about the  the fact, that - in the end - model will serve human beings. If that's the case, a third factor should be considered - interpretability. When a model is unexplainable, it may be treated as untrustworthy and become **useless**. It is a problem, since many models known for its high performance (like XGBoost) happen to be parts of the black-box team.
+Machine learning seems to be all about creating a model with *best* performance - balancing well its variance and accuracy. Unfortunately, the pursuit of that balance makes us forget about the  the fact, that - in the end - model will serve human beings. If that's the case, a third factor should be considered - interpretability. When a model is unexplainable (AKA black-box model), it may be treated as untrustworthy and become **useless**. It is a problem, since many models known for its high performance (like XGBoost) happen to be parts of the black-box team.
 
-Various techniques have risen to counter the threat of unexplainability. Partial dependency plots, ceteris paribus profiles and other tools of widely-defined **XAI** (*eXplainable Artificial Intelligence*; more [here](https://pbiecek.github.io/ema/)) are a certain work-around. Although they offer some insight into the process of decision-making by models, they are limited. On the field of interpretability, a fully explainable model (AKA white box model, like logistic regression or decision tree) beats the black box models aided by XAI tools.
+Various techniques have risen to counter the threat of unexplainability. Partial dependency plots, ceteris paribus profiles and other tools of widely-defined **XAI** (*eXplainable Artificial Intelligence*; more [here](https://pbiecek.github.io/ema/)) are a certain work-around. Although they offer some insight into the process of decision-making by models, they are limited. On the field of interpretability, a fully explainable model (AKA white-box model, like logistic regression or decision tree) beats the black-box models aided by XAI tools.
 
 ### A false(?) trade-off
 
@@ -26,4 +26,4 @@ The brave students knew, that the task was difficult, so they did their homework
 
 ### Inevitable?
 
-Although it would seem, that the black-box models are superior, this paper proves otherwise. It reminds us of utility lying in the good, old, simple methods and challenges the supremacy of the unexplainable ones. In the end, the lesson is almost poetic - combining the might of uninterpratable models with the simplicity and transparency of interpretable ones gives surprisingly good results.
+Although it would seem, that the black-box models are superior, this paper proves otherwise. It reminds us of utility lying in the good, old, simple methods and challenges the supremacy of the unexplainable ones. In the end, the lesson is almost poetic - with enough work, you can train a model as accurate as XGBoost and as transparent as a decision tree.
