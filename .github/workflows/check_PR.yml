@@ -1,9 +1,9 @@
 on:
-  push:
-    paths-ignore:
-      - 'docs/**'
+  pull_request:
+    branches:
+      - master
 
-name: blogdown
+name: check PR
 
 jobs:
   build:
@@ -38,10 +38,3 @@ jobs:
       - name: Build site
         run: |
           R -e 'blogdown::build_site(TRUE)'
-      - name: commit
-        run: |
-          if [[ -n "$(git status --porcelain)" ]]; then
-            git add docs
-            git commit -m 'build site'
-            git push https://${{github.actor}}:${{secrets.GITHUB_TOKEN}}@github.com/${{github.repository}}.git HEAD:${{ github.ref }}
-          fi
