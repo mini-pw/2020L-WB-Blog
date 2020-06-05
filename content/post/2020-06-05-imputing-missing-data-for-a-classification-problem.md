@@ -17,7 +17,7 @@ As students of the same university course, we were asked to sum up the findings 
 
 #### What is data imputation?
 
-![ht<i></i>tps://www.dataapplab.com/python_missing_data/missing-data/](/2020L-WB-Blog/static/2020-06-05-imputing-missing-data-for-a-classification-problem/missing-data.jpg)
+![ht<i></i>tps://www.dataapplab.com/python_missing_data/missing-data/](/2020L-WB-Blog/2020-06-05-imputing-missing-data-for-a-classification-problem/missing-data.jpg)
 
 Some datasets have missing values that many classification algorithms cannot handle. One way to make the algorithm work is to delete the observations that include missing data or, if missing values come just from a few columns, we can delete them instead. Unfortunately, this means we might be losing some important piece of information and this is where data imputation comes in - it’s a technique to fill out empty spaces with numerical or categorical values, which should improve significantly the outcome of classification that is run on such dataset.
 
@@ -41,7 +41,7 @@ Our colleges tried many naive approaches, such as removing columns with missing 
 
 Two factors were considered, time of imputation algorithm consumed and performance gain for a set of machine learning models.
 
-![Time of computation, paper results](/2020L-WB-Blog/static/2020-06-05-imputing-missing-data-for-a-classification-problem/time.png){ width=80% }
+![Time of computation, paper results](/2020L-WB-Blog/2020-06-05-imputing-missing-data-for-a-classification-problem/time.png){ width=80% }
 
 As we can see, the time difference is significant. We can choose between simple, fast methods and slower, more complex ones. 
 
@@ -53,9 +53,9 @@ A comparison of imputation methods was done by creating a ranking. Place in the 
 ##### Random fill to get the best results
 
 
-![Ranking of imputation methods for each model](/2020L-WB-Blog/static/2020-06-05-imputing-missing-data-for-a-classification-problem/ranking.png){ width=80% }
+![Ranking of imputation methods for each model](/2020L-WB-Blog/2020-06-05-imputing-missing-data-for-a-classification-problem/ranking.png){ width=80% }
 
-![Visualisation of paper results](/2020L-WB-Blog/static/2020-06-05-imputing-missing-data-for-a-classification-problem/ranking_plot.png){ height=80% }
+![Visualisation of paper results](/2020L-WB-Blog/2020-06-05-imputing-missing-data-for-a-classification-problem/ranking_plot.png){ height=80% }
 
 Both table and plot show us that filling NAs with random values from that column gives very good results. It is independend of the machine learning model chosen and a fast method to start your work with a new dataset.
 
@@ -63,7 +63,7 @@ However, what is also mentioned in a paper, if you have a big dataset (bigger th
 
 #### What random generators are used for - random fil as the best method
 
-![DILBERT by Scott Adams, ht<i></i>tps://dilbert.com/strip/2001-10-25](/2020L-WB-Blog/static/2020-06-05-imputing-missing-data-for-a-classification-problem/Dilbert.gif)
+![DILBERT by Scott Adams, ht<i></i>tps://dilbert.com/strip/2001-10-25](/2020L-WB-Blog/2020-06-05-imputing-missing-data-for-a-classification-problem/Dilbert.gif)
 
 ### References
 1. Jakub Pingielski, Paulina Przybyłek, Renata Rólkiewicz, Jakub Wiśniewski. (2020) Default imputation efficiency comparison. Warsaw University of Technology
