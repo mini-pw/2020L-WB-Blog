@@ -7,7 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
-<meta name="generator" content="Hugo 0.70.0" />
+<meta name="generator" content="Hugo 0.72.0" />
 
 
 
@@ -113,7 +113,7 @@ What is data imputation? Some datasets have missing values that many classificat
 <p><em>Authors: Karol Saputa, Małgorzata Wachulec, Aleksandra Wichrowska (Warsaw University of Technology)</em></p>
 <p>As students of the same university course, we were asked to sum up the findings of our colleges, the authors of the <em>Default imputation efficiency comparison</em> article. In their work, they used many missing data imputation techniques on 11 datasets, on which they then run different classification algorithms. By measuring the results obtained using these imputation algorithms they could judge their performance. But first:</p>
 <h4 id="what-is-data-imputation">What is data imputation?</h4>
-<p><img src="/2020L-WB-Blog/static/2020-06-05-imputing-missing-data-for-a-classification-problem/missing-data.jpg" alt="https://www.dataapplab.com/python_missing_data/missing-data/"></p>
+<p><img src="/2020L-WB-Blog/2020-06-05-imputing-missing-data-for-a-classification-problem/missing-data.jpg" alt="https://www.dataapplab.com/python_missing_data/missing-data/"></p>
 <p>Some datasets have missing values that many classification algorithms cannot handle. One way to make the algorithm work is to delete the observations that include missing data or, if missing values come just from a few columns, we can delete them instead. Unfortunately, this means we might be losing some important piece of information and this is where data imputation comes in - it’s a technique to fill out empty spaces with numerical or categorical values, which should improve significantly the outcome of classification that is run on such dataset.</p>
 <table>
 <thead>
@@ -151,17 +151,17 @@ What is data imputation? Some datasets have missing values that many classificat
 <p>Our colleges tried many naive approaches, such as removing columns with missing values, imputing with random values from given feature, or imputing with median (for numerical features) and with mode (for categorical features). They also tried more refined missing data approaches, such as the Random Forest from missForest package, KNN, hot-deck algorithm and Iterative Robust Model-Based Imputation (IRMI) from VIM package, as well as predictive mean matching (pmm) and classification and regression trees (cart) from mice package. This way, they compared a whole spectrum of simple and not-so-simple missing data imputation techniques available in R.</p>
 <h4 id="how-the-performance-was-measured">How the performance was measured</h4>
 <p>Two factors were considered, time of imputation algorithm consumed and performance gain for a set of machine learning models.</p>
-<p><img src="/2020L-WB-Blog/static/2020-06-05-imputing-missing-data-for-a-classification-problem/time.png" alt="Time of computation, paper results">{ width=80% }</p>
+<p><img src="/2020L-WB-Blog/2020-06-05-imputing-missing-data-for-a-classification-problem/time.png" alt="Time of computation, paper results">{ width=80% }</p>
 <p>As we can see, the time difference is significant. We can choose between simple, fast methods and slower, more complex ones.</p>
 <h5 id="ranking-of-methods-for-each-model">Ranking of methods for each model</h5>
 <p>A comparison of imputation methods was done by creating a ranking. Place in the ranking is an average of scores for all datasets (using Weighted TPR-TNR metric) for a specific machine learning model and specific imputation method. Using that methodology, it is possible to compare imputation methods general suitability for using it with ML method.</p>
 <h5 id="random-fill-to-get-the-best-results">Random fill to get the best results</h5>
-<p><img src="/2020L-WB-Blog/static/2020-06-05-imputing-missing-data-for-a-classification-problem/ranking.png" alt="Ranking of imputation methods for each model">{ width=80% }</p>
-<p><img src="/2020L-WB-Blog/static/2020-06-05-imputing-missing-data-for-a-classification-problem/ranking_plot.png" alt="Visualisation of paper results">{ height=80% }</p>
+<p><img src="/2020L-WB-Blog/2020-06-05-imputing-missing-data-for-a-classification-problem/ranking.png" alt="Ranking of imputation methods for each model">{ width=80% }</p>
+<p><img src="/2020L-WB-Blog/2020-06-05-imputing-missing-data-for-a-classification-problem/ranking_plot.png" alt="Visualisation of paper results">{ height=80% }</p>
 <p>Both table and plot show us that filling NAs with random values from that column gives very good results. It is independend of the machine learning model chosen and a fast method to start your work with a new dataset.</p>
 <p>However, what is also mentioned in a paper, if you have a big dataset (bigger than used in a paper), there is still a chance that more complex methods will give better results. It is something to try and research in the future.</p>
 <h4 id="what-random-generators-are-used-for---random-fil-as-the-best-method">What random generators are used for - random fil as the best method</h4>
-<p><img src="/2020L-WB-Blog/static/2020-06-05-imputing-missing-data-for-a-classification-problem/Dilbert.gif" alt="DILBERT by Scott Adams, https://dilbert.com/strip/2001-10-25"></p>
+<p><img src="/2020L-WB-Blog/2020-06-05-imputing-missing-data-for-a-classification-problem/Dilbert.gif" alt="DILBERT by Scott Adams, https://dilbert.com/strip/2001-10-25"></p>
 <h3 id="references">References</h3>
 <ol>
 <li>Jakub Pingielski, Paulina Przybyłek, Renata Rólkiewicz, Jakub Wiśniewski. (2020) Default imputation efficiency comparison. Warsaw University of Technology
