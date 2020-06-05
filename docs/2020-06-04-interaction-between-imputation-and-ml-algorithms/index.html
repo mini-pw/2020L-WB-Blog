@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.72.0" />
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/favicon-16x16.png" />
+<link rel="manifest" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/site.webmanifest" />
+<link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/safari-pinned-tab.svg" color="#8aa2d3" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/favicon.ico" />
+<meta name="msapplication-TileColor" content="#8aa2d3" />
+<meta name="msapplication-config" content="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/browserconfig.xml" />
+<meta name="theme-color" content="#ffffff" />
+
+
+
+<title>Interaction between imputation and ML algorithms - Machine Learning Case Studies</title>
+
+<meta name="author" content="" />
+<meta name="description" content="TL;DR Lot of people would like to find the best method to impute data, that covers most of the cases, but from this article we will learn that the task of imputing missing data is not so trivial. It demands looking at a bigger picture, for example model type or percentage of missing data. Reading this article we will learn what algorithms to use in which cases and understand the vast problem of imputation.
+Introduction We have read an article about imputation techniques and their interaction with ML algorithms. It was written by Martyna Majchrzak, Agata Makarewicz, Jacek Wiśniewski. Before reading we were expecting to find out which imputation techniques are the best and how to use them." />
+
+<meta name="keywords" content="Imputation, Machine Learning, Missing data, OpenML" />
+
+<meta property="og:title" content="Interaction between imputation and ML algorithms" />
+<meta property="og:description" content="TL;DR Lot of people would like to find the best method to impute data, that covers most of the cases, but from this article we will learn that the task of imputing missing data is not so trivial. It demands looking at a bigger picture, for example model type or percentage of missing data. Reading this article we will learn what algorithms to use in which cases and understand the vast problem of imputation.
+Introduction We have read an article about imputation techniques and their interaction with ML algorithms. It was written by Martyna Majchrzak, Agata Makarewicz, Jacek Wiśniewski. Before reading we were expecting to find out which imputation techniques are the best and how to use them." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2020L-WB-Blog/2020-06-04-interaction-between-imputation-and-ml-algorithms/" />
+<meta property="og:image" content="/2020L-WB-Blog/img/og.png"/>
+<meta property="article:published_time" content="2020-06-04T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-06-04T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/2020L-WB-Blog/img/og.png"/>
+
+<meta name="twitter:title" content="Interaction between imputation and ML algorithms"/>
+<meta name="twitter:description" content="TL;DR Lot of people would like to find the best method to impute data, that covers most of the cases, but from this article we will learn that the task of imputing missing data is not so trivial. It demands looking at a bigger picture, for example model type or percentage of missing data. Reading this article we will learn what algorithms to use in which cases and understand the vast problem of imputation.
+Introduction We have read an article about imputation techniques and their interaction with ML algorithms. It was written by Martyna Majchrzak, Agata Makarewicz, Jacek Wiśniewski. Before reading we were expecting to find out which imputation techniques are the best and how to use them."/>
+
+
+
+
+
+
+<link rel="stylesheet" href="/2020L-WB-Blog/css/main.min.css" />
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js" integrity="sha256-h2tMEmhemR2IN4wbbdNjj9LaDIjzwk2hralQwfJmBOE=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.5/dist/medium-zoom.min.js" integrity="sha256-Jd9xef1tT52aCb+cAqhElj/9D3c99lQvEjyKOuPn3S4=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<body class="d-flex flex-column h-100">
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 link-primary">
+            <a class="main-title" href="/2020L-WB-Blog/">Machine Learning Case Studies</a>
+            
+            <span class="sub-title">by Evidence Based Machine Learning Lab</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-md-9 col-12 float-left" id="content">
+                
+<article>
+    
+    <h4 class="post-title">
+        <a href="/2020L-WB-Blog/2020-06-04-interaction-between-imputation-and-ml-algorithms/">Interaction between imputation and ML algorithms</a>
+    </h4>
+    <div>
+        <span>
+            
+                Witold Merkel;
+            
+                Adam Rydelek;
+            
+                Michał Stawikowski;
+            
+        </span>
+    </div>
+    <div class="post-meta link-alter">
+        <time><i class="fas fa-calendar-day"></i>&nbsp;2020-06-04</time><span><i class="fas fa-file-alt"></i>&nbsp;562 words</span><span><i class="fas fa-tag"></i>&nbsp;<a href="/tags/imputation/">Imputation</a> <a href="/tags/machine-learning/">Machine Learning</a> <a href="/tags/missing-data/">Missing data</a> <a href="/tags/openml/">OpenML</a> </span>
+    </div>
+    
+    
+    <div class="post-content markdown-body">
+        <h2 id="tldr">TL;DR</h2>
+<p>Lot of people would like to find the best method to impute data, that covers most of the cases, but from this article we will learn that the task of imputing missing data is not so trivial. It demands looking at a bigger picture, for example model type or percentage of missing data. Reading this article we will learn what algorithms to use in which cases and understand the vast problem of imputation.</p>
+<h2 id="introduction">Introduction</h2>
+<p>We have read an article about imputation techniques and their interaction with ML algorithms. It was written by Martyna Majchrzak, Agata Makarewicz, Jacek Wiśniewski. Before reading we were expecting to find out which imputation techniques are the best and how to use them. This article has shown us that the case is not as simple as we have thought and there is no definite answer to this question. Despite that we have acquired valuable knowledge, that can be utilised in data preparation and choosing the best algorithm for datasets with high percentage of missing values.</p>
+<h2 id="comparison">Comparison</h2>
+<p>Authors have selected 14 datasets to work with, each one is divided into a training (80%) and testing (20%) and after that all of 5 imputation methods are used on them to find out which one is the best. Those methods consists of:</p>
+<ul>
+<li><strong>mean/mode imputation</strong> - putting mean in continuous variables and mode in discrete variables,</li>
+<li><strong>mice (predictive mean matching)</strong> - it creates multiple replacement values for multivariate missing data,</li>
+<li><strong>k-nearest neighbours</strong> - aggregation of the non-missing values of the k nearest neighbours,</li>
+<li><strong>hotdeck</strong> - missing values are replaced with an observed response from a “similar” unit,</li>
+<li><strong>softImpute combined with median/mode imputation</strong> - for numeric variables function softImpute(), for remaining variables, missing values are imputed with median or mode.</li>
+</ul>
+<p>Performance (F1 score is our metric) was calculated on 5 ML algorithms, which are:</p>
+<ul>
+<li><strong>RPART (Recursive Partitioning And Regression Trees)</strong>,</li>
+<li><strong>NB (Naive Bayes)</strong>,</li>
+<li><strong>Ranger (Random forest)</strong>,</li>
+<li><strong>LDA (Linear Discriminant Analysis)</strong>,</li>
+<li><strong>KNN (k-Nearest Neighbour)</strong>.</li>
+</ul>
+<p>Later in the process a rank system is used. This system gives 1 to the best imputation and 5 to the worst one on all datasets and then returns mean rank for each algorithm. Also if imputation is incomplete it scores 5. This idea has it&rsquo;s strong sites, because F1 score can vary depending on the structure of the dataset, which is bad when we want to compare them. However we think that a better idea would be to scale the result to 0-1, because in the rank system we lose the information about dispersion of results in the same dataset.</p>
+<h2 id="results">Results</h2>
+<p><img src="https://mini-pw.github.io/2020L-WB-Book/data/2-6-data/Heatmapa_piekna_wszystkie.png" alt="For all data"></p>
+<p>This heatmap shows how algorithms work with all data.</p>
+<p><img src="https://mini-pw.github.io/2020L-WB-Book/data/2-6-data/Heatmapa_piekna_missing.png" alt="For high missing data %"></p>
+<p>Here we can see that there is a difference, because it worked only on data with high percentage of missing data.</p>
+<p>From those two heatmaps we can see that there is no &ldquo;the best&rdquo; approach. From this article we have learned which imputation methods work good with a high percentage of missing data. We can also observe that some ML algorithms work better with specific imputation approaches, so it is important to remember when choosing how to impute missing data, when we want to use a specific algorithm.</p>
+<p>This article shows that there is a prefered imputation for each algorithm. The pairs are shown below:</p>
+<ul>
+<li>Rpart - VIM knn,</li>
+<li>Naive Bayes - MICE pmm,</li>
+<li>Ranger - VIM hotdeck and softImpute,</li>
+<li>LDA - VIM hotdeck,</li>
+<li>KKNN - mean/mode imputation.</li>
+</ul>
+
+    </div>
+</article>
+
+
+<div class="license markdown-body">
+    <blockquote>
+        <p>Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)</a>.</p>
+    </blockquote>
+</div>
+
+
+
+
+
+
+            </div>
+            
+            <div class="col-md-3 col-12 float-left link-alter" id="sidebar">
+                
+
+<div class="widget-toc">
+    <h5>TOC</h5>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#tldr">TL;DR</a></li>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#comparison">Comparison</a></li>
+    <li><a href="#results">Results</a></li>
+  </ul>
+</nav>
+</div>
+
+
+<div class="widget-pages">
+    <h5>Pages</h5>
+    <ul>
+        
+        
+        <li>
+            <a href="/2020L-WB-Blog/">Home</a>
+        </li>
+        
+        <li>
+            <a href="/2020L-WB-Blog/archives/">Archives</a>
+        </li>
+        
+        <li>
+            <a href="/2020L-WB-Blog/about/">About</a>
+        </li>
+        
+    </ul>
+</div>
+
+<div class="widget-tags">
+    <h5>Tags</h5>
+    <div>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/dataset/">dataset</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/imputation/">Imputation</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/machine-learning/">Machine Learning</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/missing-data/">Missing data</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/missings/">missings</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/ml/">ML</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/openml/">OpenML</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/tutorial/">tutorial</a>
+        </span>
+        
+    </div>
+</div>
+
+<div class="widget-links">
+    <h5>Links</h5>
+    <ul>
+        
+        <li>
+            <a href="https://mini-pw.github.io/2020L-WB-Book/" target="_blank"><span>ML Case Studies Book</span></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/mini-pw/2020L-WarsztatyBadawcze-Reprodukowalnosc" target="_blank"><span>Reproducibility repo (in Polish)</span></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/mini-pw/2020L-WarsztatyBadawcze-Imputacja" target="_blank"><span>Imputation repo (in Polish)</span></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/mini-pw/2020L-WarsztatyBadawcze-InzynieriaCech" target="_blank"><span>Interpretability repo (in Polish)</span></a>
+        </li>
+        
+    </ul>
+</div>
+
+
+            </div>
+            
+            
+            
+            <div id="scroll-top">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+    <div class="container-lg text-center">
+        <p>&copy; 2020 <a href="/2020L-WB-Blog/"></a> | Powered by <a href="https://github.com/amzrk2/hugo-theme-fuji/" target="_blank">Fuji</a> & <a href="https://gohugo.io/" target="_blank">Hugo</a> </p>
+    </div>
+</footer>
+    
+<script>
+    $(function () {
+        mediumZoom('.img-zoomable', {
+            margin: 32
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+<script>
+    $('.widget-toc a').click(function () {
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        });
+    });
+</script>
+
+
+
+<script>
+    $('#scroll-top').click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+
+</html>

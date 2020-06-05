@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tutorial on Machine Learning Case Studies</title>
-    <link>/2020L-WB-Blog/tags/tutorial/</link>
-    <description>Recent content in tutorial on Machine Learning Case Studies</description>
+    <title>Małgorzata Wachulec on Machine Learning Case Studies</title>
+    <link>/2020L-WB-Blog/authors/ma%C5%82gorzata-wachulec/</link>
+    <description>Recent content in Małgorzata Wachulec on Machine Learning Case Studies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 05 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/2020L-WB-Blog/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/2020L-WB-Blog/authors/ma%C5%82gorzata-wachulec/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,20 +20,6 @@
       <description>Imputing missing data for a classification problem Authors: Karol Saputa, Małgorzata Wachulec, Aleksandra Wichrowska (Warsaw University of Technology)
 As students of the same university course, we were asked to sum up the findings of our colleges, the authors of the Default imputation efficiency comparison article. In their work, they used many missing data imputation techniques on 11 datasets, on which they then run different classification algorithms. By measuring the results obtained using these imputation algorithms they could judge their performance. But first:
 What is data imputation? Some datasets have missing values that many classification algorithms cannot handle. One way to make the algorithm work is to delete the observations that include missing data or, if missing values come just from a few columns, we can delete them instead.</description>
-    </item>
-    
-    <item>
-      <title>How to add a post</title>
-      <link>/2020L-WB-Blog/2020-05-18-how-to-add-post/</link>
-      <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020L-WB-Blog/2020-05-18-how-to-add-post/</guid>
-      <description>Posting is really easy. Blog posts are simple Markdown files.
-Files The content/post folder is where blog posts are stored. To create a post, add your markdown file to content/post directory with the following format: yyyy-mm-dd-title.md.
-Where yyyy is a year, mm is a month, and dd is a day, and md is the file extension representing the format used in the file. For example: 2020-05-18-how-to-add-post.md.
-File content An example of a post file you can find here.
-A blog post file begins with a front matter which is used to set metadata. For example:
---- date: &amp;quot;2020-05-18&amp;quot; title: How to add a post authors: [&amp;quot;Alicja Gosiewska&amp;quot;] tags: - tutorial --- For more authors, add elements to the list, for example [&amp;quot;Alicja Gosiewska&amp;quot;, &amp;quot;Second Author&amp;quot;].</description>
     </item>
     
   </channel>

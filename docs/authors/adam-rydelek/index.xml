@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Adam Rydelek on Machine Learning Case Studies</title>
+    <link>/2020L-WB-Blog/authors/adam-rydelek/</link>
+    <description>Recent content in Adam Rydelek on Machine Learning Case Studies</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/2020L-WB-Blog/authors/adam-rydelek/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Interaction between imputation and ML algorithms</title>
+      <link>/2020L-WB-Blog/2020-06-04-interaction-between-imputation-and-ml-algorithms/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020L-WB-Blog/2020-06-04-interaction-between-imputation-and-ml-algorithms/</guid>
+      <description>TL;DR Lot of people would like to find the best method to impute data, that covers most of the cases, but from this article we will learn that the task of imputing missing data is not so trivial. It demands looking at a bigger picture, for example model type or percentage of missing data. Reading this article we will learn what algorithms to use in which cases and understand the vast problem of imputation.
+Introduction We have read an article about imputation techniques and their interaction with ML algorithms. It was written by Martyna Majchrzak, Agata Makarewicz, Jacek Wiśniewski. Before reading we were expecting to find out which imputation techniques are the best and how to use them.</description>
+    </item>
+    
+  </channel>
+</rss>
