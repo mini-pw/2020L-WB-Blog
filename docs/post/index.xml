@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Machine Learning Case Studies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 05 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/2020L-WB-Blog/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Imputation whizzkids</title>
+      <link>/2020L-WB-Blog/2020-06-07-imputation-whizzkids/</link>
+      <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020L-WB-Blog/2020-06-07-imputation-whizzkids/</guid>
+      <description>What __ a data imputation? Far far away, beyond the seven hills, there are data scientists, data analysts, consultants who don&amp;rsquo;t have a single thought whether the data they deal with contains any missing values. Unfortunately, we do have to think about it. A lot&amp;hellip; The question everybody strives to answer is how to do it properly, efficiently, and effectively at the same time.
+Fortunately, the group consisting of Paulina Przybyłek, Renata Rólkiewicz, Jakub Wiśniewski, and Jakub Pingielski (henceforth Authors) has recently faced the challenge of finding the best imputation methods to solve our problems once for all. Their research was comprehensive, like the results.</description>
+    </item>
     
     <item>
       <title>Imputing missing data for a classification problem</title>
@@ -55,7 +65,7 @@ Files The content/post folder is where blog posts are stored. To create a post, 
 Where yyyy is a year, mm is a month, and dd is a day, and md is the file extension representing the format used in the file. For example: 2020-05-18-how-to-add-post.md.
 File content An example of a post file you can find here.
 A blog post file begins with a front matter which is used to set metadata. For example:
---- date: &amp;quot;2020-05-18&amp;quot; title: How to add a post authors: [&amp;quot;Alicja Gosiewska&amp;quot;] tags: - tutorial --- For more authors, add elements to the list, for example [&amp;quot;Alicja Gosiewska&amp;quot;, &amp;quot;Second Author&amp;quot;].</description>
+---date: &amp;quot;2020-05-18&amp;quot;title: How to add a postauthors: [&amp;quot;Alicja Gosiewska&amp;quot;]tags:- tutorial---For more authors, add elements to the list, for example [&amp;quot;Alicja Gosiewska&amp;quot;, &amp;quot;Second Author&amp;quot;].</description>
     </item>
     
   </channel>
