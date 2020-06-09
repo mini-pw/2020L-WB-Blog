@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/2020L-WB-Blog/authors/aleksander-podsiad/</loc>
+    <lastmod>2020-06-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2020L-WB-Blog/tags/computer-vision/</loc>
     <lastmod>2020-06-09T00:00:00+00:00</lastmod>
   </url>
@@ -23,12 +28,17 @@
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/machine-learning/</loc>
+    <loc>/2020L-WB-Blog/</loc>
     <lastmod>2020-06-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/</loc>
+    <loc>/2020L-WB-Blog/authors/micha%C5%82-wdowski/</loc>
+    <lastmod>2020-06-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/tags/ml/</loc>
     <lastmod>2020-06-09T00:00:00+00:00</lastmod>
   </url>
   
@@ -39,16 +49,6 @@
   
   <url>
     <loc>/2020L-WB-Blog/authors/zuzanna-mr%C3%B3z/</loc>
-    <lastmod>2020-06-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2020L-WB-Blog/authors/aleksander-podsiad/</loc>
-    <lastmod>2020-06-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2020L-WB-Blog/authors/micha%C5%82-wdowski/</loc>
     <lastmod>2020-06-09T00:00:00+00:00</lastmod>
   </url>
   
@@ -103,17 +103,17 @@
   </url>
   
   <url>
+    <loc>/2020L-WB-Blog/tags/machine-learning/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2020L-WB-Blog/authors/micha%C5%82-stawikowski/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/2020L-WB-Blog/tags/missings/</loc>
-    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2020L-WB-Blog/tags/ml/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
   </url>
   
