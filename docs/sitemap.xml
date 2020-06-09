@@ -3,6 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+<<<<<<< HEAD
     <loc>/2020L-WB-Blog/2020-06-01-are-black-boxes-inevitable/</loc>
     <lastmod>2020-06-01T00:00:00+00:00</lastmod>
   </url>
@@ -15,10 +16,30 @@
   <url>
     <loc>/2020L-WB-Blog/authors/konrad-welkier/</loc>
     <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+=======
+    <loc>/2020L-WB-Blog/authors/aleksandra-wichrowska/</loc>
+    <lastmod>2020-06-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/tags/imputation/</loc>
+    <lastmod>2020-06-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/2020-06-05-imputing-missing-data-for-a-classification-problem/</loc>
+    <lastmod>2020-06-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/authors/karol-saputa/</loc>
+    <lastmod>2020-06-05T00:00:00+00:00</lastmod>
+>>>>>>> 78c03f0e81c4c14aff984039d92c303748d4d352
   </url>
   
   <url>
     <loc>/2020L-WB-Blog/</loc>
+<<<<<<< HEAD
     <lastmod>2020-06-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -35,16 +56,98 @@
   <url>
     <loc>/2020L-WB-Blog/authors/piotr-sie%C5%84ko/</loc>
     <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+=======
+    <lastmod>2020-06-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/authors/ma%C5%82gorzata-wachulec/</loc>
+    <lastmod>2020-06-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/tags/missing-data/</loc>
+    <lastmod>2020-06-05T00:00:00+00:00</lastmod>
+>>>>>>> 78c03f0e81c4c14aff984039d92c303748d4d352
   </url>
   
   <url>
     <loc>/2020L-WB-Blog/post/</loc>
+<<<<<<< HEAD
     <lastmod>2020-06-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/2020L-WB-Blog/tags/xai/</loc>
     <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+=======
+    <lastmod>2020-06-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/authors/adam-rydelek/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/tags/dataset/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/authors/dominik-rafacz/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/2020-06-04-interaction-between-imputation-and-ml-algorithms/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/tags/machine-learning/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/authors/micha%C5%82-stawikowski/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/tags/missings/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/tags/ml/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/2020-06-04-not-so-famous-yet-hajada-and-his-results/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/tags/openml/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/authors/tomasz-makowski/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/authors/witold-merkel/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/authors/wojciech-bogucki/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+>>>>>>> 78c03f0e81c4c14aff984039d92c303748d4d352
   </url>
   
   <url>

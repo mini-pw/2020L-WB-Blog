@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.72.0" />
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/favicon-16x16.png" />
+<link rel="manifest" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/site.webmanifest" />
+<link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/safari-pinned-tab.svg" color="#8aa2d3" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/favicon.ico" />
+<meta name="msapplication-TileColor" content="#8aa2d3" />
+<meta name="msapplication-config" content="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/browserconfig.xml" />
+<meta name="theme-color" content="#ffffff" />
+
+
+
+<title>Not so famous (yet!) Hajada and his results - Machine Learning Case Studies</title>
+
+<meta name="author" content="" />
+<meta name="description" content="##Meet Hajada!
+Have you heard of the Indian mathematician Hajada? We started to think about it, having read the title of the article &ldquo;The Hajada Imputation Test&rdquo; - it sounded somehow familiar&hellip; But you probably haven&rsquo;t had any contact with him, because not so long ago there was no such man. He was born by the authors of the test and the article, and his name comes from the first letters of their names.
+##So what is his test?
+Hajada decided to study the effectiveness and time efficiency of various methods of dealing with missing data. He juxtaposed three simple (or even naive) methods such as deleting rows or inserting random values and three more sublime methods, including mice and missForest algorithms." />
+
+<meta name="keywords" content="imputation, ML, OpenML, dataset, missings" />
+
+<meta property="og:title" content="Not so famous (yet!) Hajada and his results" />
+<meta property="og:description" content="##Meet Hajada!
+Have you heard of the Indian mathematician Hajada? We started to think about it, having read the title of the article &ldquo;The Hajada Imputation Test&rdquo; - it sounded somehow familiar&hellip; But you probably haven&rsquo;t had any contact with him, because not so long ago there was no such man. He was born by the authors of the test and the article, and his name comes from the first letters of their names.
+##So what is his test?
+Hajada decided to study the effectiveness and time efficiency of various methods of dealing with missing data. He juxtaposed three simple (or even naive) methods such as deleting rows or inserting random values and three more sublime methods, including mice and missForest algorithms." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2020L-WB-Blog/2020-06-04-not-so-famous-yet-hajada-and-his-results/" />
+<meta property="og:image" content="/2020L-WB-Blog/img/og.png"/>
+<meta property="article:published_time" content="2020-06-04T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-06-04T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/2020L-WB-Blog/img/og.png"/>
+
+<meta name="twitter:title" content="Not so famous (yet!) Hajada and his results"/>
+<meta name="twitter:description" content="##Meet Hajada!
+Have you heard of the Indian mathematician Hajada? We started to think about it, having read the title of the article &ldquo;The Hajada Imputation Test&rdquo; - it sounded somehow familiar&hellip; But you probably haven&rsquo;t had any contact with him, because not so long ago there was no such man. He was born by the authors of the test and the article, and his name comes from the first letters of their names.
+##So what is his test?
+Hajada decided to study the effectiveness and time efficiency of various methods of dealing with missing data. He juxtaposed three simple (or even naive) methods such as deleting rows or inserting random values and three more sublime methods, including mice and missForest algorithms."/>
+
+
+
+
+
+
+<link rel="stylesheet" href="/2020L-WB-Blog/css/main.min.css" />
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js" integrity="sha256-h2tMEmhemR2IN4wbbdNjj9LaDIjzwk2hralQwfJmBOE=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.5/dist/medium-zoom.min.js" integrity="sha256-Jd9xef1tT52aCb+cAqhElj/9D3c99lQvEjyKOuPn3S4=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<body class="d-flex flex-column h-100">
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 link-primary">
+            <a class="main-title" href="/2020L-WB-Blog/">Machine Learning Case Studies</a>
+            
+            <span class="sub-title">by Evidence Based Machine Learning Lab</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-md-9 col-12 float-left" id="content">
+                
+<article>
+    
+    <h4 class="post-title">
+        <a href="/2020L-WB-Blog/2020-06-04-not-so-famous-yet-hajada-and-his-results/">Not so famous (yet!) Hajada and his results</a>
+    </h4>
+    <div>
+        <span>
+            
+                Wojciech Bogucki;
+            
+                Tomasz Makowski;
+            
+                Dominik Rafacz;
+            
+        </span>
+    </div>
+    <div class="post-meta link-alter">
+        <time><i class="fas fa-calendar-day"></i>&nbsp;2020-06-04</time><span><i class="fas fa-file-alt"></i>&nbsp;680 words</span><span><i class="fas fa-tag"></i>&nbsp;<a href="/tags/imputation/">imputation</a> <a href="/tags/ml/">ML</a> <a href="/tags/openml/">OpenML</a> <a href="/tags/dataset/">dataset</a> <a href="/tags/missings/">missings</a> </span>
+    </div>
+    
+    
+    <div class="post-content markdown-body">
+        <p>##Meet Hajada!</p>
+<p>Have you heard of the Indian mathematician Hajada? We started to think about it, having read the title of the article &ldquo;The Hajada Imputation Test&rdquo; - it sounded somehow familiar&hellip; But you probably haven&rsquo;t had any contact with him, because not so long ago there was no such man. He was born by the authors of the test and the article, and his name comes from the first letters of their names.</p>
+<p>##So what is his test?</p>
+<p>Hajada decided to study the effectiveness and time efficiency of various methods of dealing with missing data. He juxtaposed three simple (or even naive) methods such as deleting rows or inserting random values and three more sublime methods, including <code>mice</code> and <code>missForest</code> algorithms. The experiment consisted in using these methods on several sets of data from the famous <code>OpenML100</code> collection. Hajada is not a racist about the datasets, and he chose them in order to take into account the entire demographic cross section of their datasets&rsquo; community, without discriminating against anyone &ndash; there are small and large, with lots of gaps and with almost none &ndash; a paradise for supporters of political correctness, you think. And yet, Hajada is going to COMPARE them&hellip; It&rsquo;s a good thing that if he does it, he at least clearly defines the criteria. The <code>F1</code> score and Matthews correlation coefficient (<code>MCC</code>) averaged over all selected datasets. The imputation time was an additional criterion.</p>
+<p>##What conclusions did Hajada arrive at?</p>
+<p>To determine which imputation method provides the best classification results Hajada created a ranking for every classification method he tested based on both measures (worth noticing &ndash; they usually resulted in the same ranks). Our concern is if a ranking for every dataset instead of a model wouldn’t also be useful in the decision process. Sadly, not every dataset was willing to cooperate and some of them caused imputation to fail, but there&rsquo;s nothing surprising, hardly anyone likes to be compared&hellip; Hajada took two approaches in this case &ndash; omit the result or give it the worst rank. In both cases <code>knn</code> imputation from <code>VIM</code> package had the best average ranks. As the second best Hajada pointed out mode/median if you want fast imputation and <code>missForest</code> if you don’t mind waiting a little longer. Strange for us is the fact that the mode/median method had worse ranks if we take into account failed imputations because how can this method really fail? Hajada also advised against removing rows with missing values due to unstable results. In the end we know better which imputation method we will use in future but, like the article says, it is impossible to draw objective conclusions because every case is different and the results of this experiment should be confirmed on a larger number of datasets and models.</p>
+<p><a href="/2020L-WB-Blog/2020-06-04-not-so-famous-yet-hajada-and-his-results/rankingAll.png">!Imputation rankings of different methods</a></p>
+<p>Another issue is the timing of the imputation. The most unexpected about it is that generating many random numbers is slower than computing mean/median and imputing by this method. But taking into account that we are in universe of <code>R</code> langugate it is very plausible. Slowness of <code>R</code> is almost legendary. For sure it is way slower than <code>C</code> and additionally it uses Mersenne twister random generator. The conclusion about time comparison is following: <code>mice</code>, <code>missForest</code> are the slowest and <code>VIM</code>, <code>random number</code> are halfway through the list. It is logical and it is worth remembering when we will have to use imputation next time. Maybe it will be worth just to use mean/median to have any imputed values and then check how other methods work. For us it was the one missing thing about time comparison. We would love to see the relationship between time of imputation and the number of rows / number of columns &ndash; it would be good to see what has a greater impact on calculation time.</p>
+<p><a href="/2020L-WB-Blog/static/2020-06-04-not-so-famous-yet-hajada-and-his-results/imputationTimesBoxplot.png">!Comparison of imputation times</a></p>
+<p>##What we want to say to Hajada?</p>
+<p>Generally speaking, good work, Mr. Hajada! Now it&rsquo;s time to see on your own processor how generalised these results are. There&rsquo;s so much data to impute!</p>
+
+    </div>
+</article>
+
+
+<div class="license markdown-body">
+    <blockquote>
+        <p>Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)</a>.</p>
+    </blockquote>
+</div>
+
+
+
+
+
+
+            </div>
+            
+            <div class="col-md-3 col-12 float-left link-alter" id="sidebar">
+                
+
+<div class="widget-toc">
+    <h5>TOC</h5>
+    <nav id="TableOfContents"></nav>
+</div>
+
+
+<div class="widget-pages">
+    <h5>Pages</h5>
+    <ul>
+        
+        
+        <li>
+            <a href="/2020L-WB-Blog/">Home</a>
+        </li>
+        
+        <li>
+            <a href="/2020L-WB-Blog/archives/">Archives</a>
+        </li>
+        
+        <li>
+            <a href="/2020L-WB-Blog/about/">About</a>
+        </li>
+        
+    </ul>
+</div>
+
+<div class="widget-tags">
+    <h5>Tags</h5>
+    <div>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/dataset/">dataset</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/imputation/">Imputation</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/machine-learning/">Machine Learning</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/missing-data/">Missing data</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/missings/">missings</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/ml/">ML</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/openml/">OpenML</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/tutorial/">tutorial</a>
+        </span>
+        
+    </div>
+</div>
+
+<div class="widget-links">
+    <h5>Links</h5>
+    <ul>
+        
+        <li>
+            <a href="https://mini-pw.github.io/2020L-WB-Book/" target="_blank"><span>ML Case Studies Book</span></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/mini-pw/2020L-WarsztatyBadawcze-Reprodukowalnosc" target="_blank"><span>Reproducibility repo (in Polish)</span></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/mini-pw/2020L-WarsztatyBadawcze-Imputacja" target="_blank"><span>Imputation repo (in Polish)</span></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/mini-pw/2020L-WarsztatyBadawcze-InzynieriaCech" target="_blank"><span>Interpretability repo (in Polish)</span></a>
+        </li>
+        
+    </ul>
+</div>
+
+
+            </div>
+            
+            
+            
+            <div id="scroll-top">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+    <div class="container-lg text-center">
+        <p>&copy; 2020 <a href="/2020L-WB-Blog/"></a> | Powered by <a href="https://github.com/amzrk2/hugo-theme-fuji/" target="_blank">Fuji</a> & <a href="https://gohugo.io/" target="_blank">Hugo</a> </p>
+    </div>
+</footer>
+    
+<script>
+    $(function () {
+        mediumZoom('.img-zoomable', {
+            margin: 32
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+<script>
+    $('.widget-toc a').click(function () {
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        });
+    });
+</script>
+
+
+
+<script>
+    $('#scroll-top').click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+
+</html>
