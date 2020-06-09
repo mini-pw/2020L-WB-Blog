@@ -1,10 +1,10 @@
 ---
 date: "2020-06-09"
 title:  Explainable Computer Vision 
-authors: ["Zuzanna Mróz", “Aleksander Podsiad”, “Michał Wdowski”]
+authors: ["Zuzanna Mróz", "Aleksander Podsiad", "Michał Wdowski"]
 tags:
 - interpretability
-- machine learning
+- ML
 - computer vision
 - embedding
 ---
@@ -23,7 +23,7 @@ Computer vision is cool. But it would be just as cool to understand how it works
 
 The solution to the aforementioned problem applied by the authors is **embedding**. But what does that even mean? The simplest way to explain it is to reduce the dimensions of images and present their content in a way that is understandable to the computer.
 
-![Diagram showing the purpose and place of embedders in predictions](/2020L-WB-Blog/static/2020-06-09-explainable-computer-vision/picrel1.png)
+![Diagram showing the purpose and place of embedders in predictions](/2020L-WB-Blog/2020-06-09-explainable-computer-vision/picrel1.png)
 
 In the article, the authors present several different methods by which you can approach the problem of teaching models to recognize images. The aim here was to compare their chosen model with a more advanced and thus less interpretable model. Embedders were used for the selected k-NN:
 
