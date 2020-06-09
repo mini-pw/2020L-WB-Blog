@@ -1,7 +1,8 @@
 on:
-  pull_request:
-    branches:
-      - master
+  push:
+    branches: master
+    paths-ignore:
+      - 'docs/**'
 
 name: blogdown
 
