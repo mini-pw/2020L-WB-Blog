@@ -6,25 +6,12 @@
     <description>Recent content in Posts on Machine Learning Case Studies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-<<<<<<< HEAD
-    <lastBuildDate>Mon, 01 Jun 2020 00:00:00 +0000</lastBuildDate>
-=======
     <lastBuildDate>Fri, 05 Jun 2020 00:00:00 +0000</lastBuildDate>
->>>>>>> 78c03f0e81c4c14aff984039d92c303748d4d352
     
 	<atom:link href="/2020L-WB-Blog/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-<<<<<<< HEAD
-      <title>Are black boxes inevitable?</title>
-      <link>/2020L-WB-Blog/2020-06-01-are-black-boxes-inevitable/</link>
-      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020L-WB-Blog/2020-06-01-are-black-boxes-inevitable/</guid>
-      <description>Black vs white Machine learning seems to be all about creating a model with best performance - balancing well its variance and accuracy. Unfortunately, the pursuit of that balance makes us forget about the the fact, that - in the end - model will serve human beings. If that&amp;rsquo;s the case, a third factor should be considered - interpretability. When a model is unexplainable (AKA black-box model), it may be treated as untrustworthy and become useless. It is a problem, since many models known for its high performance (like XGBoost) happen to be parts of the black-box team.
-A false(?) trade-off So it would seem, that explainability is, and has to be, sacrificed for better performance of the model.</description>
-=======
       <title>Imputing missing data for a classification problem</title>
       <link>/2020L-WB-Blog/2020-06-05-imputing-missing-data-for-a-classification-problem/</link>
       <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
@@ -55,7 +42,16 @@ Introduction We have read an article about imputation techniques and their inter
 Have you heard of the Indian mathematician Hajada? We started to think about it, having read the title of the article &amp;ldquo;The Hajada Imputation Test&amp;rdquo; - it sounded somehow familiar&amp;hellip; But you probably haven&amp;rsquo;t had any contact with him, because not so long ago there was no such man. He was born by the authors of the test and the article, and his name comes from the first letters of their names.
 ##So what is his test?
 Hajada decided to study the effectiveness and time efficiency of various methods of dealing with missing data. He juxtaposed three simple (or even naive) methods such as deleting rows or inserting random values and three more sublime methods, including mice and missForest algorithms.</description>
->>>>>>> 78c03f0e81c4c14aff984039d92c303748d4d352
+    </item>
+    
+    <item>
+      <title>Are black boxes inevitable?</title>
+      <link>/2020L-WB-Blog/2020-06-01-are-black-boxes-inevitable/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020L-WB-Blog/2020-06-01-are-black-boxes-inevitable/</guid>
+      <description>Black vs white Machine learning seems to be all about creating a model with best performance - balancing well its variance and accuracy. Unfortunately, the pursuit of that balance makes us forget about the the fact, that - in the end - model will serve human beings. If that&amp;rsquo;s the case, a third factor should be considered - interpretability. When a model is unexplainable (AKA black-box model), it may be treated as untrustworthy and become useless. It is a problem, since many models known for its high performance (like XGBoost) happen to be parts of the black-box team.
+A false(?) trade-off So it would seem, that explainability is, and has to be, sacrificed for better performance of the model.</description>
     </item>
     
     <item>
