@@ -23,29 +23,29 @@
 
 
 
-<title>Are black boxes inevitable? - Machine Learning Case Studies</title>
+<title>Explainable Computer Vision - Machine Learning Case Studies</title>
 
 <meta name="author" content="" />
-<meta name="description" content="Black vs white Machine learning seems to be all about creating a model with best performance - balancing well its variance and accuracy. Unfortunately, the pursuit of that balance makes us forget about the the fact, that - in the end - model will serve human beings. If that&rsquo;s the case, a third factor should be considered - interpretability. When a model is unexplainable (AKA black-box model), it may be treated as untrustworthy and become useless. It is a problem, since many models known for its high performance (like XGBoost) happen to be parts of the black-box team.
-A false(?) trade-off So it would seem, that explainability is, and has to be, sacrificed for better performance of the model." />
+<meta name="description" content="What is this blog entry about? Black-boxes are commonly used in computer vision. But do we have to use it? This article looks at this issue and we try to understand it with our small (but developed after one semester of machine learning experience) brains and summarize it here.
+What is this article about? Computer vision is cool. But it would be just as cool to understand how it works, and it&rsquo;s not so obvious. Explainable methods of image recognition - which is de facto classification - cannot use logistic regression and decision trees, because every model loses transparency as its performance increases - not to mention understanding neural networks." />
 
-<meta name="keywords" content="XAI, black-boxes, ML" />
+<meta name="keywords" content="interpretability, machine learning, computer vision, embedding" />
 
-<meta property="og:title" content="Are black boxes inevitable?" />
-<meta property="og:description" content="Black vs white Machine learning seems to be all about creating a model with best performance - balancing well its variance and accuracy. Unfortunately, the pursuit of that balance makes us forget about the the fact, that - in the end - model will serve human beings. If that&rsquo;s the case, a third factor should be considered - interpretability. When a model is unexplainable (AKA black-box model), it may be treated as untrustworthy and become useless. It is a problem, since many models known for its high performance (like XGBoost) happen to be parts of the black-box team.
-A false(?) trade-off So it would seem, that explainability is, and has to be, sacrificed for better performance of the model." />
+<meta property="og:title" content="Explainable Computer Vision" />
+<meta property="og:description" content="What is this blog entry about? Black-boxes are commonly used in computer vision. But do we have to use it? This article looks at this issue and we try to understand it with our small (but developed after one semester of machine learning experience) brains and summarize it here.
+What is this article about? Computer vision is cool. But it would be just as cool to understand how it works, and it&rsquo;s not so obvious. Explainable methods of image recognition - which is de facto classification - cannot use logistic regression and decision trees, because every model loses transparency as its performance increases - not to mention understanding neural networks." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/2020L-WB-Blog/2020-06-01-are-black-boxes-inevitable/" />
+<meta property="og:url" content="/2020L-WB-Blog/2020-06-09-explainable-computer-vision/" />
 <meta property="og:image" content="/2020L-WB-Blog/img/og.png"/>
-<meta property="article:published_time" content="2020-06-01T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-06-01T00:00:00+00:00" />
+<meta property="article:published_time" content="2020-06-09T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-06-09T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="/2020L-WB-Blog/img/og.png"/>
 
-<meta name="twitter:title" content="Are black boxes inevitable?"/>
-<meta name="twitter:description" content="Black vs white Machine learning seems to be all about creating a model with best performance - balancing well its variance and accuracy. Unfortunately, the pursuit of that balance makes us forget about the the fact, that - in the end - model will serve human beings. If that&rsquo;s the case, a third factor should be considered - interpretability. When a model is unexplainable (AKA black-box model), it may be treated as untrustworthy and become useless. It is a problem, since many models known for its high performance (like XGBoost) happen to be parts of the black-box team.
-A false(?) trade-off So it would seem, that explainability is, and has to be, sacrificed for better performance of the model."/>
+<meta name="twitter:title" content="Explainable Computer Vision"/>
+<meta name="twitter:description" content="What is this blog entry about? Black-boxes are commonly used in computer vision. But do we have to use it? This article looks at this issue and we try to understand it with our small (but developed after one semester of machine learning experience) brains and summarize it here.
+What is this article about? Computer vision is cool. But it would be just as cool to understand how it works, and it&rsquo;s not so obvious. Explainable methods of image recognition - which is de facto classification - cannot use logistic regression and decision trees, because every model loses transparency as its performance increases - not to mention understanding neural networks."/>
 
 
 
@@ -87,34 +87,76 @@ A false(?) trade-off So it would seem, that explainability is, and has to be, sa
 <article>
     
     <h4 class="post-title">
-        <a href="/2020L-WB-Blog/2020-06-01-are-black-boxes-inevitable/">Are black boxes inevitable?</a>
+        <a href="/2020L-WB-Blog/2020-06-09-explainable-computer-vision/">Explainable Computer Vision</a>
     </h4>
     <div>
         <span>
             
-                Paweł Morgen;
+                Zuzanna Mróz;
             
-                Piotr Sieńko;
+                “Aleksander Podsiad”;
             
-                Konrad Welkier;
+                “Michał Wdowski”;
             
         </span>
     </div>
     <div class="post-meta link-alter">
-        <time><i class="fas fa-calendar-day"></i>&nbsp;2020-06-01</time><span><i class="fas fa-file-alt"></i>&nbsp;334 words</span><span><i class="fas fa-tag"></i>&nbsp;<a href="/tags/xai/">XAI</a> <a href="/tags/black-boxes/">black-boxes</a> <a href="/tags/ml/">ML</a> </span>
+        <time><i class="fas fa-calendar-day"></i>&nbsp;2020-06-09</time><span><i class="fas fa-file-alt"></i>&nbsp;510 words</span><span><i class="fas fa-tag"></i>&nbsp;<a href="/tags/interpretability/">interpretability</a> <a href="/tags/machine-learning/">machine learning</a> <a href="/tags/computer-vision/">computer vision</a> <a href="/tags/embedding/">embedding</a> </span>
     </div>
     
     
     <div class="post-content markdown-body">
-        <h3 id="black-vs-white">Black vs white</h3>
-<p>Machine learning seems to be all about creating a model with <em>best</em> performance - balancing well its variance and accuracy. Unfortunately, the pursuit of that balance makes us forget about the  the fact, that - in the end - model will serve human beings. If that&rsquo;s the case, a third factor should be considered - interpretability. When a model is unexplainable (AKA black-box model), it may be treated as untrustworthy and become <strong>useless</strong>. It is a problem, since many models known for its high performance (like XGBoost) happen to be parts of the black-box team.</p>
-<h3 id="a-false-trade-off">A false(?) trade-off</h3>
-<p>So it would seem, that explainability is, and has to be, sacrificed for better performance of the model. Brave students of Warsaw University of Technology challenged that claim and attempted to create a fully explainable model with black-box accuracy. In <a href="https://mini-pw.github.io/2020L-WB-Book/surpassing-black-box-models-performance-on-unbalanced-data-with-an-interpretable-one-using-advanced-feature-engineering.html">this article</a> their methods and outcomes are described.</p>
-<h3 id="there-is-a-way">There is a way</h3>
-<p>The brave students knew, that the task was difficult, so they did their homework and prepared accordingly. They bet on extensive feature engineering - imputation, getting rid of skewness and curbing the outliers. The game-changer however was the SAFE (Surrogate Assisted Feature Extraction) algoritm. Essentialy, it silently uses a black-box model to choose important features; to <em>separate the wheat from the chaff</em>, so to speak. The attempt proved to be a success - on the data chosen for the work, they managed to train a decision tree, which was <strong>more accurate</strong> than standard black-box models (random forest, ADAboost, XGboost). The final results - including influence of preprocessing and feature engineering - can be admired on the plot below:</p>
-<p><img src="/2020L-WB-Blog/2020-06-01-are-black-boxes-inevitable/plot.png" alt="Final results from the mentioned paper"></p>
-<h3 id="inevitable">Inevitable?</h3>
-<p>Although it would seem, that the black-box models are superior, this paper proves otherwise. It reminds us of utility lying in the good, old, simple methods and challenges the supremacy of the unexplainable ones. In the end, the lesson is almost poetic - with enough work, you can train a model as accurate as XGBoost and as transparent as a decision tree.</p>
+        <h2 id="what-is-this-blog-entry-about">What is this blog entry about?</h2>
+<p>Black-boxes are commonly used in computer vision. But do we have to use it? <a href="https://mini-pw.github.io/2020L-WB-Book/explainable-computer-vision-with-embedding-and-k-nn-classifier.html">This</a> article looks at this issue and we try to understand it with our small (but developed after one semester of machine learning experience) brains and summarize it here.</p>
+<h2 id="what-is-this-article-about">What is this article about?</h2>
+<p>Computer vision is cool. But it would be just as cool to understand how it works, and it&rsquo;s not so obvious. Explainable methods of image recognition - which is <em>de facto</em> classification - cannot use logistic regression and decision trees, because every model loses transparency as its performance increases - not to mention understanding neural networks. That&rsquo;s why the authors stated that the best for research will be <em>good ol’</em> k-NN, which uses grouping of the most similar results. However, there is a problem with how to measure this similarity of images.</p>
+<h2 id="b-but-how">B-but how?</h2>
+<p>The solution to the aforementioned problem applied by the authors is <strong>embedding</strong>. But what does that even mean? The simplest way to explain it is to reduce the dimensions of images and present their content in a way that is understandable to the computer.</p>
+<p><img src="/2020L-WB-Blog/static/2020-06-09-explainable-computer-vision/picrel1.png" alt="Diagram showing the purpose and place of embedders in predictions"></p>
+<p>In the article, the authors present several different methods by which you can approach the problem of teaching models to recognize images. The aim here was to compare their chosen model with a more advanced and thus less interpretable model. Embedders were used for the selected k-NN:</p>
+<ul>
+<li>convolutional - actually it&rsquo;s another black-box, so  it’s no use writing about it</li>
+<li>SVD - it is some kind of linear transformation by an array of the largest eigenvectors</li>
+<li>K-means - the algorithm is executed, and then the centroids chosen by it are used</li>
+</ul>
+<p>The output model used as a basis for comparing the results is the Convolutional Neural Network (another black box).
+To compare the results, the authors used the ACC (accuracy) measure, which is the ratio of correctly matched images to all of them. There is no need to use more complicated metrics, because the data set has been prepared in such a way that separate classes are equal, providing the possibility of simple measurement of model performance.</p>
+<h2 id="yes-and">Yes, and?</h2>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>ACC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Black-Box Convolutional</td>
+<td>0.941</td>
+</tr>
+<tr>
+<td>k-NN Convolutional</td>
+<td>0.923</td>
+</tr>
+<tr>
+<td>k-NN base</td>
+<td>0.8606</td>
+</tr>
+<tr>
+<td>k-NN K-means</td>
+<td>0.8512</td>
+</tr>
+<tr>
+<td>Logistic regression</td>
+<td>0.847</td>
+</tr>
+<tr>
+<td>k-NN SVD</td>
+<td>0.8001</td>
+</tr>
+</tbody>
+</table>
+<p>Black-box was the best, but you have to reckon with that, because sometimes you can&rsquo;t do something as good as the uninterpretable model. The best interpretable model was k-NN with the convolutional embedder, but unfortunately it is also only semi-interpretable. k-NN and k-NN with k-means itself did relatively well, but it turned out that k-NN with SVD conversion had lower results than the base k-NN. This transformation didn&rsquo;t help at all, but even hurt. It should also be noted that in case of using K-means the process was much faster than with the base k-NN. To sum it up: using Convolutional embedder got us second-best results and while it is semi interpretable it is still better than base k-NN and logistic regression which turned out to be not interpretable.</p>
 
     </div>
 </article>
@@ -140,14 +182,10 @@ A false(?) trade-off So it would seem, that explainability is, and has to be, sa
     <h5>TOC</h5>
     <nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li><a href="#black-vs-white">Black vs white</a></li>
-        <li><a href="#a-false-trade-off">A false(?) trade-off</a></li>
-        <li><a href="#there-is-a-way">There is a way</a></li>
-        <li><a href="#inevitable">Inevitable?</a></li>
-      </ul>
-    </li>
+    <li><a href="#what-is-this-blog-entry-about">What is this blog entry about?</a></li>
+    <li><a href="#what-is-this-article-about">What is this article about?</a></li>
+    <li><a href="#b-but-how">B-but how?</a></li>
+    <li><a href="#yes-and">Yes, and?</a></li>
   </ul>
 </nav>
 </div>

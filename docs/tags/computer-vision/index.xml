@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>computer vision on Machine Learning Case Studies</title>
+    <link>/2020L-WB-Blog/tags/computer-vision/</link>
+    <description>Recent content in computer vision on Machine Learning Case Studies</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 09 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/2020L-WB-Blog/tags/computer-vision/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Explainable Computer Vision</title>
+      <link>/2020L-WB-Blog/2020-06-09-explainable-computer-vision/</link>
+      <pubDate>Tue, 09 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020L-WB-Blog/2020-06-09-explainable-computer-vision/</guid>
+      <description>What is this blog entry about? Black-boxes are commonly used in computer vision. But do we have to use it? This article looks at this issue and we try to understand it with our small (but developed after one semester of machine learning experience) brains and summarize it here.
+What is this article about? Computer vision is cool. But it would be just as cool to understand how it works, and it&amp;rsquo;s not so obvious. Explainable methods of image recognition - which is de facto classification - cannot use logistic regression and decision trees, because every model loses transparency as its performance increases - not to mention understanding neural networks.</description>
+    </item>
+    
+  </channel>
+</rss>
