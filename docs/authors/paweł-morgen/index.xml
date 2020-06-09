@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Paweł Morgen on Machine Learning Case Studies</title>
+    <link>/2020L-WB-Blog/authors/pawe%C5%82-morgen/</link>
+    <description>Recent content in Paweł Morgen on Machine Learning Case Studies</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 01 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/2020L-WB-Blog/authors/pawe%C5%82-morgen/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Are black boxes inevitable?</title>
+      <link>/2020L-WB-Blog/2020-06-01-are-black-boxes-inevitable/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020L-WB-Blog/2020-06-01-are-black-boxes-inevitable/</guid>
+      <description>Black vs white Machine learning seems to be all about creating a model with best performance - balancing well its variance and accuracy. Unfortunately, the pursuit of that balance makes us forget about the the fact, that - in the end - model will serve human beings. If that&amp;rsquo;s the case, a third factor should be considered - interpretability. When a model is unexplainable (AKA black-box model), it may be treated as untrustworthy and become useless. It is a problem, since many models known for its high performance (like XGBoost) happen to be parts of the black-box team.
+A false(?) trade-off So it would seem, that explainability is, and has to be, sacrificed for better performance of the model.</description>
+    </item>
+    
+  </channel>
+</rss>
