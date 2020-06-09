@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Karol Saputa on Machine Learning Case Studies</title>
+    <link>/2020L-WB-Blog/authors/karol-saputa/</link>
+    <description>Recent content in Karol Saputa on Machine Learning Case Studies</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 05 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/2020L-WB-Blog/authors/karol-saputa/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Imputing missing data for a classification problem</title>
+      <link>/2020L-WB-Blog/2020-06-05-imputing-missing-data-for-a-classification-problem/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020L-WB-Blog/2020-06-05-imputing-missing-data-for-a-classification-problem/</guid>
+      <description>Imputing missing data for a classification problem Authors: Karol Saputa, Małgorzata Wachulec, Aleksandra Wichrowska (Warsaw University of Technology)
+As students of the same university course, we were asked to sum up the findings of our colleges, the authors of the Default imputation efficiency comparison article. In their work, they used many missing data imputation techniques on 11 datasets, on which they then run different classification algorithms. By measuring the results obtained using these imputation algorithms they could judge their performance. But first:
+What is data imputation? Some datasets have missing values that many classification algorithms cannot handle. One way to make the algorithm work is to delete the observations that include missing data or, if missing values come just from a few columns, we can delete them instead.</description>
+    </item>
+    
+  </channel>
+</rss>
