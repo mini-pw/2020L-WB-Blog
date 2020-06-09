@@ -35,4 +35,8 @@ Furthermore, analysing correlation plot above can lead to more conclusions. For 
 
 The research shows, that in most cases, reproducibility is not affected updates, so there is no need to stop actively developing the packages. However, there are some advices, that authors should bear in mind, changing their code. First of all, they should avoid changing names of functions, as it might lead to reproducibility issues. Additionally, when the article gains popularity and authors decide to change it's API, they should carefully rethink the changes, as it may affect reproducibility of not only theirs, but also other researchers work.
 
+## References
+1. Ngoc Anh Nguyen, Piotr Piątyszek and Marcin Łukaszyk from Warsaw University of Technology. (2020) How active development affects reproducibility. Warsaw University of Technology
+
+([Link to article](https://mini-pw.github.io/2020L-WB-Book/how-active-development-affects-reproducibility.html))
 
