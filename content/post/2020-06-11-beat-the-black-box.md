@@ -11,7 +11,7 @@ tags:
 
 ## Understanding things is good for your health
 
-There is no doubt we live in a world defined by data. In fact, we always were, only now we've got a wider variety of tools at our disposal to store and process all this information. We no longer need to search for structures in data by hand, we've got models and AI for this. However, we still want, or rather feel urge to, understand how all those analysis work. Especially when we're talking about our health data, and that is what authors of "Can Automated Regression beat linear model?" are talking about.
+There is no doubt we live in a world defined by data. In fact, we always were, only now we've got a wider variety of tools at our disposal to store and process all this information. We no longer need to search for structures in data by hand, we've got models and AI for this. However, we still want, or rather feel urge to, understand how all those analysis work. Especially when we're talking about our health data, and that is what authors of ["Can Automated Regression beat linear model?"](https://mini-pw.github.io/2020L-WB-Book/can-automated-regression-beat-linear-model.html) are talking about.
 
 
 ## This model's great, why would I want another one?
