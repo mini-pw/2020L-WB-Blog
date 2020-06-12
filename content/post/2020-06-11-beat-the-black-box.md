@@ -1,7 +1,7 @@
 ---
 date: "2020-06-11"
 title: Beat the Black Box!
-authors: ["Przemysław Chojecki, Kacper Staroń, Jakub Szypuła"]
+authors: ["Kacper Staroń, Jakub Szypuła"]
 tags:
 - interpretability
 - XAI
