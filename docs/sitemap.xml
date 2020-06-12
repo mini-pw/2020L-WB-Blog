@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/2020L-WB-Blog/tags/automated-regression/</loc>
+    <lastmod>2020-06-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/2020-06-11-beat-the-black-box/</loc>
+    <lastmod>2020-06-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/tags/interpretability/</loc>
+    <lastmod>2020-06-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/</loc>
+    <lastmod>2020-06-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/post/</loc>
+    <lastmod>2020-06-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/authors/przemys%C5%82aw-chojecki-kacper-staro%C5%84-jakub-szypu%C5%82a/</loc>
+    <lastmod>2020-06-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/tags/xai/</loc>
+    <lastmod>2020-06-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2020L-WB-Blog/authors/aleksander-podsiad/</loc>
     <lastmod>2020-06-09T00:00:00+00:00</lastmod>
   </url>
@@ -23,27 +58,12 @@
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/interpretability/</loc>
-    <lastmod>2020-06-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2020L-WB-Blog/</loc>
-    <lastmod>2020-06-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/2020L-WB-Blog/authors/micha%C5%82-wdowski/</loc>
     <lastmod>2020-06-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/2020L-WB-Blog/tags/ml/</loc>
-    <lastmod>2020-06-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2020L-WB-Blog/post/</loc>
     <lastmod>2020-06-09T00:00:00+00:00</lastmod>
   </url>
   
@@ -164,11 +184,6 @@
   
   <url>
     <loc>/2020L-WB-Blog/authors/piotr-sie%C5%84ko/</loc>
-    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2020L-WB-Blog/tags/xai/</loc>
     <lastmod>2020-06-01T00:00:00+00:00</lastmod>
   </url>
   
