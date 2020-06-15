@@ -33,7 +33,7 @@ Fortunately in the majority of the articles outdated code didn't have a big impa
 
 # 404 Code Not Found
 
-![](/2020L-WB-Blog/2020-06-15-it-is-possible-to-measure-reproducibility/Summary_of_marking_articles.png)
+![Summary of marking articles](/2020L-WB-Blog/2020-06-15-it-is-possible-to-measure-reproducibility/Summary_of_marking_articles.png)
 
 Interestingly, it turns out that the most common problem with reproducibility was code availability. One might only guess that it was caused by
 developers' sloppiness, not malice. Less surprising is the fact that many packages were heavily dependent on specific versions of software and required
