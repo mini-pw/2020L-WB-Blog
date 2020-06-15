@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bartłomiej Eljasiak on Machine Learning Case Studies</title>
+    <link>/2020L-WB-Blog/authors/bart%C5%82omiej-eljasiak/</link>
+    <description>Recent content in Bartłomiej Eljasiak on Machine Learning Case Studies</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 15 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/2020L-WB-Blog/authors/bart%C5%82omiej-eljasiak/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Black-box VS White-box Duel</title>
+      <link>/2020L-WB-Blog/2020-06-15-black-box-vs-white-box-duel/</link>
+      <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020L-WB-Blog/2020-06-15-black-box-vs-white-box-duel/</guid>
+      <description>Prepare to fight The interpretability of machine learning models is gaining more and more interest in the scientific world. It’s because artificial intelligence is used in a lot of business solutions that impact our everyday life. Knowledge how the model works can, among others, assure us about the safety of the implemented solution. We came across the article of students of the Warsaw University of Technology Wojciech Bogucki, Tomasz Makowski, Dominik Rafacz titled “Predicting code defects using interpretable static measures.” touching this topic.
+Black box vs white box Using interpretable models, such as linear regression, decision trees and k-nearest neighbors is one way to have your solution explainable.</description>
+    </item>
+    
+  </channel>
+</rss>
