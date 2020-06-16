@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Imputation on Machine Learning Case Studies</title>
-    <link>https://mini-pw.github.io/2020L-WB-Blog/tags/imputation/</link>
+    <link>/2020L-WB-Blog/tags/imputation/</link>
     <description>Recent content in Imputation on Machine Learning Case Studies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 05 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://mini-pw.github.io/2020L-WB-Blog/tags/imputation/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/2020L-WB-Blog/tags/imputation/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Imputing missing data for a classification problem</title>
-      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-05-imputing-missing-data-for-a-classification-problem/</link>
+      <link>/2020L-WB-Blog/2020-06-05-imputing-missing-data-for-a-classification-problem/</link>
       <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-05-imputing-missing-data-for-a-classification-problem/</guid>
+      <guid>/2020L-WB-Blog/2020-06-05-imputing-missing-data-for-a-classification-problem/</guid>
       <description>Imputing missing data for a classification problem Authors: Karol Saputa, Małgorzata Wachulec, Aleksandra Wichrowska (Warsaw University of Technology)
 As students of the same university course, we were asked to sum up the findings of our colleges, the authors of the Default imputation efficiency comparison article. In their work, they used many missing data imputation techniques on 11 datasets, on which they then run different classification algorithms. By measuring the results obtained using these imputation algorithms they could judge their performance. But first:
 What is data imputation? Some datasets have missing values that many classification algorithms cannot handle. One way to make the algorithm work is to delete the observations that include missing data or, if missing values come just from a few columns, we can delete them instead.</description>
@@ -24,20 +24,20 @@ What is data imputation? Some datasets have missing values that many classificat
     
     <item>
       <title>Interaction between imputation and ML algorithms</title>
-      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-04-interaction-between-imputation-and-ml-algorithms/</link>
+      <link>/2020L-WB-Blog/2020-06-04-interaction-between-imputation-and-ml-algorithms/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-04-interaction-between-imputation-and-ml-algorithms/</guid>
+      <guid>/2020L-WB-Blog/2020-06-04-interaction-between-imputation-and-ml-algorithms/</guid>
       <description>TL;DR Lot of people would like to find the best method to impute data, that covers most of the cases, but from this article we will learn that the task of imputing missing data is not so trivial. It demands looking at a bigger picture, for example model type or percentage of missing data. Reading this article we will learn what algorithms to use in which cases and understand the vast problem of imputation.
 Introduction We have read an article about imputation techniques and their interaction with ML algorithms. It was written by Martyna Majchrzak, Agata Makarewicz, Jacek Wiśniewski. Before reading we were expecting to find out which imputation techniques are the best and how to use them.</description>
     </item>
     
     <item>
       <title>Not so famous (yet!) Hajada and his results</title>
-      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-04-not-so-famous-yet-hajada-and-his-results/</link>
+      <link>/2020L-WB-Blog/2020-06-04-not-so-famous-yet-hajada-and-his-results/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-04-not-so-famous-yet-hajada-and-his-results/</guid>
+      <guid>/2020L-WB-Blog/2020-06-04-not-so-famous-yet-hajada-and-his-results/</guid>
       <description>Meet Hajada! Have you heard of the Indian mathematician Hajada? We started to think about it, having read the title of the article &amp;ldquo;The Hajada Imputation Test&amp;rdquo; - it sounded somehow familiar&amp;hellip; But you probably haven&amp;rsquo;t had any contact with him, because not so long ago there was no such man. He was born by the authors of the test and the article, and his name comes from the first letters of their names.
 So what is his test? Hajada decided to study the effectiveness and time efficiency of various methods of dealing with missing data. He juxtaposed three simple (or even naive) methods such as deleting rows or inserting random values and three more sublime methods, including mice and missForest algorithms.</description>
     </item>
