@@ -17,7 +17,7 @@ Knowing the most important factors influencing a house's price might have a grea
 
 The idea of the researches was to minimize the mean absolute error between model's predictions and actual prices. To do that, they decided to divide the dataset with various factors and prices into groups basing on the house's expensiveness. This step is actually performed by an unexplainable classifier, anyway it doesn't affect the overall model's transparency. Afterwards, a white-box estimator is trained on every group of data making it clear what is the way to predict the price in given subset. Fitted classifier and estimators can be successfully applied to test data which is a key fact in examining the correctness of the entire model. Stacked model created like this allows the user to find out which values were the most valuable ones in the process of pricing the house with high accuracy.
 
-[Zdjęcie; źródło: 2020L-WB-Book/docs/images/3-7-algorithm.png]
+[!A caption](/2020L-WB-Blog/2020-06-15-Improve-your-white-box-model/3-7-algorithm.png)
 
 
 ## Results
