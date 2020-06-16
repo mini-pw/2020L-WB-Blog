@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Paweł Koźmiński on Machine Learning Case Studies</title>
+    <link>https://mini-pw.github.io/2020L-WB-Blog/authors/pawe%C5%82-ko%C5%BAmi%C5%84ski/</link>
+    <description>Recent content in Paweł Koźmiński on Machine Learning Case Studies</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 15 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mini-pw.github.io/2020L-WB-Blog/authors/pawe%C5%82-ko%C5%BAmi%C5%84ski/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Divide et Conquer - improve your white box model!</title>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-15-improve-your-white-box-model/</link>
+      <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-15-improve-your-white-box-model/</guid>
+      <description>Divide et Conquer - improve your white box model! Divide and conquer is a classical algorithmic tool. It proved its usefulness many times (e.g. in sorting algorithms, multiplying large numbers, or discrete Fourier transform). Thanks to the article of Baniecki and Polakowski (Which Neighbours Affected House Prices in the ’90s?) we discovered yet another application of this algorithm. This time in machine learning.
+Is it expensive? A house? The estimation of the price of a house is especially crucial for many people for ages. Unfortunately it is a difficult problem. The scientists, economics and statisticians are still looking for the best tools and algorithms solving it.</description>
+    </item>
+    
+  </channel>
+</rss>

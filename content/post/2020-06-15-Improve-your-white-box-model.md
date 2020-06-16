@@ -1,6 +1,6 @@
 ---
 date: "2020-06-15"
-title: *Divide et Conquer* - improve your white box model!
+title: Divide et Conquer - improve your white box model!
 authors: ["Paweł Koźmiński", "Anna Urbala", "Wojciech Szczypek"]
 ---
 

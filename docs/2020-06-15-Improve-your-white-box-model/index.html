@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.70.0" />
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/favicon-16x16.png" />
+<link rel="manifest" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/site.webmanifest" />
+<link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/safari-pinned-tab.svg" color="#8aa2d3" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/favicon.ico" />
+<meta name="msapplication-TileColor" content="#8aa2d3" />
+<meta name="msapplication-config" content="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/browserconfig.xml" />
+<meta name="theme-color" content="#ffffff" />
+
+
+
+<title>Divide et Conquer - improve your white box model! - Machine Learning Case Studies</title>
+
+<meta name="author" content="" />
+<meta name="description" content="Divide et Conquer - improve your white box model! Divide and conquer is a classical algorithmic tool. It proved its usefulness many times (e.g. in sorting algorithms, multiplying large numbers, or discrete Fourier transform). Thanks to the article of Baniecki and Polakowski (Which Neighbours Affected House Prices in the ’90s?) we discovered yet another application of this algorithm. This time in machine learning.
+Is it expensive? A house? The estimation of the price of a house is especially crucial for many people for ages. Unfortunately it is a difficult problem. The scientists, economics and statisticians are still looking for the best tools and algorithms solving it." />
+
+<meta property="og:title" content="Divide et Conquer - improve your white box model!" />
+<meta property="og:description" content="Divide et Conquer - improve your white box model! Divide and conquer is a classical algorithmic tool. It proved its usefulness many times (e.g. in sorting algorithms, multiplying large numbers, or discrete Fourier transform). Thanks to the article of Baniecki and Polakowski (Which Neighbours Affected House Prices in the ’90s?) we discovered yet another application of this algorithm. This time in machine learning.
+Is it expensive? A house? The estimation of the price of a house is especially crucial for many people for ages. Unfortunately it is a difficult problem. The scientists, economics and statisticians are still looking for the best tools and algorithms solving it." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mini-pw.github.io/2020L-WB-Blog/2020-06-15-improve-your-white-box-model/" />
+<meta property="og:image" content="https://mini-pw.github.io/2020L-WB-Blog/img/og.png"/>
+<meta property="article:published_time" content="2020-06-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-06-15T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://mini-pw.github.io/2020L-WB-Blog/img/og.png"/>
+
+<meta name="twitter:title" content="Divide et Conquer - improve your white box model!"/>
+<meta name="twitter:description" content="Divide et Conquer - improve your white box model! Divide and conquer is a classical algorithmic tool. It proved its usefulness many times (e.g. in sorting algorithms, multiplying large numbers, or discrete Fourier transform). Thanks to the article of Baniecki and Polakowski (Which Neighbours Affected House Prices in the ’90s?) we discovered yet another application of this algorithm. This time in machine learning.
+Is it expensive? A house? The estimation of the price of a house is especially crucial for many people for ages. Unfortunately it is a difficult problem. The scientists, economics and statisticians are still looking for the best tools and algorithms solving it."/>
+
+
+
+
+
+
+<link rel="stylesheet" href="https://mini-pw.github.io/2020L-WB-Blog/css/main.min.css" />
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js" integrity="sha256-h2tMEmhemR2IN4wbbdNjj9LaDIjzwk2hralQwfJmBOE=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.5/dist/medium-zoom.min.js" integrity="sha256-Jd9xef1tT52aCb+cAqhElj/9D3c99lQvEjyKOuPn3S4=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<body class="d-flex flex-column h-100">
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 link-primary">
+            <a class="main-title" href="https://mini-pw.github.io/2020L-WB-Blog/">Machine Learning Case Studies</a>
+            
+            <span class="sub-title">by Evidence Based Machine Learning Lab</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-md-9 col-12 float-left" id="content">
+                
+<article>
+    
+    <h4 class="post-title">
+        <a href="https://mini-pw.github.io/2020L-WB-Blog/2020-06-15-improve-your-white-box-model/">Divide et Conquer - improve your white box model!</a>
+    </h4>
+    <div>
+        <span>
+            
+                Paweł Koźmiński;
+            
+                Anna Urbala;
+            
+                Wojciech Szczypek;
+            
+        </span>
+    </div>
+    <div class="post-meta link-alter">
+        <time><i class="fas fa-calendar-day"></i>&nbsp;2020-06-15</time><span><i class="fas fa-file-alt"></i>&nbsp;806 words</span><span><i class="fas fa-tag"></i>&nbsp;No tag</span>
+    </div>
+    
+    
+    <div class="post-content markdown-body">
+        <h1 id="divide-et-conquer---improve-your-white-box-model"><em>Divide et Conquer</em> - improve your white box model!</h1>
+<p>Divide and conquer is a classical algorithmic tool. It proved its usefulness many times (e.g. in sorting algorithms, multiplying large numbers, or discrete Fourier transform). Thanks to the article of Baniecki and Polakowski (Which Neighbours Affected House Prices in the ’90s?) we discovered yet another application of this algorithm. This time in machine learning.</p>
+<h2 id="is-it-expensive-a-house">Is it expensive? A house?</h2>
+<p>The estimation of the price of a house is especially crucial for many people for ages. Unfortunately it is a difficult problem. The scientists, economics and statisticians are still looking for the best tools and algorithms solving it. The reason for the difficulty of this problem is its complexity. The price depends on the many, many, many factors eg. the neighborhood, area, the number of rooms, a development plan of a town, the media, an age of the building. Usually researchers used the black-box models for predicting the prices of the houses. But this method has a one tiny disadvantage - it’s impossible to determine the factors that were decisive. Because of that the authors of the article in question used divide-and-conquer method to improve some white-box models to the level of performance of complex black-box models but preserving the possibility of checking the base of the price.</p>
+<h2 id="explainable-model-without-loss-of-efficiency">Explainable model without loss of efficiency</h2>
+<p>Knowing the most important factors influencing a house&rsquo;s price might have a great impact in the building trade. Suppose that a developer knows exactly which aspects mostly determine his profit. This knowledge could be a real game changer in running his business and actually a highway to success. The development of science and technology, especially machine learning, has made it more available than ever in the history. However, there is one condition: the models explaining the prices must be interpretable. Nowadays the algorithms reaching the highest efficiency don&rsquo;t meet it. The authors of the article tried to solve this problem: they have proposed a competetive &lsquo;stacked model&rsquo; which is both explainable and very effective.</p>
+<h2 id="stacked-model---how-does-it-work">Stacked model - how does it work?</h2>
+<p>The idea of the researches was to minimize the mean absolute error between model&rsquo;s predictions and actual prices. To do that, they decided to divide the dataset with various factors and prices into groups basing on the house&rsquo;s expensiveness. This step is actually performed by an unexplainable classifier, anyway it doesn&rsquo;t affect the overall model&rsquo;s transparency. Afterwards, a white-box estimator is trained on every group of data making it clear what is the way to predict the price in given subset. Fitted classifier and estimators can be successfully applied to test data which is a key fact in examining the correctness of the entire model. Stacked model created like this allows the user to find out which values were the most valuable ones in the process of pricing the house with high accuracy.</p>
+<p><a href="/2020L-WB-Blog/2020-06-15-Improve-your-white-box-model/3-7-algorithm.png">!A caption</a></p>
+<h2 id="results">Results</h2>
+<p>Results of the research made by authors are very satisfying and impressive indeed. Stacked model whose conception was explained earlier performed terrifically. Not only does it a decent job when it comes to comparing MAE (Mean Absolute Error) with other algorithms, but it&rsquo;s still the representative of white-box models family. Thanks to such an approach we can identify the features importance for each observation. For both cheap and expensive houses stacked model manages to achieve more even spread of residuals. It results in estiamtions to be more reliable. What is interesting is the fact that, when it comes to expensive houses black-box model tends to undervalue house prices, while stacked model overestimates them. Additionally we can clearly see the common fact, that &ldquo;default&rdquo; white-box algoithms (linear model, raprt, SAFE on ranger) perform much worse than the black-box ones. Yet it is another reason advantage of stacked model - it combines both better scores than black-box models and clarity of the process of the prediction.</p>
+<h2 id="how-about-reproducibility">How about reproducibility?</h2>
+<p>In our opinion the article did quite poorly when it comes to reproducibility. None of the figures used in article have their source codes. In fact there aren&rsquo;t any code chunks in the whole article itself. It is possible that the whole code used in the article is availible in the external repo, but the repo isn&rsquo;t linked anywhere so it is just a wild guess. Luckily the dataset which is used throughout the article is included in references, but it is the only symptom of reproducibilty availible in the article.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>To sum up, we find the article very interesting. The topic is very common and can easily catch reader&rsquo;s attention. The idea behind the approach is very thouroghly and at the same time clearly and understandably described. It&rsquo;s very original and innovative. Moreover the results are very satsifying. The only diadvantage is the article&rsquo;s poor reproducibility, but it can be easily fixed by linking the repo with codes.</p>
+
+    </div>
+</article>
+
+
+<div class="license markdown-body">
+    <blockquote>
+        <p>Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)</a>.</p>
+    </blockquote>
+</div>
+
+
+
+
+
+
+            </div>
+            
+            <div class="col-md-3 col-12 float-left link-alter" id="sidebar">
+                
+
+<div class="widget-toc">
+    <h5>TOC</h5>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#is-it-expensive-a-house">Is it expensive? A house?</a></li>
+    <li><a href="#explainable-model-without-loss-of-efficiency">Explainable model without loss of efficiency</a></li>
+    <li><a href="#stacked-model---how-does-it-work">Stacked model - how does it work?</a></li>
+    <li><a href="#results">Results</a></li>
+    <li><a href="#how-about-reproducibility">How about reproducibility?</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+</div>
+
+
+<div class="widget-pages">
+    <h5>Pages</h5>
+    <ul>
+        
+        
+        <li>
+            <a href="/2020L-WB-Blog/">Home</a>
+        </li>
+        
+        <li>
+            <a href="/2020L-WB-Blog/archives/">Archives</a>
+        </li>
+        
+        <li>
+            <a href="/2020L-WB-Blog/about/">About</a>
+        </li>
+        
+    </ul>
+</div>
+
+<div class="widget-tags">
+    <h5>Tags</h5>
+    <div>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/automated-regression/">automated regression</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/black-boxes/">black-boxes</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/computer-vision/">computer vision</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/dataset/">dataset</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/embedding/">embedding</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/imputation/">Imputation</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/interpretability/">interpretability</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/machine-learning/">Machine Learning</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/missing-data/">Missing data</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/missings/">missings</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/ml/">ML</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/openml/">OpenML</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/tutorial/">tutorial</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/xai/">XAI</a>
+        </span>
+        
+    </div>
+</div>
+
+<div class="widget-links">
+    <h5>Links</h5>
+    <ul>
+        
+        <li>
+            <a href="https://mini-pw.github.io/2020L-WB-Book/" target="_blank"><span>ML Case Studies Book</span></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/mini-pw/2020L-WarsztatyBadawcze-Reprodukowalnosc" target="_blank"><span>Reproducibility repo (in Polish)</span></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/mini-pw/2020L-WarsztatyBadawcze-Imputacja" target="_blank"><span>Imputation repo (in Polish)</span></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/mini-pw/2020L-WarsztatyBadawcze-InzynieriaCech" target="_blank"><span>Interpretability repo (in Polish)</span></a>
+        </li>
+        
+    </ul>
+</div>
+
+
+            </div>
+            
+            
+            
+            <div id="scroll-top">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+    <div class="container-lg text-center">
+        <p>&copy; 2020 <a href="https://mini-pw.github.io/2020L-WB-Blog/"></a> | Powered by <a href="https://github.com/amzrk2/hugo-theme-fuji/" target="_blank">Fuji</a> & <a href="https://gohugo.io/" target="_blank">Hugo</a> </p>
+    </div>
+    <script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+</footer>
+    
+<script>
+    $(function () {
+        mediumZoom('.img-zoomable', {
+            margin: 32
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+<script>
+    $('.widget-toc a').click(function () {
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        });
+    });
+</script>
+
+
+
+<script>
+    $('#scroll-top').click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+
+</html>

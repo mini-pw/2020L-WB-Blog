@@ -2,60 +2,70 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Machine Learning Case Studies</title>
-    <link>/2020L-WB-Blog/post/</link>
+    <link>https://mini-pw.github.io/2020L-WB-Blog/post/</link>
     <description>Recent content in Posts on Machine Learning Case Studies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 16 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/2020L-WB-Blog/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mini-pw.github.io/2020L-WB-Blog/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Can you build an explainable model outperforming black box?</title>
-      <link>/2020L-WB-Blog/2020-06-16-can-you-build-an-explainable-model-overperforming-black-box/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-16-can-you-build-an-explainable-model-overperforming-black-box/</link>
       <pubDate>Tue, 16 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-06-16-can-you-build-an-explainable-model-overperforming-black-box/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-16-can-you-build-an-explainable-model-overperforming-black-box/</guid>
       <description>A word about black boxes Nowadays a fierce competition can be observed – scientists are surpassing each other in creating better regression models. As those models are getting more complex, it is becoming almost impossible to illustrate results relation with data, in a way humans understand. They are commonly called ‘black boxes’. ‘Machine learning is frequently referred to as a black box—data goes in, decisions come out, but the processes between input and output are opaque’ ~ The Lancet. Despite their excellent performance, sometimes models with easily interpretable output can be more desired, e.g. in banking.
 What can be done? Results ready for further human analysis can be achieved with explainable models (linear models, decision trees, etc.</description>
     </item>
     
     <item>
       <title>Black-box VS White-box Duel</title>
-      <link>/2020L-WB-Blog/2020-06-15-black-box-vs-white-box-duel/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-15-black-box-vs-white-box-duel/</link>
       <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-06-15-black-box-vs-white-box-duel/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-15-black-box-vs-white-box-duel/</guid>
       <description>Prepare to fight The interpretability of machine learning models is gaining more and more interest in the scientific world. It’s because artificial intelligence is used in a lot of business solutions that impact our everyday life. Knowledge how the model works can, among others, assure us about the safety of the implemented solution. We came across the article of students of the Warsaw University of Technology Wojciech Bogucki, Tomasz Makowski, Dominik Rafacz titled “Predicting code defects using interpretable static measures.” touching this topic.
 Black box vs white box Using interpretable models, such as linear regression, decision trees and k-nearest neighbors is one way to have your solution explainable.</description>
     </item>
     
     <item>
+      <title>Divide et Conquer - improve your white box model!</title>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-15-improve-your-white-box-model/</link>
+      <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-15-improve-your-white-box-model/</guid>
+      <description>Divide et Conquer - improve your white box model! Divide and conquer is a classical algorithmic tool. It proved its usefulness many times (e.g. in sorting algorithms, multiplying large numbers, or discrete Fourier transform). Thanks to the article of Baniecki and Polakowski (Which Neighbours Affected House Prices in the ’90s?) we discovered yet another application of this algorithm. This time in machine learning.
+Is it expensive? A house? The estimation of the price of a house is especially crucial for many people for ages. Unfortunately it is a difficult problem. The scientists, economics and statisticians are still looking for the best tools and algorithms solving it.</description>
+    </item>
+    
+    <item>
       <title>Beat the Black Box!</title>
-      <link>/2020L-WB-Blog/2020-06-11-beat-the-black-box/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-11-beat-the-black-box/</link>
       <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-06-11-beat-the-black-box/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-11-beat-the-black-box/</guid>
       <description>Understanding things is good for your health There is no doubt we live in a world defined by data. In fact, we always were, only now we&amp;rsquo;ve got a wider variety of tools at our disposal to store and process all this information. We no longer need to search for structures in data by hand, we&amp;rsquo;ve got models and AI for this. However, we still want, or rather feel urge to, understand how all those analysis work. Especially when we&amp;rsquo;re talking about our health data, and that is what authors of &amp;ldquo;Can Automated Regression beat linear model?&amp;quot; are talking about.</description>
     </item>
     
     <item>
       <title>Explainable Computer Vision</title>
-      <link>/2020L-WB-Blog/2020-06-09-explainable-computer-vision/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-09-explainable-computer-vision/</link>
       <pubDate>Tue, 09 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-06-09-explainable-computer-vision/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-09-explainable-computer-vision/</guid>
       <description>What is this blog entry about? Black-boxes are commonly used in computer vision. But do we have to use it? This article looks at this issue and we try to understand it with our small (but developed after one semester of machine learning experience) brains and summarize it here.
 What is this article about? Computer vision is cool. But it would be just as cool to understand how it works, and it&amp;rsquo;s not so obvious. Explainable methods of image recognition - which is de facto classification - cannot use logistic regression and decision trees, because every model loses transparency as its performance increases - not to mention understanding neural networks.</description>
     </item>
     
     <item>
       <title>Imputing missing data for a classification problem</title>
-      <link>/2020L-WB-Blog/2020-06-05-imputing-missing-data-for-a-classification-problem/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-05-imputing-missing-data-for-a-classification-problem/</link>
       <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-06-05-imputing-missing-data-for-a-classification-problem/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-05-imputing-missing-data-for-a-classification-problem/</guid>
       <description>Imputing missing data for a classification problem Authors: Karol Saputa, Małgorzata Wachulec, Aleksandra Wichrowska (Warsaw University of Technology)
 As students of the same university course, we were asked to sum up the findings of our colleges, the authors of the Default imputation efficiency comparison article. In their work, they used many missing data imputation techniques on 11 datasets, on which they then run different classification algorithms. By measuring the results obtained using these imputation algorithms they could judge their performance. But first:
 What is data imputation? Some datasets have missing values that many classification algorithms cannot handle. One way to make the algorithm work is to delete the observations that include missing data or, if missing values come just from a few columns, we can delete them instead.</description>
@@ -63,46 +73,46 @@ What is data imputation? Some datasets have missing values that many classificat
     
     <item>
       <title>Interaction between imputation and ML algorithms</title>
-      <link>/2020L-WB-Blog/2020-06-04-interaction-between-imputation-and-ml-algorithms/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-04-interaction-between-imputation-and-ml-algorithms/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-06-04-interaction-between-imputation-and-ml-algorithms/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-04-interaction-between-imputation-and-ml-algorithms/</guid>
       <description>TL;DR Lot of people would like to find the best method to impute data, that covers most of the cases, but from this article we will learn that the task of imputing missing data is not so trivial. It demands looking at a bigger picture, for example model type or percentage of missing data. Reading this article we will learn what algorithms to use in which cases and understand the vast problem of imputation.
 Introduction We have read an article about imputation techniques and their interaction with ML algorithms. It was written by Martyna Majchrzak, Agata Makarewicz, Jacek Wiśniewski. Before reading we were expecting to find out which imputation techniques are the best and how to use them.</description>
     </item>
     
     <item>
       <title>Not so famous (yet!) Hajada and his results</title>
-      <link>/2020L-WB-Blog/2020-06-04-not-so-famous-yet-hajada-and-his-results/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-04-not-so-famous-yet-hajada-and-his-results/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-06-04-not-so-famous-yet-hajada-and-his-results/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-04-not-so-famous-yet-hajada-and-his-results/</guid>
       <description>Meet Hajada! Have you heard of the Indian mathematician Hajada? We started to think about it, having read the title of the article &amp;ldquo;The Hajada Imputation Test&amp;rdquo; - it sounded somehow familiar&amp;hellip; But you probably haven&amp;rsquo;t had any contact with him, because not so long ago there was no such man. He was born by the authors of the test and the article, and his name comes from the first letters of their names.
 So what is his test? Hajada decided to study the effectiveness and time efficiency of various methods of dealing with missing data. He juxtaposed three simple (or even naive) methods such as deleting rows or inserting random values and three more sublime methods, including mice and missForest algorithms.</description>
     </item>
     
     <item>
       <title>Are black boxes inevitable?</title>
-      <link>/2020L-WB-Blog/2020-06-01-are-black-boxes-inevitable/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-01-are-black-boxes-inevitable/</link>
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-06-01-are-black-boxes-inevitable/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-01-are-black-boxes-inevitable/</guid>
       <description>Black vs white Machine learning seems to be all about creating a model with best performance - balancing well its variance and accuracy. Unfortunately, the pursuit of that balance makes us forget about the the fact, that - in the end - model will serve human beings. If that&amp;rsquo;s the case, a third factor should be considered - interpretability. When a model is unexplainable (AKA black-box model), it may be treated as untrustworthy and become useless. It is a problem, since many models known for its high performance (like XGBoost) happen to be parts of the black-box team.
 A false(?) trade-off So it would seem, that explainability is, and has to be, sacrificed for better performance of the model.</description>
     </item>
     
     <item>
       <title>How to add a post</title>
-      <link>/2020L-WB-Blog/2020-05-18-how-to-add-post/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-05-18-how-to-add-post/</link>
       <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-05-18-how-to-add-post/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-05-18-how-to-add-post/</guid>
       <description>Posting is really easy. Blog posts are simple Markdown files.
 Files The content/post folder is where blog posts are stored. To create a post, add your markdown file to content/post directory with the following format: yyyy-mm-dd-title.md.
 Where yyyy is a year, mm is a month, and dd is a day, and md is the file extension representing the format used in the file. For example: 2020-05-18-how-to-add-post.md.
 File content An example of a post file you can find here.
 A blog post file begins with a front matter which is used to set metadata. For example:
---- date: &amp;quot;2020-05-18&amp;quot; title: How to add a post authors: [&amp;quot;Alicja Gosiewska&amp;quot;] tags: - tutorial --- For more authors, add elements to the list, for example [&amp;quot;Alicja Gosiewska&amp;quot;, &amp;quot;Second Author&amp;quot;].</description>
+---date: &amp;quot;2020-05-18&amp;quot;title: How to add a postauthors: [&amp;quot;Alicja Gosiewska&amp;quot;]tags:- tutorial---For more authors, add elements to the list, for example [&amp;quot;Alicja Gosiewska&amp;quot;, &amp;quot;Second Author&amp;quot;].</description>
     </item>
     
   </channel>
