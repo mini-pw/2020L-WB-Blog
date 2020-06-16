@@ -23,23 +23,29 @@
 
 
 
-<title>Posts - Machine Learning Case Studies</title>
+<title>Can you build an explainable model outperforming black box? - Machine Learning Case Studies</title>
 
 <meta name="author" content="" />
-<meta name="description" content="A minimal hugo theme powered by Primer CSS." />
+<meta name="description" content="A word about black boxes Nowadays a fierce competition can be observed – scientists are surpassing each other in creating better regression models. As those models are getting more complex, it is becoming almost impossible to illustrate results relation with data, in a way humans understand. They are commonly called ‘black boxes’. ‘Machine learning is frequently referred to as a black box—data goes in, decisions come out, but the processes between input and output are opaque’ ~ The Lancet. Despite their excellent performance, sometimes models with easily interpretable output can be more desired, e.g. in banking.
+What can be done? Results ready for further human analysis can be achieved with explainable models (linear models, decision trees, etc." />
 
-<meta property="og:title" content="Posts" />
-<meta property="og:description" content="A minimal hugo theme powered by Primer CSS." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/2020L-WB-Blog/post/" />
+<meta name="keywords" content="XAI, black-boxes, interpretability" />
+
+<meta property="og:title" content="Can you build an explainable model outperforming black box?" />
+<meta property="og:description" content="A word about black boxes Nowadays a fierce competition can be observed – scientists are surpassing each other in creating better regression models. As those models are getting more complex, it is becoming almost impossible to illustrate results relation with data, in a way humans understand. They are commonly called ‘black boxes’. ‘Machine learning is frequently referred to as a black box—data goes in, decisions come out, but the processes between input and output are opaque’ ~ The Lancet. Despite their excellent performance, sometimes models with easily interpretable output can be more desired, e.g. in banking.
+What can be done? Results ready for further human analysis can be achieved with explainable models (linear models, decision trees, etc." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2020L-WB-Blog/2020-06-16-can-you-build-an-explainable-model-overperforming-black-box/" />
 <meta property="og:image" content="/2020L-WB-Blog/img/og.png"/>
-<meta property="og:updated_time" content="2020-06-16T00:00:00+00:00" />
+<meta property="article:published_time" content="2020-06-16T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-06-16T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="/2020L-WB-Blog/img/og.png"/>
 
-<meta name="twitter:title" content="Posts"/>
-<meta name="twitter:description" content="A minimal hugo theme powered by Primer CSS."/>
+<meta name="twitter:title" content="Can you build an explainable model outperforming black box?"/>
+<meta name="twitter:description" content="A word about black boxes Nowadays a fierce competition can be observed – scientists are surpassing each other in creating better regression models. As those models are getting more complex, it is becoming almost impossible to illustrate results relation with data, in a way humans understand. They are commonly called ‘black boxes’. ‘Machine learning is frequently referred to as a black box—data goes in, decisions come out, but the processes between input and output are opaque’ ~ The Lancet. Despite their excellent performance, sometimes models with easily interpretable output can be more desired, e.g. in banking.
+What can be done? Results ready for further human analysis can be achieved with explainable models (linear models, decision trees, etc."/>
 
 
 
@@ -78,14 +84,12 @@
             
             <div class="col-md-9 col-12 float-left" id="content">
                 
-
-
-
-<div class="post">
-    <h2 class="post-title">
+<article>
+    
+    <h4 class="post-title">
         <a href="/2020L-WB-Blog/2020-06-16-can-you-build-an-explainable-model-overperforming-black-box/">Can you build an explainable model outperforming black box?</a>
-    </h2>
-        <div>
+    </h4>
+    <div>
         <span>
             
                 Mikołaj Malec;
@@ -99,163 +103,45 @@
     <div class="post-meta link-alter">
         <time><i class="fas fa-calendar-day"></i>&nbsp;2020-06-16</time><span><i class="fas fa-file-alt"></i>&nbsp;391 words</span><span><i class="fas fa-tag"></i>&nbsp;<a href="/tags/xai/">XAI</a> <a href="/tags/black-boxes/">black-boxes</a> <a href="/tags/interpretability/">interpretability</a> </span>
     </div>
+    
+    
+    <div class="post-content markdown-body">
+        <h2 id="a-word-about-black-boxes">A word about black boxes</h2>
+<p>Nowadays a fierce competition can be observed – scientists are surpassing each other in creating better regression models. As those models are getting more complex, it is becoming almost impossible to illustrate results relation with data, in a way humans understand. They are commonly called ‘black boxes’. ‘Machine learning is frequently referred to as a black box—data goes in, decisions come out, but the processes between input and output are opaque’ ~
+<a href="https://www.thelancet.com/journals/lanres/article/PIIS2213-2600%2818%2930425-9/fulltext">The Lancet</a>. Despite their excellent performance, sometimes models with easily interpretable output can be more desired, e.g. in banking.</p>
+<h2 id="what-can-be-done">What can be done?</h2>
+<p>Results ready for further human analysis can be achieved with explainable models (linear models, decision trees, etc.) and adequate data preparation. This subject was taken up by the Warsaw University of Technology students in their brilliant <a href="https://mini-pw.github.io/2020L-WB-Book/building-an-explainable-model-for-ordinal-classification-on-eucalyptus-dataset-meeting-black-box-model-performance-levels-.html">article</a>. Their experiments were conducted using ‘eucalyptus’ OpenML dataset. The target variable is a utility with values: ‘low’, ‘average’, ‘good’, and ‘best’. To compare models authors used AUC measure, which can is represented as an area under the ROC curve.</p>
+<h2 id="black-box-vs-white-box">Black box vs white box</h2>
+<p>As a representative model of black boxes, the extreme gradient boosting algorithm was chosen. The authors compared it with the tree model. To improve white box performance, the following actions were taken:</p>
+<ul>
+<li>splitting a 4-class classification problem into 3 binary classification problems</li>
+<li>transforming the target variable into numeric values</li>
+<li>imputing missing data in the training set</li>
+<li>selecting variables</li>
+<li>transforming variable</li>
+</ul>
+<h2 id="results">Results</h2>
+<p>The results are shown in the tables below.</p>
+<p>Explainable models:
+<img src="/2020L-WB-Blog/2020-06-16-can-you-build-an-explainable-model-overperforming-black-box/1.png" alt="Explainable models"></p>
+<p>Black box models:
+<img src="/2020L-WB-Blog/2020-06-16-can-you-build-an-explainable-model-overperforming-black-box/2.png" alt="Black box models"></p>
+<p>As presented on charts, the best result was obtained by explainable model - decision tree with selected variables.</p>
+<h2 id="so-how-can-we-explain-the-final-model">So, how can we explain the final model?</h2>
+<p>As previously stated, the model that outperformed the competition is a simple decision tree regression, which can be quite easily shown on a tree plot. The plot is interpreted, by starting in the root node and going to the next nodes via edge which suits our observation. At the end of this path can be found a leaf with the predicted value.</p>
+<p><img src="/2020L-WB-Blog/2020-06-16-can-you-build-an-explainable-model-overperforming-black-box/3.png" alt="Tree plot"></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Authors&rsquo; research proved that black boxes are not always the best performing models and with some effort, the easily explainable output can be achieved. Surely, the discussed dataset was not a complicated machine learning problem, but the described article is very informative and the results are thought-provoking.</p>
+
+    </div>
+</article>
+
+
+<div class="license markdown-body">
+    <blockquote>
+        <p>Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)</a>.</p>
+    </blockquote>
 </div>
-
-<div class="post">
-    <h2 class="post-title">
-        <a href="/2020L-WB-Blog/2020-06-15-black-box-vs-white-box-duel/">Black-box VS White-box Duel</a>
-    </h2>
-        <div>
-        <span>
-            
-                Bartłomiej Eljasiak;
-            
-                Konrad Komisarczyk;
-            
-                Mariusz Słapek;
-            
-        </span>
-    </div>
-    <div class="post-meta link-alter">
-        <time><i class="fas fa-calendar-day"></i>&nbsp;2020-06-15</time><span><i class="fas fa-file-alt"></i>&nbsp;757 words</span><span><i class="fas fa-tag"></i>&nbsp;<a href="/tags/interpretability/">Interpretability</a> <a href="/tags/machine-learning/">Machine Learning</a> <a href="/tags/xai/">XAI</a> </span>
-    </div>
-</div>
-
-<div class="post">
-    <h2 class="post-title">
-        <a href="/2020L-WB-Blog/2020-06-11-beat-the-black-box/">Beat the Black Box!</a>
-    </h2>
-        <div>
-        <span>
-            
-                Kacper Staroń, Jakub Szypuła;
-            
-        </span>
-    </div>
-    <div class="post-meta link-alter">
-        <time><i class="fas fa-calendar-day"></i>&nbsp;2020-06-11</time><span><i class="fas fa-file-alt"></i>&nbsp;809 words</span><span><i class="fas fa-tag"></i>&nbsp;<a href="/tags/interpretability/">interpretability</a> <a href="/tags/xai/">XAI</a> <a href="/tags/automated-regression/">automated regression</a> </span>
-    </div>
-</div>
-
-<div class="post">
-    <h2 class="post-title">
-        <a href="/2020L-WB-Blog/2020-06-09-explainable-computer-vision/">Explainable Computer Vision</a>
-    </h2>
-        <div>
-        <span>
-            
-                Zuzanna Mróz;
-            
-                Aleksander Podsiad;
-            
-                Michał Wdowski;
-            
-        </span>
-    </div>
-    <div class="post-meta link-alter">
-        <time><i class="fas fa-calendar-day"></i>&nbsp;2020-06-09</time><span><i class="fas fa-file-alt"></i>&nbsp;510 words</span><span><i class="fas fa-tag"></i>&nbsp;<a href="/tags/interpretability/">interpretability</a> <a href="/tags/ml/">ML</a> <a href="/tags/computer-vision/">computer vision</a> <a href="/tags/embedding/">embedding</a> </span>
-    </div>
-</div>
-
-<div class="post">
-    <h2 class="post-title">
-        <a href="/2020L-WB-Blog/2020-06-05-imputing-missing-data-for-a-classification-problem/">Imputing missing data for a classification problem</a>
-    </h2>
-        <div>
-        <span>
-            
-                Karol Saputa;
-            
-                Małgorzata Wachulec;
-            
-                Aleksandra Wichrowska;
-            
-        </span>
-    </div>
-    <div class="post-meta link-alter">
-        <time><i class="fas fa-calendar-day"></i>&nbsp;2020-06-05</time><span><i class="fas fa-file-alt"></i>&nbsp;610 words</span><span><i class="fas fa-tag"></i>&nbsp;<a href="/tags/imputation/">imputation</a> <a href="/tags/missing-data/">missing data</a> </span>
-    </div>
-</div>
-
-<div class="post">
-    <h2 class="post-title">
-        <a href="/2020L-WB-Blog/2020-06-04-interaction-between-imputation-and-ml-algorithms/">Interaction between imputation and ML algorithms</a>
-    </h2>
-        <div>
-        <span>
-            
-                Witold Merkel;
-            
-                Adam Rydelek;
-            
-                Michał Stawikowski;
-            
-        </span>
-    </div>
-    <div class="post-meta link-alter">
-        <time><i class="fas fa-calendar-day"></i>&nbsp;2020-06-04</time><span><i class="fas fa-file-alt"></i>&nbsp;562 words</span><span><i class="fas fa-tag"></i>&nbsp;<a href="/tags/imputation/">Imputation</a> <a href="/tags/machine-learning/">Machine Learning</a> <a href="/tags/missing-data/">Missing data</a> <a href="/tags/openml/">OpenML</a> </span>
-    </div>
-</div>
-
-<div class="post">
-    <h2 class="post-title">
-        <a href="/2020L-WB-Blog/2020-06-04-not-so-famous-yet-hajada-and-his-results/">Not so famous (yet!) Hajada and his results</a>
-    </h2>
-        <div>
-        <span>
-            
-                Wojciech Bogucki;
-            
-                Tomasz Makowski;
-            
-                Dominik Rafacz;
-            
-        </span>
-    </div>
-    <div class="post-meta link-alter">
-        <time><i class="fas fa-calendar-day"></i>&nbsp;2020-06-04</time><span><i class="fas fa-file-alt"></i>&nbsp;671 words</span><span><i class="fas fa-tag"></i>&nbsp;<a href="/tags/imputation/">imputation</a> <a href="/tags/ml/">ML</a> <a href="/tags/openml/">OpenML</a> <a href="/tags/dataset/">dataset</a> <a href="/tags/missings/">missings</a> </span>
-    </div>
-</div>
-
-<div class="post">
-    <h2 class="post-title">
-        <a href="/2020L-WB-Blog/2020-06-01-are-black-boxes-inevitable/">Are black boxes inevitable?</a>
-    </h2>
-        <div>
-        <span>
-            
-                Paweł Morgen;
-            
-                Piotr Sieńko;
-            
-                Konrad Welkier;
-            
-        </span>
-    </div>
-    <div class="post-meta link-alter">
-        <time><i class="fas fa-calendar-day"></i>&nbsp;2020-06-01</time><span><i class="fas fa-file-alt"></i>&nbsp;334 words</span><span><i class="fas fa-tag"></i>&nbsp;<a href="/tags/xai/">XAI</a> <a href="/tags/black-boxes/">black-boxes</a> <a href="/tags/ml/">ML</a> </span>
-    </div>
-</div>
-
-<div class="post">
-    <h2 class="post-title">
-        <a href="/2020L-WB-Blog/2020-05-18-how-to-add-post/">How to add a post</a>
-    </h2>
-        <div>
-        <span>
-            
-                Alicja Gosiewska;
-            
-        </span>
-    </div>
-    <div class="post-meta link-alter">
-        <time><i class="fas fa-calendar-day"></i>&nbsp;2020-05-18</time><span><i class="fas fa-file-alt"></i>&nbsp;172 words</span><span><i class="fas fa-tag"></i>&nbsp;<a href="/tags/tutorial/">tutorial</a> </span>
-    </div>
-</div>
-
-
-
-
 
 
 
@@ -269,7 +155,16 @@
 
 <div class="widget-toc">
     <h5>TOC</h5>
-    
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#a-word-about-black-boxes">A word about black boxes</a></li>
+    <li><a href="#what-can-be-done">What can be done?</a></li>
+    <li><a href="#black-box-vs-white-box">Black box vs white box</a></li>
+    <li><a href="#results">Results</a></li>
+    <li><a href="#so-how-can-we-explain-the-final-model">So, how can we explain the final model?</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
 </div>
 
 
