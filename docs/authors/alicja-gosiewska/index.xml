@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Alicja Gosiewska on Machine Learning Case Studies</title>
-    <link>https://mini-pw.github.io/2020L-WB-Blog/authors/alicja-gosiewska/</link>
+    <link>/2020L-WB-Blog/authors/alicja-gosiewska/</link>
     <description>Recent content in Alicja Gosiewska on Machine Learning Case Studies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 18 May 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://mini-pw.github.io/2020L-WB-Blog/authors/alicja-gosiewska/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/2020L-WB-Blog/authors/alicja-gosiewska/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to add a post</title>
-      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-05-18-how-to-add-post/</link>
+      <link>/2020L-WB-Blog/2020-05-18-how-to-add-post/</link>
       <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-05-18-how-to-add-post/</guid>
+      <guid>/2020L-WB-Blog/2020-05-18-how-to-add-post/</guid>
       <description>Posting is really easy. Blog posts are simple Markdown files.
 Files The content/post folder is where blog posts are stored. To create a post, add your markdown file to content/post directory with the following format: yyyy-mm-dd-title.md.
 Where yyyy is a year, mm is a month, and dd is a day, and md is the file extension representing the format used in the file. For example: 2020-05-18-how-to-add-post.md.
