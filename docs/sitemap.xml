@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/2020L-WB-Blog/authors/ada-g%C4%85ssowska/</loc>
+    <lastmod>2020-06-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2020L-WB-Blog/authors/bartosz-ro%C5%BCek/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
@@ -19,6 +24,16 @@
   
   <url>
     <loc>/2020L-WB-Blog/2020-06-16-can-you-build-an-explainable-model-overperforming-black-box/</loc>
+    <lastmod>2020-06-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/2020-06-16-correlation-between-reproducibility-of-research-papers-and-their-objective/</loc>
+    <lastmod>2020-06-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/authors/el%C5%BCbieta-jowik/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
   
@@ -63,7 +78,27 @@
   </url>
   
   <url>
+    <loc>/2020L-WB-Blog/tags/magazines/</loc>
+    <lastmod>2020-06-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/authors/marceli-korbin/</loc>
+    <lastmod>2020-06-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2020L-WB-Blog/authors/marcin-%C5%82ukaszyk/</loc>
+    <lastmod>2020-06-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/authors/mateusz-grzyb/</loc>
+    <lastmod>2020-06-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/authors/miko%C5%82aj-jakubowski/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
   
@@ -78,6 +113,11 @@
   </url>
   
   <url>
+    <loc>/2020L-WB-Blog/authors/patryk-wrona/</loc>
+    <lastmod>2020-06-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2020L-WB-Blog/authors/piotr-pi%C4%85tyszek/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
@@ -88,12 +128,27 @@
   </url>
   
   <url>
+    <loc>/2020L-WB-Blog/tags/reproducibility/</loc>
+    <lastmod>2020-06-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/2020-06-16-scientific_magazines__reproducibility/</loc>
+    <lastmod>2020-06-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2020L-WB-Blog/tags/xai/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/2020L-WB-Blog/authors/anna-urbala/</loc>
+    <lastmod>2020-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/tags/article-rating/</loc>
     <lastmod>2020-06-15T00:00:00+00:00</lastmod>
   </url>
   
@@ -113,6 +168,21 @@
   </url>
   
   <url>
+    <loc>/2020L-WB-Blog/2020-06-15-it-is-possible-to-measure-reproducibility/</loc>
+    <lastmod>2020-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/authors/jakub-pingielski/</loc>
+    <lastmod>2020-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/authors/jakub-wi%C5%9Bniewski/</loc>
+    <lastmod>2020-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2020L-WB-Blog/authors/konrad-komisarczyk/</loc>
     <lastmod>2020-06-15T00:00:00+00:00</lastmod>
   </url>
@@ -128,7 +198,27 @@
   </url>
   
   <url>
+    <loc>/2020L-WB-Blog/tags/ml/</loc>
+    <lastmod>2020-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/authors/paulina-przyby%C5%82ek/</loc>
+    <lastmod>2020-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2020L-WB-Blog/authors/pawe%C5%82-ko%C5%BAmi%C5%84ski/</loc>
+    <lastmod>2020-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/authors/renata-r%C3%B3lkiewicz/</loc>
+    <lastmod>2020-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/tags/the-r-journal/</loc>
     <lastmod>2020-06-15T00:00:00+00:00</lastmod>
   </url>
   
@@ -148,6 +238,11 @@
   </url>
   
   <url>
+    <loc>/2020L-WB-Blog/authors/filip-chrzuszcz/</loc>
+    <lastmod>2020-06-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2020L-WB-Blog/2020-06-14-hajada-trials/</loc>
     <lastmod>2020-06-14T00:00:00+00:00</lastmod>
   </url>
@@ -158,12 +253,12 @@
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/missings/</loc>
+    <loc>/2020L-WB-Blog/authors/jan-borowski/</loc>
     <lastmod>2020-06-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/ml/</loc>
+    <loc>/2020L-WB-Blog/tags/missings/</loc>
     <lastmod>2020-06-14T00:00:00+00:00</lastmod>
   </url>
   
@@ -175,6 +270,31 @@
   <url>
     <loc>/2020L-WB-Blog/tags/openml/</loc>
     <lastmod>2020-06-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/authors/piotr-fic/</loc>
+    <lastmod>2020-06-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/tags/r-packages/</loc>
+    <lastmod>2020-06-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/tags/scientific-papers/</loc>
+    <lastmod>2020-06-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/2020-06-14-up-to-date-packages-and-their-old-articles/</loc>
+    <lastmod>2020-06-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/tags/article/</loc>
+    <lastmod>2020-06-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -190,6 +310,21 @@
   <url>
     <loc>/2020L-WB-Blog/authors/kacper-staro%C5%84-jakub-szypu%C5%82a/</loc>
     <lastmod>2020-06-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/2020-06-11-time-flies-and-so-do-articles-reproducibility/</loc>
+    <lastmod>2020-06-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/tags/active-development/</loc>
+    <lastmod>2020-06-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/authors/agata-makarewicz/</loc>
+    <lastmod>2020-06-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -213,7 +348,42 @@
   </url>
   
   <url>
+    <loc>/2020L-WB-Blog/authors/jacek-wi%C5%9Bniewski/</loc>
+    <lastmod>2020-06-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/authors/martyna-majchrzak/</loc>
+    <lastmod>2020-06-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2020L-WB-Blog/authors/micha%C5%82-wdowski/</loc>
+    <lastmod>2020-06-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/tags/package/</loc>
+    <lastmod>2020-06-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/tags/r-journal/</loc>
+    <lastmod>2020-06-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/2020-06-09-to-update-or-not-to-update/</loc>
+    <lastmod>2020-06-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/tags/updating/</loc>
+    <lastmod>2020-06-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/tags/version-control/</loc>
     <lastmod>2020-06-09T00:00:00+00:00</lastmod>
   </url>
   

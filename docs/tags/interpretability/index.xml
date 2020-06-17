@@ -41,6 +41,16 @@ Black box vs white box Using interpretable models, such as linear regression, de
     </item>
     
     <item>
+      <title>Time flies... and so do articles&#39; reproducibility?</title>
+      <link>/2020L-WB-Blog/2020-06-11-time-flies-and-so-do-articles-reproducibility/</link>
+      <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020L-WB-Blog/2020-06-11-time-flies-and-so-do-articles-reproducibility/</guid>
+      <description>Sometimes we forget about what is really important&amp;hellip; Have you ever stopped for a moment in the course of everyday life and looked better at the reproductivity of the scientific article? Have you ever wondered - can I do what authors did in this article and get the same results? If you are not in technical industry - probably not&amp;hellip; and it&amp;rsquo;s perfectly fine. Otherwise - it&amp;rsquo;s about time to start getting interested.
+Reproducibility, like wine? Or vice versa? When publishing a work, you definitely need to remember about few basic rules: correct documentation, ensuring that files are up-to-date etc. However, not everyone respects these rules and hence - some articles sooner or later lose readability, reproductivity and therefore their value.</description>
+    </item>
+    
+    <item>
       <title>Explainable Computer Vision</title>
       <link>/2020L-WB-Blog/2020-06-09-explainable-computer-vision/</link>
       <pubDate>Tue, 09 Jun 2020 00:00:00 +0000</pubDate>

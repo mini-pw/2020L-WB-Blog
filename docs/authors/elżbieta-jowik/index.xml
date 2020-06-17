@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Elżbieta Jowik on Machine Learning Case Studies</title>
+    <link>/2020L-WB-Blog/authors/el%C5%BCbieta-jowik/</link>
+    <description>Recent content in Elżbieta Jowik on Machine Learning Case Studies</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 16 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/2020L-WB-Blog/authors/el%C5%BCbieta-jowik/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Scientific magazines &amp; reproducibility</title>
+      <link>/2020L-WB-Blog/2020-06-16-scientific_magazines__reproducibility/</link>
+      <pubDate>Tue, 16 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020L-WB-Blog/2020-06-16-scientific_magazines__reproducibility/</guid>
+      <description>One cannot help but notice that science is suffering from a reproducibility crisis. The problem is not only the subject of academic considerations, but much more global. The inability of scientists to recreate and reproduce one anothers&amp;rsquo; results increases demands on resources and drives up research costs as well as their time consumption. Mikołaj Malec, Maciej Paczóski and Bartosz Rożek explored this subject in their article.
+First look at the article The article titled ML Case Studies: Ways to reproduce articles in terms of release date and magazine, describes well some new approach to the issue, taking under consideration three well known scientific journals: R Journal, JMLR Machine Learning Open Source Software and Journal of Statistical Software.</description>
+    </item>
+    
+  </channel>
+</rss>

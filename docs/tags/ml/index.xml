@@ -6,10 +6,21 @@
     <description>Recent content in ML on Machine Learning Case Studies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 14 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/2020L-WB-Blog/tags/ml/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>It is possible to measure reproducibility?</title>
+      <link>/2020L-WB-Blog/2020-06-15-it-is-possible-to-measure-reproducibility/</link>
+      <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020L-WB-Blog/2020-06-15-it-is-possible-to-measure-reproducibility/</guid>
+      <description>It works on my machine Have you ever founds some great pieces of software only to realize that the code provided by the developer does not work anymore?
+The problem of software reproducibility in scientific research is becoming more and more important as number of new packages increases exponentially. But the problem is even more complex - there are not only strictly reproducible or irreproducible projects but also some that fall in between. That is why a zero-one rating, which is common approach to measure reproducibility, may be misleading.
+One metric to rule them all To enable comparison between different software, in this article group of students from the Warsaw University of Technology analyzed packages published in The R Journal and developed a 6-point scale to measure reproducibility of the article based on six main categories of problems that can be faced while trying to reproduce scientific paper results:</description>
+    </item>
     
     <item>
       <title>Hajada trials</title>
@@ -17,7 +28,7 @@
       <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/2020L-WB-Blog/2020-06-14-hajada-trials/</guid>
-      <description>Our story begins The story of Hajada is perhaps not an Arabian epic, but still, but just like one of Shecherezade&amp;rsquo;s stories, it&amp;rsquo;ll keep you, dear Reader, on your toes. Sometimes, the data is incomplete and we need to cope with that. There are many methods of so-called &amp;ldquo;imputation&amp;rsquo;&#39;, i.e. filling gaps in the data. Hanna Zdulska, Jakub Kosterna, Dawid Przybyliński took an effort to compare those methods. Here&amp;rsquo;s what they found out.
+      <description>Our story begins The story of Hajada is perhaps not an Arabian epic, but still, but just like one of Shecherezade&amp;rsquo;s stories, it&amp;rsquo;ll keep you, dear Reader, on your toes. Sometimes, the data is incomplete and we need to cope with that. There are many methods of so-called &amp;ldquo;imputation&amp;rsquo;&amp;rsquo;, i.e. filling gaps in the data. Hanna Zdulska, Jakub Kosterna, Dawid Przybyliński took an effort to compare those methods. Here&amp;rsquo;s what they found out.
 Challengers approach What kinds of imputation did they compare? The most popular ones, namely &amp;ldquo;Bogo replace&amp;rdquo;, a simple method of replacing missing values with random values from different observations, replacing with the mode of a median of a given column, MICE imputation, where each incomplete variable is imputed by a separate model, missForest - an intelligent imputation based on fandom forest and VIM&amp;rsquo;s k-NN - an imputation based on the k-NN classifier.</description>
     </item>
     
