@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>glass-box on Machine Learning Case Studies</title>
+    <link>/2020L-WB-Blog/tags/glass-box/</link>
+    <description>Recent content in glass-box on Machine Learning Case Studies</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 16 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/2020L-WB-Blog/tags/glass-box/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Improving glass-box models with various variables transformations</title>
+      <link>/2020L-WB-Blog/2020-06-16-improving-glass-box-models-with-various-variables-transformations/</link>
+      <pubDate>Tue, 16 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020L-WB-Blog/2020-06-16-improving-glass-box-models-with-various-variables-transformations/</guid>
+      <description>Choosing between interpretability and model performance dilemma is gaining popularity. Authors of this article tested various variables&amp;rsquo; transformations to increase the performance of glass-box models. To test all things they used the Concrete_Data dataset from the OpenML database. The data is technical, about different proportions of ingredients in building materials and the model aims to predict the compressive strength of created material.
+After getting to know our dataset that we want to work on we need to use feature engineering techniques to improve our model. Sometimes, we do it by hand, tweaking it until we get satisfying results, but we can also leave it to automated function that we call, to handle it for us.</description>
+    </item>
+    
+  </channel>
+</rss>
