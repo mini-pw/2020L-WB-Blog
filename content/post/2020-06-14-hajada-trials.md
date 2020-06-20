@@ -29,11 +29,11 @@ The performance of the models has been measured in MCC and F1 score. The team al
 ## The True King
 It turned out that imputation with mode or median and rows removal are the fastest methods (no surprise). Most importantly, VIM having very low median time has also the biggest variance of all.
 
-![Comparison of imputation times](/2020L-WB-Blog/static/2020-06-14-Hajada-trials/imputationTimesBoxplot.png)
+![Comparison of imputation times](/2020L-WB-Blog/2020-06-14-hajada-trials/imputationTimesBoxplot.png)
 
 What about performance gain? Well, the best is for sure VIM, achieving the best median rank overall,  and missForest the second after it. The worst methods turned out to be MICE, imputing with random values and imputing with mode/mean, achieving worst scores in F1 and MCC. The results of other methods differ if we choose to include failed imputations in our benchmark. With failed imputations, median scores of all methods are very similar.
 
-![Imputation rankings of different methods](/2020L-WB-Blog/static/2020-06-14-Hajada-trials/rankingAll.png)
+![Imputation rankings of different methods](/2020L-WB-Blog/2020-06-14-hajada-trials/rankingAll.png)
 
 ##   Epilogue
 As we can see, the best imputation method overall turned out to bo VIM, among the fastest - replacing with the mode or the median and among the slowest - missForest. 
