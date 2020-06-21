@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.72.0" />
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/favicon-16x16.png" />
+<link rel="manifest" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/site.webmanifest" />
+<link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/safari-pinned-tab.svg" color="#8aa2d3" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/favicon.ico" />
+<meta name="msapplication-TileColor" content="#8aa2d3" />
+<meta name="msapplication-config" content="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/browserconfig.xml" />
+<meta name="theme-color" content="#ffffff" />
+
+
+
+<title>Data for Takeaway: A Quest for the Missing Data - Machine Learning Case Studies</title>
+
+<meta name="author" content="" />
+<meta name="description" content="The weather in Grantue wasn&rsquo;t the most pleasant that day. Mostly misty, but here and there it was raining. No-one could be seen on the streets, though it had more to do with the recent outbreak of a disease and the general reluctance of the Grantue citizens to go out unless absolutely necessary. But I, I actually liked that high humidity, lack of wind and vague temperature.
+And there I was, with soaked glasses in the pockets, returning home from the meeting that could have taken place on a videoconference but didn&rsquo;t. I was angry, but every droplet of rain reduced my anger a bit and when I finally got home, I was already calmed, leaving a path of angry droplets behind me." />
+
+<meta name="keywords" content="imputation, missing data, machine learning, story, entertainment" />
+
+<meta property="og:title" content="Data for Takeaway: A Quest for the Missing Data" />
+<meta property="og:description" content="The weather in Grantue wasn&rsquo;t the most pleasant that day. Mostly misty, but here and there it was raining. No-one could be seen on the streets, though it had more to do with the recent outbreak of a disease and the general reluctance of the Grantue citizens to go out unless absolutely necessary. But I, I actually liked that high humidity, lack of wind and vague temperature.
+And there I was, with soaked glasses in the pockets, returning home from the meeting that could have taken place on a videoconference but didn&rsquo;t. I was angry, but every droplet of rain reduced my anger a bit and when I finally got home, I was already calmed, leaving a path of angry droplets behind me." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2020L-WB-Blog/2020-06-21-data-takeaway-quest-missing-data/" />
+<meta property="og:image" content="/2020L-WB-Blog/img/og.png"/>
+<meta property="article:published_time" content="2020-06-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-06-20T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/2020L-WB-Blog/img/og.png"/>
+
+<meta name="twitter:title" content="Data for Takeaway: A Quest for the Missing Data"/>
+<meta name="twitter:description" content="The weather in Grantue wasn&rsquo;t the most pleasant that day. Mostly misty, but here and there it was raining. No-one could be seen on the streets, though it had more to do with the recent outbreak of a disease and the general reluctance of the Grantue citizens to go out unless absolutely necessary. But I, I actually liked that high humidity, lack of wind and vague temperature.
+And there I was, with soaked glasses in the pockets, returning home from the meeting that could have taken place on a videoconference but didn&rsquo;t. I was angry, but every droplet of rain reduced my anger a bit and when I finally got home, I was already calmed, leaving a path of angry droplets behind me."/>
+
+
+
+
+
+
+<link rel="stylesheet" href="/2020L-WB-Blog/css/main.min.css" />
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js" integrity="sha256-h2tMEmhemR2IN4wbbdNjj9LaDIjzwk2hralQwfJmBOE=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.5/dist/medium-zoom.min.js" integrity="sha256-Jd9xef1tT52aCb+cAqhElj/9D3c99lQvEjyKOuPn3S4=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<body class="d-flex flex-column h-100">
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 link-primary">
+            <a class="main-title" href="/2020L-WB-Blog/">Machine Learning Case Studies</a>
+            
+            <span class="sub-title">by Evidence Based Machine Learning Lab</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-md-9 col-12 float-left" id="content">
+                
+<article>
+    
+    <h4 class="post-title">
+        <a href="/2020L-WB-Blog/2020-06-21-data-takeaway-quest-missing-data/">Data for Takeaway: A Quest for the Missing Data</a>
+    </h4>
+    <div>
+        <span>
+            
+                Mateusz Bąkała;
+            
+                Michał Pastuszka;
+            
+                Karol Pysiak;
+            
+        </span>
+    </div>
+    <div class="post-meta link-alter">
+        <time><i class="fas fa-calendar-day"></i>&nbsp;2020-06-20</time><span><i class="fas fa-file-alt"></i>&nbsp;1289 words</span><span><i class="fas fa-tag"></i>&nbsp;<a href="/tags/imputation/">imputation</a> <a href="/tags/missing-data/">missing data</a> <a href="/tags/machine-learning/">machine learning</a> <a href="/tags/story/">story</a> <a href="/tags/entertainment/">entertainment</a> </span>
+    </div>
+    
+    
+    <div class="post-content markdown-body">
+        <p>The weather in Grantue wasn&rsquo;t the most pleasant that day. Mostly misty, but here and there it was raining. No-one could be seen on the streets, though it had more to do with the recent outbreak of a disease and the general reluctance of the Grantue citizens to go out unless absolutely necessary. But I, I actually liked that high humidity, lack of wind and vague temperature.</p>
+<p>And there I was, with soaked glasses in the pockets, returning home from the meeting that could have taken place on a videoconference but didn&rsquo;t. I was angry, but every droplet of rain reduced my anger a bit and when I finally got home, I was already calmed, leaving a path of angry droplets behind me.</p>
+<p>As soon as I got through the door, I tossed my bag across the room. It landed perfectly in the corner of the sofa, albeit rather ungently. Luckily, I already damaged or broke whatever was inside and could be broken.</p>
+<p>&ldquo;What&rsquo;s up?&rdquo;, I asked.</p>
+<p>&ldquo;A ceiling, a sky, a star or a billion,&rdquo; Alison replied, not trying to mask her discontent with such uninspired greeting. &ldquo;Be more specific, pretty please?&rdquo;</p>
+<p>&ldquo;If you say so, I might have a question for you. A challenge, dare I say,&rdquo; I added, to spark her curiosity. Indeed, her curiosity was sparked and immediately proceeded to trace down and exterminate Alison&rsquo;s cat. We left them both alone, we didn&rsquo;t like the cat anyways.</p>
+<p>I reached for the laptop, knowing it would be necessary for solving the problem I faced.</p>
+<p>&ldquo;I have some data and some machine learning to put together,&rdquo; I began, &ldquo;but it just wouldn&rsquo;t work. Those pesky errors just keep appearing and I don&rsquo;t know how to get rid of them. Like, completely and for good.&rdquo;</p>
+<p>Alison coughed with impatience. Right, specificity still missing.</p>
+<p>&ldquo;You&rsquo;re good with R, do I remember correctly?&rdquo; I asked. Alison nodded, so I continued, &ldquo;Here, I ran this snippet and it says there are some missing values. What would you do?&rdquo;</p>
+<p>Alison shrugged. &ldquo;Get rid of &lsquo;em, as simple as that. I&rsquo;ve just read an article on that this mornin&rsquo;, that&rsquo;s gotta help a bit.&rdquo;</p>
+<p>&ldquo;Wow, just as if we were characters in a story and the author needed it to push the plot ahead.&rdquo;</p>
+<p>&ldquo;Oh, c&rsquo;mon, that&rsquo;s a stupid idea.&rdquo;</p>
+<p>I responded by typing and executing:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75af00">rm</span><span style="color:#111">(</span><span style="color:#00a8c8">NA</span><span style="color:#111">)</span>
+</code></pre></div><p>While my roommate was staring in some kind of weird awe and the kitten was screaming in agony, RStudio threw an error.</p>
+<p>&ldquo;Seems I&rsquo;ll need your ideas, Allie.&rdquo;</p>
+<p>&ldquo;I&rsquo;m delighted and terrified at the same time,&rdquo; she commented. &ldquo;Lemme tell ya how it&rsquo;s done. Firstly, ya can&rsquo;t just remove &lsquo;em and leave the rest, gotta either delete whole row or column, or replace &lsquo;em with some values.&rdquo;</p>
+<p>I was all ears already. <!-- raw HTML omitted --></p>
+<p>&ldquo;I guess ya&rsquo;d rather not delete data,&rdquo; she continued, taking over the laptop and some local ship-building company. &ldquo;A data imputation then. Just have to decide on the method used. And it was all &lsquo;bout it in that article. It&rsquo;s even in the title.&rdquo;</p>
+<p>&ldquo;Which is&hellip;?&rdquo; I inquired.</p>
+<p>&ldquo;Quite lengthy,&rdquo; Alison replied. &ldquo;Comparison of performance of data imputation methods in the context of their impact on the prediction efficiency of classification algorithms. Must&rsquo;ve been written by a bunch of hyper-precise minds.&rdquo;</p>
+<p>&ldquo;And which method is the best?&rdquo;</p>
+<p>&ldquo;It ain&rsquo;t that straighforward.&rdquo;</p>
+<p>&ldquo;Twistbackward then?&rdquo;</p>
+<p>&ldquo;No, there&rsquo;s no such word.&rdquo;</p>
+<p>&ldquo;Well, I just created it.&rdquo;</p>
+<p>&ldquo;But did ya give it a meaning?&rdquo;</p>
+<p>&ldquo;Whatever meaning is appropriate here.&rdquo;</p>
+<p>&ldquo;So ya coulda just say &lsquo;arquisteiny&rsquo; and use the same reasoning.&rdquo;</p>
+<p>&ldquo;Do we have a minimum word limit to pass or what?&rdquo;</p>
+<p>Alison gave me an irritated look, but I could see that deep inside she enjoyed this little struggle.</p>
+<p>&ldquo;Well,&rdquo; she said, trying to take the intercourse to where it was just a while ago. &ldquo;As I almost said, there ain&rsquo;t no way to indicate one best method, but some are better than the others. In this article they compared six methods using several measures.&rdquo; Alison gave me a quick look. &ldquo;To name a few, AUC, BACC, BBC, OBFS, MCC, and MC Hammer.&rdquo;</p>
+<p>&ldquo;I know you made them up, but all of them or just some?&rdquo;</p>
+<p>&ldquo;Yeah, the last one made it too obvious,&rdquo; she confessed. &ldquo;The first two are legit&hellip; and the penultimate as well.&rdquo;</p>
+<p>&ldquo;And the measures?&rdquo; I asked, reaching for an orange juice.</p>
+<p>&ldquo;Oh, those were measures. I did a little switcharoo there.&rdquo;</p>
+<p>I changed my mind and decided to go for a grapefruit juice instead.</p>
+<p>&ldquo;These measures are median or mode, dependin&rsquo; on the type of the variable, mice, missRanger, softImpute, kNN and hotdeck.&rdquo;</p>
+<p>My glance spotted an already opened bottle of apple juice, so I suddenly began to hesitate.</p>
+<p>&ldquo;But how they exactly work isn&rsquo;t important there, they&rsquo;re all implemented in R.&rdquo;</p>
+<p>There was only half a glass of apple juice, so I took it all and filled the rest of the glass with the remaining juices, creating the ultimate juice mix.</p>
+<p>&ldquo;What we need is which one will be the best in your case. And not too slow.&rdquo;</p>
+<p>I took a sip and liked it, so I quickly drank it all.</p>
+<p>&ldquo;They tested &lsquo;em on ten datasets and the results are here.&rdquo;</p>
+<p>Drinking too much at once made me feel dizzy, so I suggested, &ldquo;Maybe we could discuss this on the outside? Lightnings are quite rare at the moment, so the probability of being hurt or killed by one is manageable. Also, I need me some humidity.&rdquo;</p>
+<p>Alison puffed her lips out, shrugged, donated a few bucks to a charity and agreed to the idea. On our way out she took an umbrella, just in case, and I couldn&rsquo;t blame her. For that at least.</p>
+<p>Wandering through misty streets of Grantue we saw an abandoned dog. It was covered in a black, sticky mud, but he smelled sweet, like the cookies my mom always baked on the day before the day before Christmas Eve, as well as the day before Christmas Eve, whenever the former happened to be Thursday. When we came closer little buddy started waving his tail, splashing the dirt all over us. It had been so pleasing to see his happy face in this dark, cold part of the world, but now, drowning in mud, the pleasure was slowly drifting away.</p>
+<p>&ldquo;Shouldn&rsquo;t we&rsquo;ve been done talkin&rsquo; &lsquo;bout that imputation already?&rdquo; marked Alison.</p>
+<p>I simply couldn&rsquo;t deny that saying I don&rsquo;t disagree wouldn&rsquo;t be a lie.</p>
+<p>&ldquo;Long story short, basic algorithms were doin&rsquo; very well.&rdquo;</p>
+<p>&ldquo;Median?&rdquo; I asked to make sure.</p>
+<p>&ldquo;And mode,&rdquo; she clarified. &ldquo;For kNN, they were indisputably the best choice. For the others&hellip; Well, missRanger performed a bit better. However&hellip;&rdquo;</p>
+<p>The dog saw an equally abandoned cat and with a loud growl quickly ran off into the everpresent darkness, taking with itself that poetic mood, provoking to describe everything with a pathos and grandiloquence.</p>
+<p>&ldquo;&hellip;however it takes quite a while to compute, about a hundred times as much as median and mode. Is it worth it? Gotta be sceptic.&rdquo;</p>
+<p>&ldquo;So do you recommend&hellip; what?&rdquo;</p>
+<p>&ldquo;The pure simplicity. Unless ya really need your accuracy.&rdquo;</p>
+<p>I looked around, thinking intensively about what I just heard.</p>
+<p>&ldquo;So, tell me one thing&hellip; Why?&rdquo;</p>
+<p>Confused Alison noises could be heard. They seemed to be saying, &ldquo;What why?&rdquo;</p>
+<p>&ldquo;Why do they try and create algorithms that take a lot more time and perform equally good or even worse?&rdquo;</p>
+<p>Suddenly, a freezing wind started blowing, out of nowhere, by some called &ldquo;East&rdquo;. Dogs, cats, rats hid and pigs stopped flying. The darkess was brightening. The whole world &ndash; or at least the city of Grantue &ndash; held its breath in the anticipation.</p>
+<p>Alison took her sweet time to answer.</p>
+<p>&ldquo;Guess they must be mathematicians.&rdquo;</p>
+
+    </div>
+</article>
+
+
+<div class="license markdown-body">
+    <blockquote>
+        <p>Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)</a>.</p>
+    </blockquote>
+</div>
+
+
+
+
+
+
+            </div>
+            
+            <div class="col-md-3 col-12 float-left link-alter" id="sidebar">
+                
+
+<div class="widget-toc">
+    <h5>TOC</h5>
+    <nav id="TableOfContents"></nav>
+</div>
+
+
+<div class="widget-pages">
+    <h5>Pages</h5>
+    <ul>
+        
+        
+        <li>
+            <a href="/2020L-WB-Blog/">Home</a>
+        </li>
+        
+        <li>
+            <a href="/2020L-WB-Blog/archives/">Archives</a>
+        </li>
+        
+        <li>
+            <a href="/2020L-WB-Blog/about/">About</a>
+        </li>
+        
+    </ul>
+</div>
+
+<div class="widget-tags">
+    <h5>Tags</h5>
+    <div>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/active-development/">active development</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/article/">article</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/article-rating/">article rating</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/automated-regression/">automated regression</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/black-box/">black-box</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/black-boxes/">black-boxes</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/computer-vision/">computer vision</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/dataset/">dataset</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/embedding/">embedding</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/entertainment/">entertainment</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/features-engineering/">features engineering</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/features-importance/">features importance</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/features-transformations/">features transformations</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/glass-box/">glass-box</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/imputation/">Imputation</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/interpretability/">interpretability</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/machine-learning/">Machine Learning</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/magazines/">magazines</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/missing-data/">Missing data</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/missing-values/">missing values</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/missings/">missings</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/ml/">ML</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/openml/">OpenML</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/package/">package</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/r-journal/">R journal</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/r-packages/">R packages</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/reproducibility/">reproducibility</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/scientific-papers/">scientific papers</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/story/">story</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/the-r-journal/">The R Journal</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/tutorial/">tutorial</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/updating/">updating</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/version-control/">version control</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/xai/">XAI</a>
+        </span>
+        
+    </div>
+</div>
+
+<div class="widget-links">
+    <h5>Links</h5>
+    <ul>
+        
+        <li>
+            <a href="https://mini-pw.github.io/2020L-WB-Book/" target="_blank"><span>ML Case Studies Book</span></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/mini-pw/2020L-WarsztatyBadawcze-Reprodukowalnosc" target="_blank"><span>Reproducibility repo (in Polish)</span></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/mini-pw/2020L-WarsztatyBadawcze-Imputacja" target="_blank"><span>Imputation repo (in Polish)</span></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/mini-pw/2020L-WarsztatyBadawcze-InzynieriaCech" target="_blank"><span>Interpretability repo (in Polish)</span></a>
+        </li>
+        
+    </ul>
+</div>
+
+
+            </div>
+            
+            
+            
+            <div id="scroll-top">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+    <div class="container-lg text-center">
+        <p>&copy; 2020 <a href="/2020L-WB-Blog/"></a> | Powered by <a href="https://github.com/amzrk2/hugo-theme-fuji/" target="_blank">Fuji</a> & <a href="https://gohugo.io/" target="_blank">Hugo</a> </p>
+    </div>
+    <script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+</footer>
+    
+<script>
+    $(function () {
+        mediumZoom('.img-zoomable', {
+            margin: 32
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+<script>
+    $('.widget-toc a').click(function () {
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        });
+    });
+</script>
+
+
+
+<script>
+    $('#scroll-top').click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+
+</html>
