@@ -35,7 +35,7 @@ The results and conclusions that authors came up are not straightforward. Depend
 
 ![Legend](Legenda.png)
 
-Naturally, the bigger the values of accuracy and F1, the better each model performed. We may notice that when it comes to F1 score, *MissForest* package yielded undeniably best results. While the differences in accuracy are not as significant, the same package seems to perform best overall. However, we wish the authors did not use the jitter effect on the plot, as it seem to decrease the readability of the plots greatly.
+Naturally, the bigger the values of accuracy and F1, the better each model performed. We may notice that when it comes to F1 score, *MissForest* package yielded undeniably best results. While the differences in accuracy are not as significant, the same package seems to perform best overall. However, we wish the authors did not use the jitter effect on the plot, as it seems to decrease the readability of the plots greatly.
 
 ### Authors' conclusions
 
