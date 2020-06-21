@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.72.0" />
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/favicon-16x16.png" />
+<link rel="manifest" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/site.webmanifest" />
+<link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/safari-pinned-tab.svg" color="#8aa2d3" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/favicon.ico" />
+<meta name="msapplication-TileColor" content="#8aa2d3" />
+<meta name="msapplication-config" content="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/browserconfig.xml" />
+<meta name="theme-color" content="#ffffff" />
+
+
+
+<title>Dive deep into data imputation - Machine Learning Case Studies</title>
+
+<meta name="author" content="" />
+<meta name="description" content="Don&rsquo;t delete your missing data - learn how to deal with it.
+All the data we have We learn on clean fabricated datasets but when it comes to real life problems machine learning becomes something completely different. Very often we must deal with missing values. A common approach is to simply delete observations that have them but by doing so we can lose a lot of important information. That is the main reason why we should be &ldquo;data imputation ninjas&rdquo; as it can save us a lot of time when trying to find a model fitting our data well.
+Many cases - many solutions Missing values can be very different for each dataset." />
+
+<meta name="keywords" content="tutorial" />
+
+<meta property="og:title" content="Dive deep into data imputation" />
+<meta property="og:description" content="Don&rsquo;t delete your missing data - learn how to deal with it.
+All the data we have We learn on clean fabricated datasets but when it comes to real life problems machine learning becomes something completely different. Very often we must deal with missing values. A common approach is to simply delete observations that have them but by doing so we can lose a lot of important information. That is the main reason why we should be &ldquo;data imputation ninjas&rdquo; as it can save us a lot of time when trying to find a model fitting our data well.
+Many cases - many solutions Missing values can be very different for each dataset." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2020L-WB-Blog/2020-06-12-dive-deep-into-data-imputation/" />
+<meta property="og:image" content="/2020L-WB-Blog/img/og.png"/>
+<meta property="article:published_time" content="2020-06-12T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-06-12T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/2020L-WB-Blog/img/og.png"/>
+
+<meta name="twitter:title" content="Dive deep into data imputation"/>
+<meta name="twitter:description" content="Don&rsquo;t delete your missing data - learn how to deal with it.
+All the data we have We learn on clean fabricated datasets but when it comes to real life problems machine learning becomes something completely different. Very often we must deal with missing values. A common approach is to simply delete observations that have them but by doing so we can lose a lot of important information. That is the main reason why we should be &ldquo;data imputation ninjas&rdquo; as it can save us a lot of time when trying to find a model fitting our data well.
+Many cases - many solutions Missing values can be very different for each dataset."/>
+
+
+
+
+
+
+<link rel="stylesheet" href="/2020L-WB-Blog/css/main.min.css" />
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js" integrity="sha256-h2tMEmhemR2IN4wbbdNjj9LaDIjzwk2hralQwfJmBOE=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.5/dist/medium-zoom.min.js" integrity="sha256-Jd9xef1tT52aCb+cAqhElj/9D3c99lQvEjyKOuPn3S4=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<body class="d-flex flex-column h-100">
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 link-primary">
+            <a class="main-title" href="/2020L-WB-Blog/">Machine Learning Case Studies</a>
+            
+            <span class="sub-title">by Evidence Based Machine Learning Lab</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-md-9 col-12 float-left" id="content">
+                
+<article>
+    
+    <h4 class="post-title">
+        <a href="/2020L-WB-Blog/2020-06-12-dive-deep-into-data-imputation/">Dive deep into data imputation</a>
+    </h4>
+    <div>
+        <span>
+            
+                Bartłomiej Granat;
+            
+                Szymon Maksymiuk;
+            
+        </span>
+    </div>
+    <div class="post-meta link-alter">
+        <time><i class="fas fa-calendar-day"></i>&nbsp;2020-06-12</time><span><i class="fas fa-file-alt"></i>&nbsp;510 words</span><span><i class="fas fa-tag"></i>&nbsp;<a href="/tags/tutorial/">tutorial</a> </span>
+    </div>
+    
+    
+    <div class="post-content markdown-body">
+        <p>Don&rsquo;t delete your missing data - learn how to deal with it.</p>
+<h1 id="all-the-data-we-have">All the data we have</h1>
+<p>We learn on clean fabricated datasets but when it comes to real life problems machine learning becomes something completely different. 
+Very often we must deal with missing values. A common approach is to simply delete observations that have them but by doing so we can lose a lot of important information.
+That is the main reason why we should be &ldquo;data imputation ninjas&rdquo; as it can save us a lot of time when trying to find a model fitting our data well.</p>
+<h1 id="many-cases---many-solutions">Many cases - many solutions</h1>
+<p>Missing values can be very different for each dataset. They might be completely random, follow some pattern or simpy be a part of data model. That&rsquo;s why there is no 
+approach that always performs best. To dive deeper into the topic Jan Borowski, Filip Chrzuszcz and Piotr Fic from Warsaw University of Technology wrote an 
+<a href="https://mini-pw.github.io/2020L-WB-Book/various-data-imputation-techniques-in-r.html">article</a> about various data imputation techniques in r</p>
+<h1 id="diving-deeper">Diving deeper</h1>
+<p>The article mentioned above explains in a complex way what are the algorithms for data imputation available in R and how they perform on various datasets. 
+There were 14 datasets with percentage of missing values varying from 0.7% to 35.8%. After preparing the datasets several imputation methods
+were tested and feeded into 4 different machine learning algorithms. Tested imputation methods were:</p>
+<ul>
+<li><strong>mean/mode imputation</strong> - replacing missing continous values with mean and replacing missing discrete values with mode of remaining ones,</li>
+<li><strong>mice (predictive mean matching)</strong> -  multivariate imputation by chained equations,</li>
+<li><strong>missMDA</strong> -  imputation with the principal component method,</li>
+<li><strong>missFOREST</strong> - imputation with predictions of the random forest model,</li>
+<li><strong>softImpute</strong> - solving an optimization problem using a soft-thresholded SVD algorithm for continous variables</li>
+<li><strong>VIM</strong> - iterative robust model-based imputation</li>
+</ul>
+<p>All of the tasks were classification and the algorithms used for testing were:</p>
+<ul>
+<li>Extreme Gradient Boosting,</li>
+<li>Random Forest,</li>
+<li>Support Vector Machines,</li>
+<li>Linear Regression</li>
+</ul>
+<h1 id="what-works-better">What works better?</h1>
+<p>The two measures used for evaluating models were F1-score and accuracy. All the models were done the same way with only imputation methods differing between them.
+Eventually for each of the 14 datasets the average score was taken and that&rsquo;s how they realized that <strong>there isn&rsquo;t one imputation method that works the best</strong>.</p>
+<p><img src="/2020L-WB-Blog/2020-06-12-dive-deep-into-data-imputation/screen1.png" alt="Average scores across all datasets for different imputation methods"></p>
+<p><em>Plot shows average scores across all datasets for different imputation methods</em></p>
+<p>We can see that there is no obvious leader. That&rsquo;s why ranking system was introduced giving 
+bigger scores for worse predictions. The apporach with least points should turn out to be least case specific and generally the best.</p>
+<p><img src="/2020L-WB-Blog/2020-06-12-dive-deep-into-data-imputation/screen2.png" alt=""></p>
+<p><em>Table with imputation methods ranking</em></p>
+<p>Another thing that has to be taken into consideration is time of imputation.</p>
+<p><img src="/2020L-WB-Blog/2020-06-12-dive-deep-into-data-imputation/screen3.png" alt=""></p>
+<p><em>Average time of imputation for different methods</em></p>
+<h1 id="what-should-i-use-for-my-data">What should I use for my data?</h1>
+<p>Based on the article the best imputation method depends on the problem but it is always worth to begin with median/mode imputation as it is very little time consuming
+and can significantly improve your model. Only if the results are not satisfying we should then try other ones. 
+For more refer to <a href="https://mini-pw.github.io/2020L-WB-Book/various-data-imputation-techniques-in-r.html">article</a>.</p>
+
+    </div>
+</article>
+
+
+<div class="license markdown-body">
+    <blockquote>
+        <p>Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)</a>.</p>
+    </blockquote>
+</div>
+
+
+
+
+
+
+            </div>
+            
+            <div class="col-md-3 col-12 float-left link-alter" id="sidebar">
+                
+
+<div class="widget-toc">
+    <h5>TOC</h5>
+    <nav id="TableOfContents"></nav>
+</div>
+
+
+<div class="widget-pages">
+    <h5>Pages</h5>
+    <ul>
+        
+        
+        <li>
+            <a href="/2020L-WB-Blog/">Home</a>
+        </li>
+        
+        <li>
+            <a href="/2020L-WB-Blog/archives/">Archives</a>
+        </li>
+        
+        <li>
+            <a href="/2020L-WB-Blog/about/">About</a>
+        </li>
+        
+    </ul>
+</div>
+
+<div class="widget-tags">
+    <h5>Tags</h5>
+    <div>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/black-boxes/">black-boxes</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/computer-vision/">computer vision</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/dataset/">dataset</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/embedding/">embedding</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/imputation/">Imputation</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/interpretability/">interpretability</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/machine-learning/">Machine Learning</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/missing-data/">Missing data</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/missings/">missings</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/ml/">ML</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/openml/">OpenML</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/tutorial/">tutorial</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/xai/">XAI</a>
+        </span>
+        
+    </div>
+</div>
+
+<div class="widget-links">
+    <h5>Links</h5>
+    <ul>
+        
+        <li>
+            <a href="https://mini-pw.github.io/2020L-WB-Book/" target="_blank"><span>ML Case Studies Book</span></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/mini-pw/2020L-WarsztatyBadawcze-Reprodukowalnosc" target="_blank"><span>Reproducibility repo (in Polish)</span></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/mini-pw/2020L-WarsztatyBadawcze-Imputacja" target="_blank"><span>Imputation repo (in Polish)</span></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/mini-pw/2020L-WarsztatyBadawcze-InzynieriaCech" target="_blank"><span>Interpretability repo (in Polish)</span></a>
+        </li>
+        
+    </ul>
+</div>
+
+
+            </div>
+            
+            
+            
+            <div id="scroll-top">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+    <div class="container-lg text-center">
+        <p>&copy; 2020 <a href="/2020L-WB-Blog/"></a> | Powered by <a href="https://github.com/amzrk2/hugo-theme-fuji/" target="_blank">Fuji</a> & <a href="https://gohugo.io/" target="_blank">Hugo</a> </p>
+    </div>
+</footer>
+    
+<script>
+    $(function () {
+        mediumZoom('.img-zoomable', {
+            margin: 32
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+<script>
+    $('.widget-toc a').click(function () {
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        });
+    });
+</script>
+
+
+
+<script>
+    $('#scroll-top').click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+
+</html>
