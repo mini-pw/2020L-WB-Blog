@@ -3,501 +3,526 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/2020L-WB-Blog/authors/ada-g%C4%85ssowska/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/2020-06-21-how-should-i-impute-imputation-techniques-comparison/</loc>
+    <lastmod>2020-06-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/tags/imputation/</loc>
+    <lastmod>2020-06-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/kacper-siemaszko/</loc>
+    <lastmod>2020-06-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/tags/machine-learning/</loc>
+    <lastmod>2020-06-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/</loc>
+    <lastmod>2020-06-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/tags/missing-values/</loc>
+    <lastmod>2020-06-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/post/</loc>
+    <lastmod>2020-06-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/wojtek-kretowicz/</loc>
+    <lastmod>2020-06-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/%C5%82ukasz-brzozowski/</loc>
+    <lastmod>2020-06-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/ada-g%C4%85ssowska/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/bartosz-ro%C5%BCek/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/bartosz-ro%C5%BCek/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/black-box/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/tags/black-box/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/black-boxes/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/tags/black-boxes/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/2020-06-16-can-you-build-an-explainable-model-overperforming-black-box/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/2020-06-16-can-you-build-an-explainable-model-overperforming-black-box/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/2020-06-16-correlation-between-reproducibility-of-research-papers-and-their-objective/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/2020-06-16-correlation-between-reproducibility-of-research-papers-and-their-objective/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/el%C5%BCbieta-jowik/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/el%C5%BCbieta-jowik/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/features-engineering/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/tags/features-engineering/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/features-importance/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/tags/features-importance/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/features-transformations/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/tags/features-transformations/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/glass-box/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/tags/glass-box/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/2020-06-16-improving-glass-box-models-with-various-variables-transformations/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/2020-06-16-improving-glass-box-models-with-various-variables-transformations/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/interpretability/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/tags/interpretability/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/maciej-pacz%C3%B3ski/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/maciej-pacz%C3%B3ski/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/tags/magazines/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/magazines/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/marceli-korbin/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/marceli-korbin/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/marcin-%C5%82ukaszyk/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/marcin-%C5%82ukaszyk/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/mateusz-grzyb/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/mateusz-grzyb/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/miko%C5%82aj-jakubowski/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/miko%C5%82aj-jakubowski/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/miko%C5%82aj-malec/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/miko%C5%82aj-malec/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/ngoc-anh-nguyen/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/ngoc-anh-nguyen/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/patryk-wrona/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/patryk-wrona/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/piotr-pi%C4%85tyszek/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/piotr-pi%C4%85tyszek/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/tags/reproducibility/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/post/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/2020-06-16-scientific_magazines__reproducibility/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/reproducibility/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/tags/xai/</loc>
     <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/2020-06-16-scientific_magazines__reproducibility/</loc>
-    <lastmod>2020-06-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2020L-WB-Blog/tags/xai/</loc>
-    <lastmod>2020-06-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2020L-WB-Blog/authors/anna-urbala/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/anna-urbala/</loc>
     <lastmod>2020-06-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/article-rating/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/tags/article-rating/</loc>
     <lastmod>2020-06-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/bart%C5%82omiej-eljasiak/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/bart%C5%82omiej-eljasiak/</loc>
     <lastmod>2020-06-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/2020-06-15-black-box-vs-white-box-duel/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/2020-06-15-black-box-vs-white-box-duel/</loc>
     <lastmod>2020-06-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/2020-06-15-improve-your-white-box-model/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/2020-06-15-improve-your-white-box-model/</loc>
     <lastmod>2020-06-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/2020-06-15-it-is-possible-to-measure-reproducibility/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/2020-06-15-it-is-possible-to-measure-reproducibility/</loc>
     <lastmod>2020-06-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/jakub-pingielski/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/jakub-pingielski/</loc>
     <lastmod>2020-06-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/jakub-wi%C5%9Bniewski/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/jakub-wi%C5%9Bniewski/</loc>
     <lastmod>2020-06-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/konrad-komisarczyk/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/konrad-komisarczyk/</loc>
     <lastmod>2020-06-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/machine-learning/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/mariusz-s%C5%82apek/</loc>
     <lastmod>2020-06-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/mariusz-s%C5%82apek/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/tags/ml/</loc>
     <lastmod>2020-06-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/ml/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/paulina-przyby%C5%82ek/</loc>
     <lastmod>2020-06-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/paulina-przyby%C5%82ek/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/pawe%C5%82-ko%C5%BAmi%C5%84ski/</loc>
     <lastmod>2020-06-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/pawe%C5%82-ko%C5%BAmi%C5%84ski/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/renata-r%C3%B3lkiewicz/</loc>
     <lastmod>2020-06-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/renata-r%C3%B3lkiewicz/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/tags/the-r-journal/</loc>
     <lastmod>2020-06-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/the-r-journal/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/wojciech-szczypek/</loc>
     <lastmod>2020-06-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/wojciech-szczypek/</loc>
-    <lastmod>2020-06-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2020L-WB-Blog/authors/bogdan-jastrz%C4%99bski/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/bogdan-jastrz%C4%99bski/</loc>
     <lastmod>2020-06-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/dataset/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/tags/dataset/</loc>
     <lastmod>2020-06-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/filip-chrzuszcz/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/filip-chrzuszcz/</loc>
     <lastmod>2020-06-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/2020-06-14-hajada-trials/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/2020-06-14-hajada-trials/</loc>
     <lastmod>2020-06-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/imputation/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/jan-borowski/</loc>
     <lastmod>2020-06-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/jan-borowski/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/tags/missings/</loc>
     <lastmod>2020-06-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/missings/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/olaf-werner/</loc>
     <lastmod>2020-06-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/olaf-werner/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/tags/openml/</loc>
     <lastmod>2020-06-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/openml/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/piotr-fic/</loc>
     <lastmod>2020-06-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/piotr-fic/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/tags/r-packages/</loc>
     <lastmod>2020-06-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/r-packages/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/tags/scientific-papers/</loc>
     <lastmod>2020-06-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/scientific-papers/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/2020-06-14-up-to-date-packages-and-their-old-articles/</loc>
     <lastmod>2020-06-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/2020-06-14-up-to-date-packages-and-their-old-articles/</loc>
-    <lastmod>2020-06-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2020L-WB-Blog/tags/article/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/tags/article/</loc>
     <lastmod>2020-06-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/automated-regression/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/tags/automated-regression/</loc>
     <lastmod>2020-06-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/2020-06-11-beat-the-black-box/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/2020-06-11-beat-the-black-box/</loc>
     <lastmod>2020-06-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/kacper-staro%C5%84-jakub-szypu%C5%82a/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/kacper-staro%C5%84-jakub-szypu%C5%82a/</loc>
     <lastmod>2020-06-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/2020-06-11-time-flies-and-so-do-articles-reproducibility/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/2020-06-11-time-flies-and-so-do-articles-reproducibility/</loc>
     <lastmod>2020-06-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/active-development/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/tags/active-development/</loc>
     <lastmod>2020-06-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/agata-makarewicz/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/agata-makarewicz/</loc>
     <lastmod>2020-06-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/aleksander-podsiad/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/aleksander-podsiad/</loc>
     <lastmod>2020-06-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/computer-vision/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/tags/computer-vision/</loc>
     <lastmod>2020-06-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/embedding/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/tags/embedding/</loc>
     <lastmod>2020-06-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/2020-06-09-explainable-computer-vision/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/2020-06-09-explainable-computer-vision/</loc>
     <lastmod>2020-06-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/jacek-wi%C5%9Bniewski/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/jacek-wi%C5%9Bniewski/</loc>
     <lastmod>2020-06-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/martyna-majchrzak/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/martyna-majchrzak/</loc>
     <lastmod>2020-06-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/micha%C5%82-wdowski/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/micha%C5%82-wdowski/</loc>
     <lastmod>2020-06-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/package/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/tags/package/</loc>
     <lastmod>2020-06-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/r-journal/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/tags/r-journal/</loc>
     <lastmod>2020-06-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/2020-06-09-to-update-or-not-to-update/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/2020-06-09-to-update-or-not-to-update/</loc>
     <lastmod>2020-06-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/updating/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/tags/updating/</loc>
     <lastmod>2020-06-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/version-control/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/tags/version-control/</loc>
     <lastmod>2020-06-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/zuzanna-mr%C3%B3z/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/zuzanna-mr%C3%B3z/</loc>
     <lastmod>2020-06-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/aleksandra-wichrowska/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/aleksandra-wichrowska/</loc>
     <lastmod>2020-06-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/2020-06-05-imputing-missing-data-for-a-classification-problem/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/2020-06-05-imputing-missing-data-for-a-classification-problem/</loc>
     <lastmod>2020-06-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/karol-saputa/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/karol-saputa/</loc>
     <lastmod>2020-06-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/ma%C5%82gorzata-wachulec/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/ma%C5%82gorzata-wachulec/</loc>
     <lastmod>2020-06-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/missing-data/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/tags/missing-data/</loc>
     <lastmod>2020-06-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/adam-rydelek/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/adam-rydelek/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/dominik-rafacz/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/dominik-rafacz/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/2020-06-04-interaction-between-imputation-and-ml-algorithms/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/2020-06-04-interaction-between-imputation-and-ml-algorithms/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/micha%C5%82-stawikowski/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/micha%C5%82-stawikowski/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/2020-06-04-not-so-famous-yet-hajada-and-his-results/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/2020-06-04-not-so-famous-yet-hajada-and-his-results/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/tomasz-makowski/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/tomasz-makowski/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/witold-merkel/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/witold-merkel/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/wojciech-bogucki/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/wojciech-bogucki/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/2020-06-01-are-black-boxes-inevitable/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/2020-06-01-are-black-boxes-inevitable/</loc>
     <lastmod>2020-06-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/konrad-welkier/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/konrad-welkier/</loc>
     <lastmod>2020-06-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/pawe%C5%82-morgen/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/pawe%C5%82-morgen/</loc>
     <lastmod>2020-06-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/piotr-sie%C5%84ko/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/piotr-sie%C5%84ko/</loc>
     <lastmod>2020-06-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/authors/alicja-gosiewska/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/authors/alicja-gosiewska/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/2020-05-18-how-to-add-post/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/2020-05-18-how-to-add-post/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/tutorial/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/tags/tutorial/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/about/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/about/</loc>
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/archives/</loc>
+    <loc>https://mini-pw.github.io/2020L-WB-Blog/archives/</loc>
   </url>
   
 </urlset>

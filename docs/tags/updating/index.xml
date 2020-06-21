@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>updating on Machine Learning Case Studies</title>
-    <link>/2020L-WB-Blog/tags/updating/</link>
+    <link>https://mini-pw.github.io/2020L-WB-Blog/tags/updating/</link>
     <description>Recent content in updating on Machine Learning Case Studies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 09 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/2020L-WB-Blog/tags/updating/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mini-pw.github.io/2020L-WB-Blog/tags/updating/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Update or not to update - this is the question!</title>
-      <link>/2020L-WB-Blog/2020-06-09-to-update-or-not-to-update/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-09-to-update-or-not-to-update/</link>
       <pubDate>Tue, 09 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-06-09-to-update-or-not-to-update/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-09-to-update-or-not-to-update/</guid>
       <description>Once researchers public a piece of software and publish a paper about it, should they continue to update the package, resolving users&amp;rsquo; issues and adding more features or just leave it be? This question might seem trivial, but turns about to be a bit more complex than you may think. We recently read an artice, written by Ngoc Anh Nguyen, Piotr Piątyszek and Marcin Łukaszyk from Warsaw University of Technology, that covers the subject of how active development of an R package affects the reproducibility of the article that introduced it.
 What is reproducibility and how it was measured? Reproducibility is a highly desirable quality of a science article, that allows a different research team to attain the identical results using the same methods.</description>
     </item>

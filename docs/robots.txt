@@ -1,3 +1,3 @@
 User-agent: *
 
-Sitemap: /2020L-WB-Blog//sitemap.xml
+Sitemap: https://mini-pw.github.io/2020L-WB-Blog//sitemap.xml

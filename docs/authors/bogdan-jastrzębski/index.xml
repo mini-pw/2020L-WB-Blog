@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bogdan Jastrzębski on Machine Learning Case Studies</title>
-    <link>/2020L-WB-Blog/authors/bogdan-jastrz%C4%99bski/</link>
+    <link>https://mini-pw.github.io/2020L-WB-Blog/authors/bogdan-jastrz%C4%99bski/</link>
     <description>Recent content in Bogdan Jastrzębski on Machine Learning Case Studies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 14 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/2020L-WB-Blog/authors/bogdan-jastrz%C4%99bski/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mini-pw.github.io/2020L-WB-Blog/authors/bogdan-jastrz%C4%99bski/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hajada trials</title>
-      <link>/2020L-WB-Blog/2020-06-14-hajada-trials/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-14-hajada-trials/</link>
       <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-06-14-hajada-trials/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-14-hajada-trials/</guid>
       <description>Our story begins The story of Hajada is perhaps not an Arabian epic, but still, but just like one of Shecherezade&amp;rsquo;s stories, it&amp;rsquo;ll keep you, dear Reader, on your toes. Sometimes, the data is incomplete and we need to cope with that. There are many methods of so-called &amp;ldquo;imputation&amp;rsquo;&amp;rsquo;, i.e. filling gaps in the data. Hanna Zdulska, Jakub Kosterna, Dawid Przybyliński took an effort to compare those methods. Here&amp;rsquo;s what they found out.
 Challengers approach What kinds of imputation did they compare? The popular ones, you may know them or not, namely: “Bogo replace”, replacing with mode or median, &amp;ldquo;MICE&amp;rdquo; imputation method, &amp;ldquo;missForest&amp;rdquo; imputation and &amp;ldquo;VIM&amp;rsquo;s k-NN&amp;rdquo;.</description>
     </item>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.72.0" />
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/favicon-16x16.png" />
+<link rel="manifest" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/site.webmanifest" />
+<link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/safari-pinned-tab.svg" color="#8aa2d3" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/favicon.ico" />
+<meta name="msapplication-TileColor" content="#8aa2d3" />
+<meta name="msapplication-config" content="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/browserconfig.xml" />
+<meta name="theme-color" content="#ffffff" />
+
+
+
+<title>How should I impute? – imputation techniques comparison. - Machine Learning Case Studies</title>
+
+<meta name="author" content="" />
+<meta name="description" content="Why impute? When people start their journey with machine learning and data analysis, they show a lot of enthusiasm and desire to learn and create. As they progress, they encounter many obstacles, that may strip them of their positive attitude. One example of such obstacles is missing data in the dataset they&rsquo;re working on. Authors of the article titled &ldquo;Imputation techniques&rsquo; comparison in R programming language&rdquo; formulated three main problems that come with missing values – substantial amount of trained model&rsquo;s bias, reduction in data analysis efficiency and inability to use many machine learning models, that were not adjusted to handle missing data." />
+
+<meta name="keywords" content="imputation, machine learning, missing values" />
+
+<meta property="og:title" content="How should I impute? – imputation techniques comparison." />
+<meta property="og:description" content="Why impute? When people start their journey with machine learning and data analysis, they show a lot of enthusiasm and desire to learn and create. As they progress, they encounter many obstacles, that may strip them of their positive attitude. One example of such obstacles is missing data in the dataset they&rsquo;re working on. Authors of the article titled &ldquo;Imputation techniques&rsquo; comparison in R programming language&rdquo; formulated three main problems that come with missing values – substantial amount of trained model&rsquo;s bias, reduction in data analysis efficiency and inability to use many machine learning models, that were not adjusted to handle missing data." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mini-pw.github.io/2020L-WB-Blog/2020-06-21-how-should-i-impute-imputation-techniques-comparison/" />
+<meta property="og:image" content="https://mini-pw.github.io/2020L-WB-Blog/img/og.png"/>
+<meta property="article:published_time" content="2020-06-21T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-06-21T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://mini-pw.github.io/2020L-WB-Blog/img/og.png"/>
+
+<meta name="twitter:title" content="How should I impute? – imputation techniques comparison."/>
+<meta name="twitter:description" content="Why impute? When people start their journey with machine learning and data analysis, they show a lot of enthusiasm and desire to learn and create. As they progress, they encounter many obstacles, that may strip them of their positive attitude. One example of such obstacles is missing data in the dataset they&rsquo;re working on. Authors of the article titled &ldquo;Imputation techniques&rsquo; comparison in R programming language&rdquo; formulated three main problems that come with missing values – substantial amount of trained model&rsquo;s bias, reduction in data analysis efficiency and inability to use many machine learning models, that were not adjusted to handle missing data."/>
+
+
+
+
+
+
+<link rel="stylesheet" href="https://mini-pw.github.io/2020L-WB-Blog/css/main.min.css" />
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js" integrity="sha256-h2tMEmhemR2IN4wbbdNjj9LaDIjzwk2hralQwfJmBOE=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.5/dist/medium-zoom.min.js" integrity="sha256-Jd9xef1tT52aCb+cAqhElj/9D3c99lQvEjyKOuPn3S4=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<body class="d-flex flex-column h-100">
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 link-primary">
+            <a class="main-title" href="https://mini-pw.github.io/2020L-WB-Blog/">Machine Learning Case Studies</a>
+            
+            <span class="sub-title">by Evidence Based Machine Learning Lab</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-md-9 col-12 float-left" id="content">
+                
+<article>
+    
+    <h4 class="post-title">
+        <a href="https://mini-pw.github.io/2020L-WB-Blog/2020-06-21-how-should-i-impute-imputation-techniques-comparison/">How should I impute? – imputation techniques comparison.</a>
+    </h4>
+    <div>
+        <span>
+            
+                Łukasz Brzozowski;
+            
+                Wojtek Kretowicz;
+            
+                Kacper Siemaszko;
+            
+        </span>
+    </div>
+    <div class="post-meta link-alter">
+        <time><i class="fas fa-calendar-day"></i>&nbsp;2020-06-21</time><span><i class="fas fa-file-alt"></i>&nbsp;1201 words</span><span><i class="fas fa-tag"></i>&nbsp;<a href="/tags/imputation/">imputation</a> <a href="/tags/machine-learning/">machine learning</a> <a href="/tags/missing-values/">missing values</a> </span>
+    </div>
+    
+    
+    <div class="post-content markdown-body">
+        <h2 id="why-impute">Why impute?</h2>
+<p>When people start their journey with machine learning and data analysis, they show a lot of enthusiasm and desire to learn and create. As they progress, they encounter many obstacles, that may strip them of their positive attitude. One example of such obstacles is missing data in the dataset they&rsquo;re working on. Authors of the article titled &ldquo;Imputation techniques&rsquo; comparison in R programming language&rdquo; formulated three main problems that come with missing values – substantial amount of trained model&rsquo;s  bias, reduction in data analysis efficiency and inability to use many machine learning models, that were not adjusted to handle missing data. Imputing is a way of dealing with this problems and the premise of the article is to demistify imputing and find the best method.</p>
+<h2 id="how-to-approach-such-comparison">How to approach such comparison?</h2>
+<p>Measuring the imputation techique&rsquo;s effectiveness is not a straightforward task. Because of the nature of real missing values we cannot compare the imputed values with the right values that they replace – the only case when we&rsquo;d be able to do that would be if we forcibly replaced right values with missing. Unfortunately, the results wouldn&rsquo;t be too reliable, because the missing values were artificial. Hence, authors proposed measuring the imputation technique&rsquo;s effectiveness indirectly, by measuring the effectiveness of machine learnig model trained on imputed data. To make the comparison more reliable, the authors decide to compare the techniques on 4 different models (logistic regression, naive Bayesian classificator, binomial regression, random forest), 7 different datasets from OpenML (labor, colic, credit-approval, hepatitis, vote, eucalyptus, echoMonths) with 2 different model efficiency metrics (accuracy, F1-score). The imputation methods will be also compared on the complexity level, by measuring the time needed to impute the values.</p>
+<h2 id="ok-so-what-methods-are-compared">Ok, so what methods are compared?</h2>
+<p>Finally, when we&rsquo;re familiar with the methodology, we can move to the comparison part. Authors decided to compare the following methods:</p>
+<ul>
+<li>IRMI</li>
+<li>hotDeck</li>
+<li>k nearest neighbours (knn)</li>
+<li>missForest</li>
+<li>mean/median/dominant</li>
+</ul>
+<p>These methods vary in complexity and the idea behind them. The least complex is mean/median/dominant – this method imputes the value in the column based on the most narrow aggregate available based on the column type – mean for numerical, median for ordinal and dominant for the rest. More complex and based on the same principle are hotDeck and knn. They both use some kind of similarity metric to find closest records without missing data. Then based on these records they impute the missing values. The most complex methods are IRMI and missForest. They both are based on the principle of using classification and regression models to predict missing values based on the information from other columns in the dataset. Now as we know what methods we compare, we can dive into the results.</p>
+<h2 id="finding-the-best-technique">Finding the best technique</h2>
+<p>The results and conclusions that authors came up are not straightforward. Depending on the task different methods perform better. The authors considered two measures -  accuracy and F1 score (it is a harmonic mean of precision and recall). Below, in the chart, are presented final, aggregated results:</p>
+<p><img src="overall.png" alt="Overall method effectiveness"></p>
+<p><img src="Legenda.png" alt="Legend"></p>
+<p>Naturally, the bigger the values of accuracy and F1, the better each model performed. We may notice that when it comes to F1 score, <em>MissForest</em> package yielded undeniably best results. While the differences in accuracy are not as significant, the same package seems to perform best overall. However, we wish the authors did not use the jitter effect on the plot, as it seems to decrease the readability of the plots greatly.</p>
+<h3 id="authors-conclusions">Authors&rsquo; conclusions</h3>
+<p>Depending on the size of the data set and the amount of missing data, authors concluded that in presented groups the best algorithms are:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">small</th>
+<th align="center">medium</th>
+<th align="center">big</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tiny</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">hotdeck/MissForest</td>
+</tr>
+<tr>
+<td>middling</td>
+<td align="center">IRMI</td>
+<td align="center">MissForest</td>
+<td align="center">IRMI</td>
+</tr>
+<tr>
+<td>significant</td>
+<td align="center">IRMI/kNN</td>
+<td align="center">-</td>
+<td align="center">IRMI/kNN</td>
+</tr>
+</tbody>
+</table>
+<p>where <em>tiny</em> means that less than 1% of all values are missing, <em>middling</em> means ~5% missing data and <em>significant</em> means that over 15% of the data is missing.</p>
+<p>Authors suggest that the safest method to choose is MissForest. Interesingly, there was no task where <em>mean</em>, <em>median</em> or <em>dominant</em> performed the best, which shows that the simplest imputation methods don&rsquo;t perform well compared to more complex algorithms.</p>
+<p>Another considered aspect is time. <em>IRMI</em> needed much more time on average to make calculations. However, authors the stated that none of these algorithms is highly time consuming. Nonetheless, if you are dealing with a huge dataset and need to calculate things quickly, <em>IRMI</em> may not be the best choice, perhaps <em>MissForest</em> would perform better.</p>
+<h3 id="things-to-improve">Things to improve</h3>
+<p>While we enjoyed the article greatly, we noticed some parts of the article which could be improved to make it even better. 
+First of all, we wish there was some info on the models&rsquo; hyperparameters available - while we deduce from the article that the models used default hyperparameters from the <em>mlr</em> package, we suspect that changing hyperparameters could be used to perform a more extensive comparison of the models, as we don&rsquo;t really know that an imputation method would still perform alike after tuning the hyperparameters.</p>
+<p>Secondly, the authors didn&rsquo;t explicitly provide us with information what fraction of the dataset was missing data. We were able to calculate the percentage of missing data in the dataset, but we believe that including that piece of information would increase the article&rsquo;s readability greatly - especially if the authors propose various methods of imputation depending on the percentage of missing data. We therefore present here the calculated fractions for each dataset:</p>
+<ul>
+<li><em>labor</em> - 33.6% of missing data</li>
+<li><em>colic</em> - 16.3% of missing data</li>
+<li><em>credit-approval</em> - 0.6% of missing data</li>
+<li><em>hepatitis</em> - 5% of missing data</li>
+<li><em>vote</em> - 5% of missing data</li>
+<li><em>eucalyptus</em> - 4% of missing data</li>
+<li><em>echoMonths</em> - 7% of missing data</li>
+</ul>
+<p>Having that data presented directly, we are a bit surprised the authors decided to divide the datasets into groups having &lt;1%, 1-15%, &gt;15% of missing data, while only one dataset has less than one percent of missing data and only two datasets have more than 15% of missing data, while they differ greatly in the fraction (16.3% and 33.6%). We wish that the authors divided the datasets differently or presented the results on more datasets, as some results may be quite unreliable. Another solution would be to simply compare datasets generally without any grouping.</p>
+<p>Finally, the authors unfortunately did not inform us which datasets are <em>medium</em> in size - the only bit of information we found was that the datasets were <em>big</em> if they contained at least 10000 values. We wish that the rule of such division was presented explicitly. We also believe that while 10000 values may be perceived as indeed a lot in a dataset, there are much bigger datasets available and a similar comparison with them would be beneficial.</p>
+<h3 id="summary">Summary</h3>
+<p>The article presents quality suggestions which imputations methods to use when we deal with missing data in machine learning tasks, adn we reckon it a great comparison of the presented imputation methods. While we are not entirely convinced of reliability of the results when the fraction of missing data is <em>tiny</em> or <em>significant</em> (&lt;1% and &gt;15%), we value the extensive analysis performed on the datasets having a <em>middling</em> fraction of missing data and we will incorporate the suggested tools in our own works in the future.</p>
+
+    </div>
+</article>
+
+
+<div class="license markdown-body">
+    <blockquote>
+        <p>Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)</a>.</p>
+    </blockquote>
+</div>
+
+
+
+
+
+
+            </div>
+            
+            <div class="col-md-3 col-12 float-left link-alter" id="sidebar">
+                
+
+<div class="widget-toc">
+    <h5>TOC</h5>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#why-impute">Why impute?</a></li>
+    <li><a href="#how-to-approach-such-comparison">How to approach such comparison?</a></li>
+    <li><a href="#ok-so-what-methods-are-compared">Ok, so what methods are compared?</a></li>
+    <li><a href="#finding-the-best-technique">Finding the best technique</a>
+      <ul>
+        <li><a href="#authors-conclusions">Authors&rsquo; conclusions</a></li>
+        <li><a href="#things-to-improve">Things to improve</a></li>
+        <li><a href="#summary">Summary</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+
+
+<div class="widget-pages">
+    <h5>Pages</h5>
+    <ul>
+        
+        
+        <li>
+            <a href="/2020L-WB-Blog/">Home</a>
+        </li>
+        
+        <li>
+            <a href="/2020L-WB-Blog/archives/">Archives</a>
+        </li>
+        
+        <li>
+            <a href="/2020L-WB-Blog/about/">About</a>
+        </li>
+        
+    </ul>
+</div>
+
+<div class="widget-tags">
+    <h5>Tags</h5>
+    <div>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/active-development/">active development</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/article/">article</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/article-rating/">article rating</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/automated-regression/">automated regression</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/black-box/">black-box</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/black-boxes/">black-boxes</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/computer-vision/">computer vision</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/dataset/">dataset</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/embedding/">embedding</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/features-engineering/">features engineering</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/features-importance/">features importance</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/features-transformations/">features transformations</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/glass-box/">glass-box</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/imputation/">Imputation</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/interpretability/">interpretability</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/machine-learning/">Machine Learning</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/magazines/">magazines</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/missing-data/">Missing data</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/missing-values/">missing values</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/missings/">missings</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/ml/">ML</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/openml/">OpenML</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/package/">package</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/r-journal/">R journal</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/r-packages/">R packages</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/reproducibility/">reproducibility</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/scientific-papers/">scientific papers</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/the-r-journal/">The R Journal</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/tutorial/">tutorial</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/updating/">updating</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/version-control/">version control</a>
+        </span>
+        
+        <span>
+            <a href="https://mini-pw.github.io/2020L-WB-Blog/tags/xai/">XAI</a>
+        </span>
+        
+    </div>
+</div>
+
+<div class="widget-links">
+    <h5>Links</h5>
+    <ul>
+        
+        <li>
+            <a href="https://mini-pw.github.io/2020L-WB-Book/" target="_blank"><span>ML Case Studies Book</span></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/mini-pw/2020L-WarsztatyBadawcze-Reprodukowalnosc" target="_blank"><span>Reproducibility repo (in Polish)</span></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/mini-pw/2020L-WarsztatyBadawcze-Imputacja" target="_blank"><span>Imputation repo (in Polish)</span></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/mini-pw/2020L-WarsztatyBadawcze-InzynieriaCech" target="_blank"><span>Interpretability repo (in Polish)</span></a>
+        </li>
+        
+    </ul>
+</div>
+
+
+            </div>
+            
+            
+            
+            <div id="scroll-top">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+    <div class="container-lg text-center">
+        <p>&copy; 2020 <a href="https://mini-pw.github.io/2020L-WB-Blog/"></a> | Powered by <a href="https://github.com/amzrk2/hugo-theme-fuji/" target="_blank">Fuji</a> & <a href="https://gohugo.io/" target="_blank">Hugo</a> </p>
+    </div>
+    <script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+</footer>
+    
+<script>
+    $(function () {
+        mediumZoom('.img-zoomable', {
+            margin: 32
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+<script>
+    $('.widget-toc a').click(function () {
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        });
+    });
+</script>
+
+
+
+<script>
+    $('#scroll-top').click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+
+</html>

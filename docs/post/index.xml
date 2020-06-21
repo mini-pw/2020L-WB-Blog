@@ -2,81 +2,90 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Machine Learning Case Studies</title>
-    <link>/2020L-WB-Blog/post/</link>
+    <link>https://mini-pw.github.io/2020L-WB-Blog/post/</link>
     <description>Recent content in Posts on Machine Learning Case Studies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 16 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/2020L-WB-Blog/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mini-pw.github.io/2020L-WB-Blog/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>How should I impute? – imputation techniques comparison.</title>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-21-how-should-i-impute-imputation-techniques-comparison/</link>
+      <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-21-how-should-i-impute-imputation-techniques-comparison/</guid>
+      <description>Why impute? When people start their journey with machine learning and data analysis, they show a lot of enthusiasm and desire to learn and create. As they progress, they encounter many obstacles, that may strip them of their positive attitude. One example of such obstacles is missing data in the dataset they&amp;rsquo;re working on. Authors of the article titled &amp;ldquo;Imputation techniques&amp;rsquo; comparison in R programming language&amp;rdquo; formulated three main problems that come with missing values – substantial amount of trained model&amp;rsquo;s bias, reduction in data analysis efficiency and inability to use many machine learning models, that were not adjusted to handle missing data.</description>
+    </item>
+    
+    <item>
       <title>Can you build an explainable model outperforming black box?</title>
-      <link>/2020L-WB-Blog/2020-06-16-can-you-build-an-explainable-model-overperforming-black-box/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-16-can-you-build-an-explainable-model-overperforming-black-box/</link>
       <pubDate>Tue, 16 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-06-16-can-you-build-an-explainable-model-overperforming-black-box/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-16-can-you-build-an-explainable-model-overperforming-black-box/</guid>
       <description>A word about black boxes Nowadays a fierce competition can be observed – scientists are surpassing each other in creating better regression models. As those models are getting more complex, it is becoming almost impossible to illustrate results relation with data, in a way humans understand. They are commonly called ‘black boxes’. ‘Machine learning is frequently referred to as a black box—data goes in, decisions come out, but the processes between input and output are opaque’ ~ The Lancet. Despite their excellent performance, sometimes models with easily interpretable output can be more desired, e.g. in banking.
 What can be done? Results ready for further human analysis can be achieved with explainable models (linear models, decision trees, etc.</description>
     </item>
     
     <item>
       <title>Correlation between reproducibility of research papers and their objective</title>
-      <link>/2020L-WB-Blog/2020-06-16-correlation-between-reproducibility-of-research-papers-and-their-objective/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-16-correlation-between-reproducibility-of-research-papers-and-their-objective/</link>
       <pubDate>Tue, 16 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-06-16-correlation-between-reproducibility-of-research-papers-and-their-objective/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-16-correlation-between-reproducibility-of-research-papers-and-their-objective/</guid>
       <description>Introduction In this blog, we summarize the work of our colleagues from the same faculty: Correlation between reproducibility of research papers and their objective. They used more than 30 papers coming from The R Journal in order to do research on the reproducibility of scientific papers.
 But what is reproducibility? The easiest way to describe reproducibility is &amp;lsquo;the part&amp;rsquo; of the given article that we can obtain by ourselves using the attached code in its chunks. By &amp;lsquo;the part&amp;rsquo; can be meant the real fraction of the article (the same plots and tables) or simply the existence of sources and creating approximated results - just to show the tendency of some variables in a data set.</description>
     </item>
     
     <item>
       <title>Improving glass-box models with various variables transformations</title>
-      <link>/2020L-WB-Blog/2020-06-16-improving-glass-box-models-with-various-variables-transformations/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-16-improving-glass-box-models-with-various-variables-transformations/</link>
       <pubDate>Tue, 16 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-06-16-improving-glass-box-models-with-various-variables-transformations/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-16-improving-glass-box-models-with-various-variables-transformations/</guid>
       <description>Choosing between interpretability and model performance dilemma is gaining popularity. Authors of this article tested various variables&amp;rsquo; transformations to increase the performance of glass-box models. To test all things they used the Concrete_Data dataset from the OpenML database. The data is technical, about different proportions of ingredients in building materials and the model aims to predict the compressive strength of created material.
 After getting to know our dataset that we want to work on we need to use feature engineering techniques to improve our model. Sometimes, we do it by hand, tweaking it until we get satisfying results, but we can also leave it to automated function that we call, to handle it for us.</description>
     </item>
     
     <item>
       <title>Scientific magazines &amp; reproducibility</title>
-      <link>/2020L-WB-Blog/2020-06-16-scientific_magazines__reproducibility/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-16-scientific_magazines__reproducibility/</link>
       <pubDate>Tue, 16 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-06-16-scientific_magazines__reproducibility/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-16-scientific_magazines__reproducibility/</guid>
       <description>One cannot help but notice that science is suffering from a reproducibility crisis. The problem is not only the subject of academic considerations, but much more global. The inability of scientists to recreate and reproduce one anothers&amp;rsquo; results increases demands on resources and drives up research costs as well as their time consumption. Mikołaj Malec, Maciej Paczóski and Bartosz Rożek explored this subject in their article.
 First look at the article The article titled ML Case Studies: Ways to reproduce articles in terms of release date and magazine, describes well some new approach to the issue, taking under consideration three well known scientific journals: R Journal, JMLR Machine Learning Open Source Software and Journal of Statistical Software.</description>
     </item>
     
     <item>
       <title>Black-box VS White-box Duel</title>
-      <link>/2020L-WB-Blog/2020-06-15-black-box-vs-white-box-duel/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-15-black-box-vs-white-box-duel/</link>
       <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-06-15-black-box-vs-white-box-duel/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-15-black-box-vs-white-box-duel/</guid>
       <description>Prepare to fight The interpretability of machine learning models is gaining more and more interest in the scientific world. It’s because artificial intelligence is used in a lot of business solutions that impact our everyday life. Knowledge how the model works can, among others, assure us about the safety of the implemented solution. We came across the article of students of the Warsaw University of Technology Wojciech Bogucki, Tomasz Makowski, Dominik Rafacz titled “Predicting code defects using interpretable static measures.” touching this topic.
 Black box vs white box Using interpretable models, such as linear regression, decision trees and k-nearest neighbors is one way to have your solution explainable.</description>
     </item>
     
     <item>
       <title>Divide et Conquer - improve your white box model!</title>
-      <link>/2020L-WB-Blog/2020-06-15-improve-your-white-box-model/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-15-improve-your-white-box-model/</link>
       <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-06-15-improve-your-white-box-model/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-15-improve-your-white-box-model/</guid>
       <description>Divide et Conquer - improve your white box model! Divide and conquer is a classical algorithmic tool. It proved its usefulness many times (e.g. in sorting algorithms, multiplying large numbers, or discrete Fourier transform). Thanks to the article of Baniecki and Polakowski (Which Neighbours Affected House Prices in the ’90s?) we discovered yet another application of this algorithm. This time in machine learning.
 Is it expensive? A house? The estimation of the price of a house is especially crucial for many people for ages. Unfortunately it is a difficult problem. The scientists, economics and statisticians are still looking for the best tools and algorithms solving it.</description>
     </item>
     
     <item>
       <title>It is possible to measure reproducibility?</title>
-      <link>/2020L-WB-Blog/2020-06-15-it-is-possible-to-measure-reproducibility/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-15-it-is-possible-to-measure-reproducibility/</link>
       <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-06-15-it-is-possible-to-measure-reproducibility/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-15-it-is-possible-to-measure-reproducibility/</guid>
       <description>It works on my machine Have you ever founds some great pieces of software only to realize that the code provided by the developer does not work anymore?
 The problem of software reproducibility in scientific research is becoming more and more important as number of new packages increases exponentially. But the problem is even more complex - there are not only strictly reproducible or irreproducible projects but also some that fall in between. That is why a zero-one rating, which is common approach to measure reproducibility, may be misleading.
 One metric to rule them all To enable comparison between different software, in this article group of students from the Warsaw University of Technology analyzed packages published in The R Journal and developed a 6-point scale to measure reproducibility of the article based on six main categories of problems that can be faced while trying to reproduce scientific paper results:</description>
@@ -84,69 +93,69 @@ One metric to rule them all To enable comparison between different software, in 
     
     <item>
       <title>Hajada trials</title>
-      <link>/2020L-WB-Blog/2020-06-14-hajada-trials/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-14-hajada-trials/</link>
       <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-06-14-hajada-trials/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-14-hajada-trials/</guid>
       <description>Our story begins The story of Hajada is perhaps not an Arabian epic, but still, but just like one of Shecherezade&amp;rsquo;s stories, it&amp;rsquo;ll keep you, dear Reader, on your toes. Sometimes, the data is incomplete and we need to cope with that. There are many methods of so-called &amp;ldquo;imputation&amp;rsquo;&amp;rsquo;, i.e. filling gaps in the data. Hanna Zdulska, Jakub Kosterna, Dawid Przybyliński took an effort to compare those methods. Here&amp;rsquo;s what they found out.
 Challengers approach What kinds of imputation did they compare? The popular ones, you may know them or not, namely: “Bogo replace”, replacing with mode or median, &amp;ldquo;MICE&amp;rdquo; imputation method, &amp;ldquo;missForest&amp;rdquo; imputation and &amp;ldquo;VIM&amp;rsquo;s k-NN&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>Up-to-date packages and their old articles</title>
-      <link>/2020L-WB-Blog/2020-06-14-up-to-date-packages-and-their-old-articles/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-14-up-to-date-packages-and-their-old-articles/</link>
       <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-06-14-up-to-date-packages-and-their-old-articles/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-14-up-to-date-packages-and-their-old-articles/</guid>
       <description>Intro The reproducibility of science paper is a huge and important problem. Today we will not talk about one part of that problem. What if after publishing article researchers still develop their packages changing function, optimize, etc. In the discussed article researcher focused on this particular situation. They selected articles where used package was still developed until today and check reproducibility. Thay use code in the selected article and check if it is possible to run it today. You will be surprised at how many levels of reproducibility can be distinct.
 Methodology In order to fully understand the topic authors decided to analyze 13 articles which use 16 different R packages.</description>
     </item>
     
     <item>
       <title>Beat the Black Box!</title>
-      <link>/2020L-WB-Blog/2020-06-11-beat-the-black-box/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-11-beat-the-black-box/</link>
       <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-06-11-beat-the-black-box/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-11-beat-the-black-box/</guid>
       <description>Understanding things is good for your health There is no doubt we live in a world defined by data. In fact, we always were, only now we&amp;rsquo;ve got a wider variety of tools at our disposal to store and process all this information. We no longer need to search for structures in data by hand, we&amp;rsquo;ve got models and AI for this. However, we still want, or rather feel urge to, understand how all those analysis work. Especially when we&amp;rsquo;re talking about our health data, and that is what authors of &amp;ldquo;Can Automated Regression beat linear model?&amp;quot; are talking about.</description>
     </item>
     
     <item>
       <title>Time flies... and so do articles&#39; reproducibility?</title>
-      <link>/2020L-WB-Blog/2020-06-11-time-flies-and-so-do-articles-reproducibility/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-11-time-flies-and-so-do-articles-reproducibility/</link>
       <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-06-11-time-flies-and-so-do-articles-reproducibility/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-11-time-flies-and-so-do-articles-reproducibility/</guid>
       <description>Sometimes we forget about what is really important&amp;hellip; Have you ever stopped for a moment in the course of everyday life and looked better at the reproductivity of the scientific article? Have you ever wondered - can I do what authors did in this article and get the same results? If you are not in technical industry - probably not&amp;hellip; and it&amp;rsquo;s perfectly fine. Otherwise - it&amp;rsquo;s about time to start getting interested.
 Reproducibility, like wine? Or vice versa? When publishing a work, you definitely need to remember about few basic rules: correct documentation, ensuring that files are up-to-date etc. However, not everyone respects these rules and hence - some articles sooner or later lose readability, reproductivity and therefore their value.</description>
     </item>
     
     <item>
       <title>Explainable Computer Vision</title>
-      <link>/2020L-WB-Blog/2020-06-09-explainable-computer-vision/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-09-explainable-computer-vision/</link>
       <pubDate>Tue, 09 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-06-09-explainable-computer-vision/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-09-explainable-computer-vision/</guid>
       <description>What is this blog entry about? Black-boxes are commonly used in computer vision. But do we have to use it? This article looks at this issue and we try to understand it with our small (but developed after one semester of machine learning experience) brains and summarize it here.
 What is this article about? Computer vision is cool. But it would be just as cool to understand how it works, and it&amp;rsquo;s not so obvious. Explainable methods of image recognition - which is de facto classification - cannot use logistic regression and decision trees, because every model loses transparency as its performance increases - not to mention understanding neural networks.</description>
     </item>
     
     <item>
       <title>Update or not to update - this is the question!</title>
-      <link>/2020L-WB-Blog/2020-06-09-to-update-or-not-to-update/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-09-to-update-or-not-to-update/</link>
       <pubDate>Tue, 09 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-06-09-to-update-or-not-to-update/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-09-to-update-or-not-to-update/</guid>
       <description>Once researchers public a piece of software and publish a paper about it, should they continue to update the package, resolving users&amp;rsquo; issues and adding more features or just leave it be? This question might seem trivial, but turns about to be a bit more complex than you may think. We recently read an artice, written by Ngoc Anh Nguyen, Piotr Piątyszek and Marcin Łukaszyk from Warsaw University of Technology, that covers the subject of how active development of an R package affects the reproducibility of the article that introduced it.
 What is reproducibility and how it was measured? Reproducibility is a highly desirable quality of a science article, that allows a different research team to attain the identical results using the same methods.</description>
     </item>
     
     <item>
       <title>Imputing missing data for a classification problem</title>
-      <link>/2020L-WB-Blog/2020-06-05-imputing-missing-data-for-a-classification-problem/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-05-imputing-missing-data-for-a-classification-problem/</link>
       <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-06-05-imputing-missing-data-for-a-classification-problem/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-05-imputing-missing-data-for-a-classification-problem/</guid>
       <description>Imputing missing data for a classification problem Authors: Karol Saputa, Małgorzata Wachulec, Aleksandra Wichrowska (Warsaw University of Technology)
 As students of the same university course, we were asked to sum up the findings of our colleges, the authors of the Default imputation efficiency comparison article. In their work, they used many missing data imputation techniques on 11 datasets, on which they then run different classification algorithms. By measuring the results obtained using these imputation algorithms they could judge their performance. But first:
 What is data imputation? Some datasets have missing values that many classification algorithms cannot handle. One way to make the algorithm work is to delete the observations that include missing data or, if missing values come just from a few columns, we can delete them instead.</description>
@@ -154,46 +163,46 @@ What is data imputation? Some datasets have missing values that many classificat
     
     <item>
       <title>Interaction between imputation and ML algorithms</title>
-      <link>/2020L-WB-Blog/2020-06-04-interaction-between-imputation-and-ml-algorithms/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-04-interaction-between-imputation-and-ml-algorithms/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-06-04-interaction-between-imputation-and-ml-algorithms/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-04-interaction-between-imputation-and-ml-algorithms/</guid>
       <description>TL;DR Lot of people would like to find the best method to impute data, that covers most of the cases, but from this article we will learn that the task of imputing missing data is not so trivial. It demands looking at a bigger picture, for example model type or percentage of missing data. Reading this article we will learn what algorithms to use in which cases and understand the vast problem of imputation.
 Introduction We have read an article about imputation techniques and their interaction with ML algorithms. It was written by Martyna Majchrzak, Agata Makarewicz, Jacek Wiśniewski. Before reading we were expecting to find out which imputation techniques are the best and how to use them.</description>
     </item>
     
     <item>
       <title>Not so famous (yet!) Hajada and his results</title>
-      <link>/2020L-WB-Blog/2020-06-04-not-so-famous-yet-hajada-and-his-results/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-04-not-so-famous-yet-hajada-and-his-results/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-06-04-not-so-famous-yet-hajada-and-his-results/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-04-not-so-famous-yet-hajada-and-his-results/</guid>
       <description>Meet Hajada! Have you heard of the Indian mathematician Hajada? We started to think about it, having read the title of the article &amp;ldquo;The Hajada Imputation Test&amp;rdquo; - it sounded somehow familiar&amp;hellip; But you probably haven&amp;rsquo;t had any contact with him, because not so long ago there was no such man. He was born by the authors of the test and the article, and his name comes from the first letters of their names.
 So what is his test? Hajada decided to study the effectiveness and time efficiency of various methods of dealing with missing data. He juxtaposed three simple (or even naive) methods such as deleting rows or inserting random values and three more sublime methods, including mice and missForest algorithms.</description>
     </item>
     
     <item>
       <title>Are black boxes inevitable?</title>
-      <link>/2020L-WB-Blog/2020-06-01-are-black-boxes-inevitable/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-01-are-black-boxes-inevitable/</link>
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-06-01-are-black-boxes-inevitable/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-01-are-black-boxes-inevitable/</guid>
       <description>Black vs white Machine learning seems to be all about creating a model with best performance - balancing well its variance and accuracy. Unfortunately, the pursuit of that balance makes us forget about the the fact, that - in the end - model will serve human beings. If that&amp;rsquo;s the case, a third factor should be considered - interpretability. When a model is unexplainable (AKA black-box model), it may be treated as untrustworthy and become useless. It is a problem, since many models known for its high performance (like XGBoost) happen to be parts of the black-box team.
 A false(?) trade-off So it would seem, that explainability is, and has to be, sacrificed for better performance of the model.</description>
     </item>
     
     <item>
       <title>How to add a post</title>
-      <link>/2020L-WB-Blog/2020-05-18-how-to-add-post/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-05-18-how-to-add-post/</link>
       <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-05-18-how-to-add-post/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-05-18-how-to-add-post/</guid>
       <description>Posting is really easy. Blog posts are simple Markdown files.
 Files The content/post folder is where blog posts are stored. To create a post, add your markdown file to content/post directory with the following format: yyyy-mm-dd-title.md.
 Where yyyy is a year, mm is a month, and dd is a day, and md is the file extension representing the format used in the file. For example: 2020-05-18-how-to-add-post.md.
 File content An example of a post file you can find here.
 A blog post file begins with a front matter which is used to set metadata. For example:
---- date: &amp;quot;2020-05-18&amp;quot; title: How to add a post authors: [&amp;quot;Alicja Gosiewska&amp;quot;] tags: - tutorial --- For more authors, add elements to the list, for example [&amp;quot;Alicja Gosiewska&amp;quot;, &amp;quot;Second Author&amp;quot;].</description>
+---date: &amp;quot;2020-05-18&amp;quot;title: How to add a postauthors: [&amp;quot;Alicja Gosiewska&amp;quot;]tags:- tutorial---For more authors, add elements to the list, for example [&amp;quot;Alicja Gosiewska&amp;quot;, &amp;quot;Second Author&amp;quot;].</description>
     </item>
     
   </channel>

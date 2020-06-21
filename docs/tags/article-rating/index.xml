@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>article rating on Machine Learning Case Studies</title>
-    <link>/2020L-WB-Blog/tags/article-rating/</link>
+    <link>https://mini-pw.github.io/2020L-WB-Blog/tags/article-rating/</link>
     <description>Recent content in article rating on Machine Learning Case Studies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 15 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/2020L-WB-Blog/tags/article-rating/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mini-pw.github.io/2020L-WB-Blog/tags/article-rating/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>It is possible to measure reproducibility?</title>
-      <link>/2020L-WB-Blog/2020-06-15-it-is-possible-to-measure-reproducibility/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-15-it-is-possible-to-measure-reproducibility/</link>
       <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-06-15-it-is-possible-to-measure-reproducibility/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-15-it-is-possible-to-measure-reproducibility/</guid>
       <description>It works on my machine Have you ever founds some great pieces of software only to realize that the code provided by the developer does not work anymore?
 The problem of software reproducibility in scientific research is becoming more and more important as number of new packages increases exponentially. But the problem is even more complex - there are not only strictly reproducible or irreproducible projects but also some that fall in between. That is why a zero-one rating, which is common approach to measure reproducibility, may be misleading.
 One metric to rule them all To enable comparison between different software, in this article group of students from the Warsaw University of Technology analyzed packages published in The R Journal and developed a 6-point scale to measure reproducibility of the article based on six main categories of problems that can be faced while trying to reproduce scientific paper results:</description>

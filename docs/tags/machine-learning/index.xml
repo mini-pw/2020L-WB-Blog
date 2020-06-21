@@ -2,31 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Machine Learning on Machine Learning Case Studies</title>
-    <link>/2020L-WB-Blog/tags/machine-learning/</link>
+    <link>https://mini-pw.github.io/2020L-WB-Blog/tags/machine-learning/</link>
     <description>Recent content in Machine Learning on Machine Learning Case Studies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 15 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/2020L-WB-Blog/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mini-pw.github.io/2020L-WB-Blog/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>How should I impute? – imputation techniques comparison.</title>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-21-how-should-i-impute-imputation-techniques-comparison/</link>
+      <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-21-how-should-i-impute-imputation-techniques-comparison/</guid>
+      <description>Why impute? When people start their journey with machine learning and data analysis, they show a lot of enthusiasm and desire to learn and create. As they progress, they encounter many obstacles, that may strip them of their positive attitude. One example of such obstacles is missing data in the dataset they&amp;rsquo;re working on. Authors of the article titled &amp;ldquo;Imputation techniques&amp;rsquo; comparison in R programming language&amp;rdquo; formulated three main problems that come with missing values – substantial amount of trained model&amp;rsquo;s bias, reduction in data analysis efficiency and inability to use many machine learning models, that were not adjusted to handle missing data.</description>
+    </item>
+    
+    <item>
       <title>Black-box VS White-box Duel</title>
-      <link>/2020L-WB-Blog/2020-06-15-black-box-vs-white-box-duel/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-15-black-box-vs-white-box-duel/</link>
       <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-06-15-black-box-vs-white-box-duel/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-15-black-box-vs-white-box-duel/</guid>
       <description>Prepare to fight The interpretability of machine learning models is gaining more and more interest in the scientific world. It’s because artificial intelligence is used in a lot of business solutions that impact our everyday life. Knowledge how the model works can, among others, assure us about the safety of the implemented solution. We came across the article of students of the Warsaw University of Technology Wojciech Bogucki, Tomasz Makowski, Dominik Rafacz titled “Predicting code defects using interpretable static measures.” touching this topic.
 Black box vs white box Using interpretable models, such as linear regression, decision trees and k-nearest neighbors is one way to have your solution explainable.</description>
     </item>
     
     <item>
       <title>Interaction between imputation and ML algorithms</title>
-      <link>/2020L-WB-Blog/2020-06-04-interaction-between-imputation-and-ml-algorithms/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-04-interaction-between-imputation-and-ml-algorithms/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-06-04-interaction-between-imputation-and-ml-algorithms/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-04-interaction-between-imputation-and-ml-algorithms/</guid>
       <description>TL;DR Lot of people would like to find the best method to impute data, that covers most of the cases, but from this article we will learn that the task of imputing missing data is not so trivial. It demands looking at a bigger picture, for example model type or percentage of missing data. Reading this article we will learn what algorithms to use in which cases and understand the vast problem of imputation.
 Introduction We have read an article about imputation techniques and their interaction with ML algorithms. It was written by Martyna Majchrzak, Agata Makarewicz, Jacek Wiśniewski. Before reading we were expecting to find out which imputation techniques are the best and how to use them.</description>
     </item>
