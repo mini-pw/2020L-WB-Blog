@@ -41,6 +41,16 @@ Challengers approach What kinds of imputation did they compare? The popular ones
     </item>
     
     <item>
+      <title>Imputation whizzkids</title>
+      <link>/2020L-WB-Blog/2020-06-07-imputation-whizzkids/</link>
+      <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020L-WB-Blog/2020-06-07-imputation-whizzkids/</guid>
+      <description>What __ a data imputation? Far far away, beyond the seven hills, there are data scientists, data analysts, consultants who don&amp;rsquo;t have a single thought whether the data they deal with contains any missing values. Unfortunately, we do have to think about it. A lot&amp;hellip; The question everybody strives to answer is how to do it properly, efficiently, and effectively at the same time.
+Fortunately, the group consisting of Paulina Przybyłek, Renata Rólkiewicz, Jakub Wiśniewski, and Jakub Pingielski (henceforth Authors) has recently faced the challenge of finding the best imputation methods to solve our problems once for all. Their research was comprehensive, like the results.</description>
+    </item>
+    
+    <item>
       <title>Imputing missing data for a classification problem</title>
       <link>/2020L-WB-Blog/2020-06-05-imputing-missing-data-for-a-classification-problem/</link>
       <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
