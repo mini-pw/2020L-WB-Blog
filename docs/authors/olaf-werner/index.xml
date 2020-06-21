@@ -18,7 +18,7 @@
       
       <guid>/2020L-WB-Blog/2020-06-14-hajada-trials/</guid>
       <description>Our story begins The story of Hajada is perhaps not an Arabian epic, but still, but just like one of Shecherezade&amp;rsquo;s stories, it&amp;rsquo;ll keep you, dear Reader, on your toes. Sometimes, the data is incomplete and we need to cope with that. There are many methods of so-called &amp;ldquo;imputation&amp;rsquo;&amp;rsquo;, i.e. filling gaps in the data. Hanna Zdulska, Jakub Kosterna, Dawid Przybyliński took an effort to compare those methods. Here&amp;rsquo;s what they found out.
-Challengers approach What kinds of imputation did they compare? The most popular ones, namely &amp;ldquo;Bogo replace&amp;rdquo;, a simple method of replacing missing values with random values from different observations, replacing with the mode of a median of a given column, MICE imputation, where each incomplete variable is imputed by a separate model, missForest - an intelligent imputation based on fandom forest and VIM&amp;rsquo;s k-NN - an imputation based on the k-NN classifier.</description>
+Challengers approach What kinds of imputation did they compare? The popular ones, you may know them or not, namely: “Bogo replace”, replacing with mode or median, &amp;ldquo;MICE&amp;rdquo; imputation method, &amp;ldquo;missForest&amp;rdquo; imputation and &amp;ldquo;VIM&amp;rsquo;s k-NN&amp;rdquo;.</description>
     </item>
     
   </channel>
