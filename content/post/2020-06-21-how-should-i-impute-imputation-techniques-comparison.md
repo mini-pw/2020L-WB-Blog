@@ -14,7 +14,7 @@ When people start their journey with machine learning and data analysis, they sh
 
 ## How to approach such comparison?
 
-Measuring the imputation techique's effectiveness is not a straightforward task. Because of the nature of real missing values we cannot compare the imputed values with the right values that they replace– the only case when we'd be able to do that would be if we forcibly replaced right values with missing. Unfortunately, the results wouldn't be too reliable, because the missing values were artificial. Hence, authors proposed measuring the imputation technique's effectiveness indirectly, by measuring the effectiveness of machine learnig model trained on imputed data. To make the comparison more reliable, authors decide to compare the techniques on 4 different models (logistic regression, naive Bayesian classificator, binomial regression, random forest), 7 different datasets from OpenML (labor, colic, credit-approval, hepatitis, vote, eucalyptus, echoMonths) with 2 different model efficiency metrics (accuracy, F1-score). The imputation methods will be also compared on the complexity level, by measuring the time needed to impute the values.
+Measuring the imputation techique's effectiveness is not a straightforward task. Because of the nature of real missing values we cannot compare the imputed values with the right values that they replace – the only case when we'd be able to do that would be if we forcibly replaced right values with missing. Unfortunately, the results wouldn't be too reliable, because the missing values were artificial. Hence, authors proposed measuring the imputation technique's effectiveness indirectly, by measuring the effectiveness of machine learnig model trained on imputed data. To make the comparison more reliable, authors decide to compare the techniques on 4 different models (logistic regression, naive Bayesian classificator, binomial regression, random forest), 7 different datasets from OpenML (labor, colic, credit-approval, hepatitis, vote, eucalyptus, echoMonths) with 2 different model efficiency metrics (accuracy, F1-score). The imputation methods will be also compared on the complexity level, by measuring the time needed to impute the values.
 
 ## Ok, so what methods are compared?
 
@@ -29,4 +29,9 @@ These methods vary between themselves in complexity and the idea behind them. Th
 
 ## Finding the best technique
 
+What 
+![Overall method effectiveness](/2020L-WB-Blog/static/2020-06-21-how-should-i-impute-imputation-techniques-comparison/overall.png)
 ## Authors' conclusions
+
+
+
