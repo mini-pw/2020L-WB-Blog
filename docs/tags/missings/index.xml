@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>missings on Machine Learning Case Studies</title>
-    <link>/2020L-WB-Blog/tags/missings/</link>
+    <link>https://mini-pw.github.io/2020L-WB-Blog/tags/missings/</link>
     <description>Recent content in missings on Machine Learning Case Studies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 14 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/2020L-WB-Blog/tags/missings/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mini-pw.github.io/2020L-WB-Blog/tags/missings/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hajada trials</title>
-      <link>/2020L-WB-Blog/2020-06-14-hajada-trials/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-14-hajada-trials/</link>
       <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-06-14-hajada-trials/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-14-hajada-trials/</guid>
       <description>Our story begins The story of Hajada is perhaps not an Arabian epic, but still, but just like one of Shecherezade&amp;rsquo;s stories, it&amp;rsquo;ll keep you, dear Reader, on your toes. Sometimes, the data is incomplete and we need to cope with that. There are many methods of so-called &amp;ldquo;imputation&amp;rsquo;&amp;rsquo;, i.e. filling gaps in the data. Hanna Zdulska, Jakub Kosterna, Dawid Przybyliński took an effort to compare those methods. Here&amp;rsquo;s what they found out.
 Challengers approach What kinds of imputation did they compare? The most popular ones, namely &amp;ldquo;Bogo replace&amp;rdquo;, a simple method of replacing missing values with random values from different observations, replacing with the mode of a median of a given column, MICE imputation, where each incomplete variable is imputed by a separate model, missForest - an intelligent imputation based on fandom forest and VIM&amp;rsquo;s k-NN - an imputation based on the k-NN classifier.</description>
     </item>
     
     <item>
       <title>Not so famous (yet!) Hajada and his results</title>
-      <link>/2020L-WB-Blog/2020-06-04-not-so-famous-yet-hajada-and-his-results/</link>
+      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-04-not-so-famous-yet-hajada-and-his-results/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020L-WB-Blog/2020-06-04-not-so-famous-yet-hajada-and-his-results/</guid>
+      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-04-not-so-famous-yet-hajada-and-his-results/</guid>
       <description>Meet Hajada! Have you heard of the Indian mathematician Hajada? We started to think about it, having read the title of the article &amp;ldquo;The Hajada Imputation Test&amp;rdquo; - it sounded somehow familiar&amp;hellip; But you probably haven&amp;rsquo;t had any contact with him, because not so long ago there was no such man. He was born by the authors of the test and the article, and his name comes from the first letters of their names.
 So what is his test? Hajada decided to study the effectiveness and time efficiency of various methods of dealing with missing data. He juxtaposed three simple (or even naive) methods such as deleting rows or inserting random values and three more sublime methods, including mice and missForest algorithms.</description>
     </item>

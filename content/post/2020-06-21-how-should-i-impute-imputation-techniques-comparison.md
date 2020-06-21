@@ -29,9 +29,25 @@ These methods vary between themselves in complexity and the idea behind them. Th
 
 ## Finding the best technique
 
-What 
-![Overall method effectiveness](/2020L-WB-Blog/static/2020-06-21-how-should-i-impute-imputation-techniques-comparison/overall.png)
-## Authors' conclusions
+The results and conclusions that authors came up are not straightforward. Depending on the task different methods perform better. There were considered two measures, $acc$ and $f1$. Below, in the chart, are presented final, aggregated results:
 
+![Overall method effectiveness](overall.png)
 
+![Legend](Legenda.png)
+
+### Authors' conclusions
+
+Depending on the size of the data set and the amount of missing data, authors concluded that in presented groups the best algorithms are:
+
+|             |   small  |   medium   |         big        |
+|-------------|:--------:|:----------:|:------------------:|
+| tiny        | -        | -          | hotdeck/MissForest |
+| middling    | IRMI     | MissForest | IRMI               |
+| significant | IRMI/kNN | -          | IRMI/kNN           |
+
+where *tiny* means below $1%$, *middling* means $~5%$ and *significant* means over $15%$.
+
+Authors suggest that the safest method to choose is MissForest. Interesingly, there was no task where *mean*, *median* or *dominant* performed the best.
+
+Another considered aspect is time. *IRMI* has got significantly bigger average time needed to make calculations. However, authors stated an opinion that none of these algorithms is highly time consuming. None the less, if you are dealing with huge data set and do not dispse a lot of time, *IRMI* may not be the best choice, perhaps *MissForest* would perform better.
 
