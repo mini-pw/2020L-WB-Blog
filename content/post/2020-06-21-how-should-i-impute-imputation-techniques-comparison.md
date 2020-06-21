@@ -10,7 +10,7 @@ tags:
 
 ## Why impute?
 
-When people start their journey with machine learning and data analysis, they show a lot of enthusiasm and desire to learn and create. As they progress they encounter many obstacles, that may strip them of their positive attitude. One of the obstacles is missing values in the dataset they're working on. Authors of the article formulated three main problems that come with missings – substantial amount of trained model's  bias, reduction in data analysis efficiency and inability to use many machine learning models, that were not adjusted to handle missing data. Imputing is a way of dealing with this problems and the premise of the article is to demistify imputing and find the best one.
+When people start their journey with machine learning and data analysis, they show a lot of enthusiasm and desire to learn and create. As they progress they encounter many obstacles, that may strip them of their positive attitude. One of the obstacles is missing values in the dataset they're working on. Authors of the article titled "Imputation techniques' comparison in R programming language" formulated three main problems that come with missings – substantial amount of trained model's  bias, reduction in data analysis efficiency and inability to use many machine learning models, that were not adjusted to handle missing data. Imputing is a way of dealing with this problems and the premise of the article is to demistify imputing and find the best one.
 
 ## How to approach such comparison?
 
