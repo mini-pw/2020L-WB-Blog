@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Szymon Maksymiuk on Machine Learning Case Studies</title>
+    <link>/2020L-WB-Blog/authors/szymon-maksymiuk/</link>
+    <description>Recent content in Szymon Maksymiuk on Machine Learning Case Studies</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 12 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/2020L-WB-Blog/authors/szymon-maksymiuk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dive deep into data imputation</title>
+      <link>/2020L-WB-Blog/2020-06-12-dive-deep-into-data-imputation/</link>
+      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020L-WB-Blog/2020-06-12-dive-deep-into-data-imputation/</guid>
+      <description>Don&amp;rsquo;t delete your missing data - learn how to deal with it.
+All the data we have We learn on clean fabricated datasets but when it comes to real life problems machine learning becomes something completely different. Very often we must deal with missing values. A common approach is to simply delete observations that have them but by doing so we can lose a lot of important information. That is the main reason why we should be &amp;ldquo;data imputation ninjas&amp;rdquo; as it can save us a lot of time when trying to find a model fitting our data well.
+Many cases - many solutions Missing values can be very different for each dataset.</description>
+    </item>
+    
+  </channel>
+</rss>
