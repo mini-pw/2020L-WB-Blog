@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mikołaj Jakubowski on Machine Learning Case Studies</title>
-    <link>https://mini-pw.github.io/2020L-WB-Blog/authors/miko%C5%82aj-jakubowski/</link>
+    <link>/2020L-WB-Blog/authors/miko%C5%82aj-jakubowski/</link>
     <description>Recent content in Mikołaj Jakubowski on Machine Learning Case Studies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 16 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://mini-pw.github.io/2020L-WB-Blog/authors/miko%C5%82aj-jakubowski/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/2020L-WB-Blog/authors/miko%C5%82aj-jakubowski/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Correlation between reproducibility of research papers and their objective</title>
-      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-16-correlation-between-reproducibility-of-research-papers-and-their-objective/</link>
+      <link>/2020L-WB-Blog/2020-06-16-correlation-between-reproducibility-of-research-papers-and-their-objective/</link>
       <pubDate>Tue, 16 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-16-correlation-between-reproducibility-of-research-papers-and-their-objective/</guid>
+      <guid>/2020L-WB-Blog/2020-06-16-correlation-between-reproducibility-of-research-papers-and-their-objective/</guid>
       <description>Introduction In this blog, we summarize the work of our colleagues from the same faculty: Correlation between reproducibility of research papers and their objective. They used more than 30 papers coming from The R Journal in order to do research on the reproducibility of scientific papers.
 But what is reproducibility? The easiest way to describe reproducibility is &amp;lsquo;the part&amp;rsquo; of the given article that we can obtain by ourselves using the attached code in its chunks. By &amp;lsquo;the part&amp;rsquo; can be meant the real fraction of the article (the same plots and tables) or simply the existence of sources and creating approximated results - just to show the tendency of some variables in a data set.</description>
     </item>

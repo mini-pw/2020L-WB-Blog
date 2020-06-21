@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>missing values on Machine Learning Case Studies</title>
-    <link>https://mini-pw.github.io/2020L-WB-Blog/tags/missing-values/</link>
+    <link>/2020L-WB-Blog/tags/missing-values/</link>
     <description>Recent content in missing values on Machine Learning Case Studies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 21 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://mini-pw.github.io/2020L-WB-Blog/tags/missing-values/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/2020L-WB-Blog/tags/missing-values/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How should I impute? – imputation techniques comparison.</title>
-      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-21-how-should-i-impute-imputation-techniques-comparison/</link>
+      <link>/2020L-WB-Blog/2020-06-21-how-should-i-impute-imputation-techniques-comparison/</link>
       <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-21-how-should-i-impute-imputation-techniques-comparison/</guid>
+      <guid>/2020L-WB-Blog/2020-06-21-how-should-i-impute-imputation-techniques-comparison/</guid>
       <description>Why impute? When people start their journey with machine learning and data analysis, they show a lot of enthusiasm and desire to learn and create. As they progress, they encounter many obstacles, that may strip them of their positive attitude. One example of such obstacles is missing data in the dataset they&amp;rsquo;re working on. Authors of the article titled &amp;ldquo;Imputation techniques&amp;rsquo; comparison in R programming language&amp;rdquo; formulated three main problems that come with missing values – substantial amount of trained model&amp;rsquo;s bias, reduction in data analysis efficiency and inability to use many machine learning models, that were not adjusted to handle missing data.</description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Piotr Fic on Machine Learning Case Studies</title>
-    <link>https://mini-pw.github.io/2020L-WB-Blog/authors/piotr-fic/</link>
+    <link>/2020L-WB-Blog/authors/piotr-fic/</link>
     <description>Recent content in Piotr Fic on Machine Learning Case Studies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 14 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://mini-pw.github.io/2020L-WB-Blog/authors/piotr-fic/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/2020L-WB-Blog/authors/piotr-fic/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Up-to-date packages and their old articles</title>
-      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-14-up-to-date-packages-and-their-old-articles/</link>
+      <link>/2020L-WB-Blog/2020-06-14-up-to-date-packages-and-their-old-articles/</link>
       <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-14-up-to-date-packages-and-their-old-articles/</guid>
+      <guid>/2020L-WB-Blog/2020-06-14-up-to-date-packages-and-their-old-articles/</guid>
       <description>Intro The reproducibility of science paper is a huge and important problem. Today we will not talk about one part of that problem. What if after publishing article researchers still develop their packages changing function, optimize, etc. In the discussed article researcher focused on this particular situation. They selected articles where used package was still developed until today and check reproducibility. Thay use code in the selected article and check if it is possible to run it today. You will be surprised at how many levels of reproducibility can be distinct.
 Methodology In order to fully understand the topic authors decided to analyze 13 articles which use 16 different R packages.</description>
     </item>

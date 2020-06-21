@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>reproducibility on Machine Learning Case Studies</title>
-    <link>https://mini-pw.github.io/2020L-WB-Blog/tags/reproducibility/</link>
+    <link>/2020L-WB-Blog/tags/reproducibility/</link>
     <description>Recent content in reproducibility on Machine Learning Case Studies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 16 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://mini-pw.github.io/2020L-WB-Blog/tags/reproducibility/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/2020L-WB-Blog/tags/reproducibility/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Correlation between reproducibility of research papers and their objective</title>
-      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-16-correlation-between-reproducibility-of-research-papers-and-their-objective/</link>
+      <link>/2020L-WB-Blog/2020-06-16-correlation-between-reproducibility-of-research-papers-and-their-objective/</link>
       <pubDate>Tue, 16 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-16-correlation-between-reproducibility-of-research-papers-and-their-objective/</guid>
+      <guid>/2020L-WB-Blog/2020-06-16-correlation-between-reproducibility-of-research-papers-and-their-objective/</guid>
       <description>Introduction In this blog, we summarize the work of our colleagues from the same faculty: Correlation between reproducibility of research papers and their objective. They used more than 30 papers coming from The R Journal in order to do research on the reproducibility of scientific papers.
 But what is reproducibility? The easiest way to describe reproducibility is &amp;lsquo;the part&amp;rsquo; of the given article that we can obtain by ourselves using the attached code in its chunks. By &amp;lsquo;the part&amp;rsquo; can be meant the real fraction of the article (the same plots and tables) or simply the existence of sources and creating approximated results - just to show the tendency of some variables in a data set.</description>
     </item>
     
     <item>
       <title>Scientific magazines &amp; reproducibility</title>
-      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-16-scientific_magazines__reproducibility/</link>
+      <link>/2020L-WB-Blog/2020-06-16-scientific_magazines__reproducibility/</link>
       <pubDate>Tue, 16 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-16-scientific_magazines__reproducibility/</guid>
+      <guid>/2020L-WB-Blog/2020-06-16-scientific_magazines__reproducibility/</guid>
       <description>One cannot help but notice that science is suffering from a reproducibility crisis. The problem is not only the subject of academic considerations, but much more global. The inability of scientists to recreate and reproduce one anothers&amp;rsquo; results increases demands on resources and drives up research costs as well as their time consumption. Mikołaj Malec, Maciej Paczóski and Bartosz Rożek explored this subject in their article.
 First look at the article The article titled ML Case Studies: Ways to reproduce articles in terms of release date and magazine, describes well some new approach to the issue, taking under consideration three well known scientific journals: R Journal, JMLR Machine Learning Open Source Software and Journal of Statistical Software.</description>
     </item>
     
     <item>
       <title>It is possible to measure reproducibility?</title>
-      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-15-it-is-possible-to-measure-reproducibility/</link>
+      <link>/2020L-WB-Blog/2020-06-15-it-is-possible-to-measure-reproducibility/</link>
       <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-15-it-is-possible-to-measure-reproducibility/</guid>
+      <guid>/2020L-WB-Blog/2020-06-15-it-is-possible-to-measure-reproducibility/</guid>
       <description>It works on my machine Have you ever founds some great pieces of software only to realize that the code provided by the developer does not work anymore?
 The problem of software reproducibility in scientific research is becoming more and more important as number of new packages increases exponentially. But the problem is even more complex - there are not only strictly reproducible or irreproducible projects but also some that fall in between. That is why a zero-one rating, which is common approach to measure reproducibility, may be misleading.
 One metric to rule them all To enable comparison between different software, in this article group of students from the Warsaw University of Technology analyzed packages published in The R Journal and developed a 6-point scale to measure reproducibility of the article based on six main categories of problems that can be faced while trying to reproduce scientific paper results:</description>
@@ -44,30 +44,30 @@ One metric to rule them all To enable comparison between different software, in 
     
     <item>
       <title>Up-to-date packages and their old articles</title>
-      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-14-up-to-date-packages-and-their-old-articles/</link>
+      <link>/2020L-WB-Blog/2020-06-14-up-to-date-packages-and-their-old-articles/</link>
       <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-14-up-to-date-packages-and-their-old-articles/</guid>
+      <guid>/2020L-WB-Blog/2020-06-14-up-to-date-packages-and-their-old-articles/</guid>
       <description>Intro The reproducibility of science paper is a huge and important problem. Today we will not talk about one part of that problem. What if after publishing article researchers still develop their packages changing function, optimize, etc. In the discussed article researcher focused on this particular situation. They selected articles where used package was still developed until today and check reproducibility. Thay use code in the selected article and check if it is possible to run it today. You will be surprised at how many levels of reproducibility can be distinct.
 Methodology In order to fully understand the topic authors decided to analyze 13 articles which use 16 different R packages.</description>
     </item>
     
     <item>
       <title>Time flies... and so do articles&#39; reproducibility?</title>
-      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-11-time-flies-and-so-do-articles-reproducibility/</link>
+      <link>/2020L-WB-Blog/2020-06-11-time-flies-and-so-do-articles-reproducibility/</link>
       <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-11-time-flies-and-so-do-articles-reproducibility/</guid>
+      <guid>/2020L-WB-Blog/2020-06-11-time-flies-and-so-do-articles-reproducibility/</guid>
       <description>Sometimes we forget about what is really important&amp;hellip; Have you ever stopped for a moment in the course of everyday life and looked better at the reproductivity of the scientific article? Have you ever wondered - can I do what authors did in this article and get the same results? If you are not in technical industry - probably not&amp;hellip; and it&amp;rsquo;s perfectly fine. Otherwise - it&amp;rsquo;s about time to start getting interested.
 Reproducibility, like wine? Or vice versa? When publishing a work, you definitely need to remember about few basic rules: correct documentation, ensuring that files are up-to-date etc. However, not everyone respects these rules and hence - some articles sooner or later lose readability, reproductivity and therefore their value.</description>
     </item>
     
     <item>
       <title>Update or not to update - this is the question!</title>
-      <link>https://mini-pw.github.io/2020L-WB-Blog/2020-06-09-to-update-or-not-to-update/</link>
+      <link>/2020L-WB-Blog/2020-06-09-to-update-or-not-to-update/</link>
       <pubDate>Tue, 09 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://mini-pw.github.io/2020L-WB-Blog/2020-06-09-to-update-or-not-to-update/</guid>
+      <guid>/2020L-WB-Blog/2020-06-09-to-update-or-not-to-update/</guid>
       <description>Once researchers public a piece of software and publish a paper about it, should they continue to update the package, resolving users&amp;rsquo; issues and adding more features or just leave it be? This question might seem trivial, but turns about to be a bit more complex than you may think. We recently read an artice, written by Ngoc Anh Nguyen, Piotr Piątyszek and Marcin Łukaszyk from Warsaw University of Technology, that covers the subject of how active development of an R package affects the reproducibility of the article that introduced it.
 What is reproducibility and how it was measured? Reproducibility is a highly desirable quality of a science article, that allows a different research team to attain the identical results using the same methods.</description>
     </item>
