@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.72.0" />
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/favicon-16x16.png" />
+<link rel="manifest" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/site.webmanifest" />
+<link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/safari-pinned-tab.svg" color="#8aa2d3" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/favicon.ico" />
+<meta name="msapplication-TileColor" content="#8aa2d3" />
+<meta name="msapplication-config" content="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/browserconfig.xml" />
+<meta name="theme-color" content="#ffffff" />
+
+
+
+<title>Imputation whizzkids - Machine Learning Case Studies</title>
+
+<meta name="author" content="" />
+<meta name="description" content="What __ a data imputation? Far far away, beyond the seven hills, there are data scientists, data analysts, consultants who don&rsquo;t have a single thought whether the data they deal with contains any missing values. Unfortunately, we do have to think about it. A lot&hellip; The question everybody strives to answer is how to do it properly, efficiently, and effectively at the same time.
+Fortunately, the group consisting of Paulina Przybyłek, Renata Rólkiewicz, Jakub Wiśniewski, and Jakub Pingielski (henceforth Authors) has recently faced the challenge of finding the best imputation methods to solve our problems once for all. Their research was comprehensive, like the results." />
+
+<meta name="keywords" content="imputation" />
+
+<meta property="og:title" content="Imputation whizzkids" />
+<meta property="og:description" content="What __ a data imputation? Far far away, beyond the seven hills, there are data scientists, data analysts, consultants who don&rsquo;t have a single thought whether the data they deal with contains any missing values. Unfortunately, we do have to think about it. A lot&hellip; The question everybody strives to answer is how to do it properly, efficiently, and effectively at the same time.
+Fortunately, the group consisting of Paulina Przybyłek, Renata Rólkiewicz, Jakub Wiśniewski, and Jakub Pingielski (henceforth Authors) has recently faced the challenge of finding the best imputation methods to solve our problems once for all. Their research was comprehensive, like the results." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2020L-WB-Blog/2020-06-07-imputation-whizzkids/" />
+<meta property="og:image" content="/2020L-WB-Blog/img/og.png"/>
+<meta property="article:published_time" content="2020-06-07T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-06-07T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/2020L-WB-Blog/img/og.png"/>
+
+<meta name="twitter:title" content="Imputation whizzkids"/>
+<meta name="twitter:description" content="What __ a data imputation? Far far away, beyond the seven hills, there are data scientists, data analysts, consultants who don&rsquo;t have a single thought whether the data they deal with contains any missing values. Unfortunately, we do have to think about it. A lot&hellip; The question everybody strives to answer is how to do it properly, efficiently, and effectively at the same time.
+Fortunately, the group consisting of Paulina Przybyłek, Renata Rólkiewicz, Jakub Wiśniewski, and Jakub Pingielski (henceforth Authors) has recently faced the challenge of finding the best imputation methods to solve our problems once for all. Their research was comprehensive, like the results."/>
+
+
+
+
+
+
+<link rel="stylesheet" href="/2020L-WB-Blog/css/main.min.css" />
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js" integrity="sha256-h2tMEmhemR2IN4wbbdNjj9LaDIjzwk2hralQwfJmBOE=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.5/dist/medium-zoom.min.js" integrity="sha256-Jd9xef1tT52aCb+cAqhElj/9D3c99lQvEjyKOuPn3S4=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<body class="d-flex flex-column h-100">
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 link-primary">
+            <a class="main-title" href="/2020L-WB-Blog/">Machine Learning Case Studies</a>
+            
+            <span class="sub-title">by Evidence Based Machine Learning Lab</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-md-9 col-12 float-left" id="content">
+                
+<article>
+    
+    <h4 class="post-title">
+        <a href="/2020L-WB-Blog/2020-06-07-imputation-whizzkids/">Imputation whizzkids</a>
+    </h4>
+    <div>
+        <span>
+            
+                Mateusz Polakowski;
+            
+                Hubert Baniecki;
+            
+        </span>
+    </div>
+    <div class="post-meta link-alter">
+        <time><i class="fas fa-calendar-day"></i>&nbsp;2020-06-07</time><span><i class="fas fa-file-alt"></i>&nbsp;496 words</span><span><i class="fas fa-tag"></i>&nbsp;<a href="/tags/imputation/">imputation</a> </span>
+    </div>
+    
+    
+    <div class="post-content markdown-body">
+        <h1 id="what-__-a-data-imputation">What __ a data imputation?</h1>
+<p>Far far away, beyond the seven hills, there are data scientists, data analysts, consultants who don&rsquo;t have a single thought whether the data they deal with contains any missing values. Unfortunately, we do have to think about it. A lot&hellip; The question everybody strives to answer is how to do it properly, efficiently, and effectively at the same time.</p>
+<p>Fortunately, the group consisting of Paulina Przybyłek, Renata Rólkiewicz, Jakub Wiśniewski, and Jakub Pingielski (henceforth Authors) has recently faced the challenge of finding the best imputation methods to solve our problems once for all. Their research was comprehensive, like the results.</p>
+<p>Full paper and robust description can be found at <a href="https://mini-pw.github.io/2020L-WB-Book/default-imputation-efficiency-comparison.html">Default imputation efficiency comparison</a></p>
+<h1 id="___-methodology">___ methodology</h1>
+<p>Authors came up with an idea of creating a versatile pipeline to test as many imputation method - classifier - dataset threes as they could. They ended up with almost 500, which is impressive.</p>
+<p>What is worth additional noticing is that they didn&rsquo;t stop at the median / mean kind of imputation methods but also tried more sophisticated ones like missForest or mice. What&rsquo;s more - Authors didn&rsquo;t base on one metric and used 4: ROC AUC, Balanced Accuracy, Geometric Mean and Weighted TPR-TNR (sidenote: those metrics are used for slightly different kinds of problems, so their results are going to give a broader image of imputation methods performance).</p>
+<p>Although Authors tested only small and medium-size datasets (5K observations isn&rsquo;t that big) obtained results can be at ease applied broadly.</p>
+<h1 id="what-___-the-results">What ___ the results?</h1>
+<p>Many conclusions can be driven out of the mentioned research but one takes the first place. What turned out is that simple, basic imputation methods (except harsh column removing) perform the best across datasets and models (even random fill!). Furthermore, the Authors created another contest metric - the time of calculations, which is fair, because imputations taking several hours or days to finish are relatively not usable at all.</p>
+<p><img src="/2020L-WB-Blog/2020-06-07-Imputation-whizzkids/results.png" alt="Imputation methods ranking (averaged by model)"></p>
+<p><img src="/2020L-WB-Blog/2020-06-07-Imputation-whizzkids/results_time.png" alt="Time distribution of imputation methods"></p>
+<p>No hardcore data scientist is necessary to interpret the above graphics properly. As mentioned, basic imputation methods create presumably the biggest gains compared to final classifiers&rsquo; performance.</p>
+<p>What was lacking is the business and real-life interpretations of those best methods. It is totally fine to get a median in the Iris dataset sepal length feature but shouldn&rsquo;t be freely considered in more sophisticated data e.g. medicine, or sensitive business processes. Anyway, that niche can be filled with more complicated methods like mice or missForest, which create bigger variance and more thoughtful values to impute with.</p>
+<h1 id="summing-__">Summing __</h1>
+<p>Authors came through creating a reliable pipeline to test the performance of many imputation methods and they did it very conscientiously. The range of chosen methods, datasets, and even classifiers is striking. Although there are some inconveniences no one should dare say that the Authors didn&rsquo;t consider any aspect of the problem.</p>
+<p>The research was carried out scrupulously, so even though imputation brings always some imperfections to the data, they managed to diminish them almost utterly.</p>
+
+    </div>
+</article>
+
+
+<div class="license markdown-body">
+    <blockquote>
+        <p>Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)</a>.</p>
+    </blockquote>
+</div>
+
+
+
+
+
+
+            </div>
+            
+            <div class="col-md-3 col-12 float-left link-alter" id="sidebar">
+                
+
+<div class="widget-toc">
+    <h5>TOC</h5>
+    <nav id="TableOfContents"></nav>
+</div>
+
+
+<div class="widget-pages">
+    <h5>Pages</h5>
+    <ul>
+        
+        
+        <li>
+            <a href="/2020L-WB-Blog/">Home</a>
+        </li>
+        
+        <li>
+            <a href="/2020L-WB-Blog/archives/">Archives</a>
+        </li>
+        
+        <li>
+            <a href="/2020L-WB-Blog/about/">About</a>
+        </li>
+        
+    </ul>
+</div>
+
+<div class="widget-tags">
+    <h5>Tags</h5>
+    <div>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/dataset/">dataset</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/imputation/">Imputation</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/machine-learning/">Machine Learning</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/missing-data/">Missing data</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/missings/">missings</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/ml/">ML</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/openml/">OpenML</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/tutorial/">tutorial</a>
+        </span>
+        
+    </div>
+</div>
+
+<div class="widget-links">
+    <h5>Links</h5>
+    <ul>
+        
+        <li>
+            <a href="https://mini-pw.github.io/2020L-WB-Book/" target="_blank"><span>ML Case Studies Book</span></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/mini-pw/2020L-WarsztatyBadawcze-Reprodukowalnosc" target="_blank"><span>Reproducibility repo (in Polish)</span></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/mini-pw/2020L-WarsztatyBadawcze-Imputacja" target="_blank"><span>Imputation repo (in Polish)</span></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/mini-pw/2020L-WarsztatyBadawcze-InzynieriaCech" target="_blank"><span>Interpretability repo (in Polish)</span></a>
+        </li>
+        
+    </ul>
+</div>
+
+
+            </div>
+            
+            
+            
+            <div id="scroll-top">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+    <div class="container-lg text-center">
+        <p>&copy; 2020 <a href="/2020L-WB-Blog/"></a> | Powered by <a href="https://github.com/amzrk2/hugo-theme-fuji/" target="_blank">Fuji</a> & <a href="https://gohugo.io/" target="_blank">Hugo</a> </p>
+    </div>
+</footer>
+    
+<script>
+    $(function () {
+        mediumZoom('.img-zoomable', {
+            margin: 32
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+<script>
+    $('.widget-toc a').click(function () {
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        });
+    });
+</script>
+
+
+
+<script>
+    $('#scroll-top').click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+
+</html>
