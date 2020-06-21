@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.72.0" />
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/favicon-16x16.png" />
+<link rel="manifest" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/site.webmanifest" />
+<link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/safari-pinned-tab.svg" color="#8aa2d3" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/favicon.ico" />
+<meta name="msapplication-TileColor" content="#8aa2d3" />
+<meta name="msapplication-config" content="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/browserconfig.xml" />
+<meta name="theme-color" content="#ffffff" />
+
+
+
+<title>Time flies... and so do articles&#39; reproducibility? - Machine Learning Case Studies</title>
+
+<meta name="author" content="[Jakub Kosterna Dawid Przybyliński Hanna Zdulska]" />
+<meta name="description" content="Sometimes we forget about what is really important&hellip; Have you ever stopped for a moment in the course of everyday life and looked better at the reproductivity of the scientific article? Have you ever wondered - can I do what authors did in this article and get the same results? If you are not in technical industry - probably not&hellip; and it&rsquo;s perfectly fine. Otherwise - it&rsquo;s about time to start getting interested.
+Reproducibility, like wine? Or vice versa? When publishing a work, you definitely need to remember about few basic rules: correct documentation, ensuring that files are up-to-date etc. However, not everyone respects these rules and hence - some articles sooner or later lose readability, reproductivity and therefore their value." />
+
+<meta name="keywords" content="reproducibility, interpretability, article" />
+
+<meta property="og:title" content="Time flies... and so do articles&#39; reproducibility?" />
+<meta property="og:description" content="Sometimes we forget about what is really important&hellip; Have you ever stopped for a moment in the course of everyday life and looked better at the reproductivity of the scientific article? Have you ever wondered - can I do what authors did in this article and get the same results? If you are not in technical industry - probably not&hellip; and it&rsquo;s perfectly fine. Otherwise - it&rsquo;s about time to start getting interested.
+Reproducibility, like wine? Or vice versa? When publishing a work, you definitely need to remember about few basic rules: correct documentation, ensuring that files are up-to-date etc. However, not everyone respects these rules and hence - some articles sooner or later lose readability, reproductivity and therefore their value." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2020L-WB-Blog/2020-06-11-time-flies-and-so-do-articles-reproducibility/" />
+<meta property="og:image" content="/2020L-WB-Blog/img/og.png"/>
+<meta property="article:published_time" content="2020-06-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-06-11T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/2020L-WB-Blog/img/og.png"/>
+
+<meta name="twitter:title" content="Time flies... and so do articles&#39; reproducibility?"/>
+<meta name="twitter:description" content="Sometimes we forget about what is really important&hellip; Have you ever stopped for a moment in the course of everyday life and looked better at the reproductivity of the scientific article? Have you ever wondered - can I do what authors did in this article and get the same results? If you are not in technical industry - probably not&hellip; and it&rsquo;s perfectly fine. Otherwise - it&rsquo;s about time to start getting interested.
+Reproducibility, like wine? Or vice versa? When publishing a work, you definitely need to remember about few basic rules: correct documentation, ensuring that files are up-to-date etc. However, not everyone respects these rules and hence - some articles sooner or later lose readability, reproductivity and therefore their value."/>
+
+
+
+
+
+
+<link rel="stylesheet" href="/2020L-WB-Blog/css/main.min.css" />
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js" integrity="sha256-h2tMEmhemR2IN4wbbdNjj9LaDIjzwk2hralQwfJmBOE=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.5/dist/medium-zoom.min.js" integrity="sha256-Jd9xef1tT52aCb+cAqhElj/9D3c99lQvEjyKOuPn3S4=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<body class="d-flex flex-column h-100">
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 link-primary">
+            <a class="main-title" href="/2020L-WB-Blog/">Machine Learning Case Studies</a>
+            
+            <span class="sub-title">by Evidence Based Machine Learning Lab</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-md-9 col-12 float-left" id="content">
+                
+<article>
+    
+    <h4 class="post-title">
+        <a href="/2020L-WB-Blog/2020-06-11-time-flies-and-so-do-articles-reproducibility/">Time flies... and so do articles&#39; reproducibility?</a>
+    </h4>
+    <div>
+        <span>
+            
+        </span>
+    </div>
+    <div class="post-meta link-alter">
+        <time><i class="fas fa-calendar-day"></i>&nbsp;2020-06-11</time><span><i class="fas fa-file-alt"></i>&nbsp;613 words</span><span><i class="fas fa-tag"></i>&nbsp;<a href="/tags/reproducibility/">reproducibility</a> <a href="/tags/interpretability/">interpretability</a> <a href="/tags/article/">article</a> </span>
+    </div>
+    
+    
+    <div class="post-content markdown-body">
+        <h3 id="sometimes-we-forget-about-what-is-really-important">Sometimes we forget about what is really important&hellip;</h3>
+<p>Have you ever stopped for a moment in the course of everyday life and looked better at the reproductivity of the scientific article? Have you ever wondered - can I do what authors did in this article and get the same results? If you are not in technical industry - probably not&hellip; and it&rsquo;s perfectly fine. Otherwise - it&rsquo;s about time to start getting interested.</p>
+<h3 id="reproducibility-like-wine-or-vice-versa">Reproducibility, like wine? Or vice versa?</h3>
+<p>When publishing a work, you definitely need to remember about few basic rules: correct documentation, ensuring that files are up-to-date etc. However, not everyone respects these rules and hence - some articles sooner or later lose readability, reproductivity and therefore their value. Time flows and it would seem like a reasonable assumption that the older the text, the harder it is to reproduce in nowday&rsquo;s conditions. Will this intuition be true? The topic has been studied recently by three young data scientists from Warsaw University of Technology: Paweł Morgen, Piotr Sieńko and Konrad Welkier. The final conclusions were presented in a scientific article entitled &ldquo;Aging articles. How time affects reproducibility of scientific papers&rdquo;. Curious about the results? I guarantee you&rsquo;ll be shocked!</p>
+<h3 id="how-to-compare-reproducibility">How to compare reproducibility?</h3>
+<p>The young authors set correlations as their distinctive element - as one of them wisely said: &ldquo;The intention of such research is to find correlations between age of article and its reproducibility&rdquo;. Does it makes sense? I think we can all agree that of course yes! The classic correlation measurement for finding similarity is very informative.</p>
+<p>There is some discourse about exact definition of reproducibility in scientific community. Authors decided to use definition suggested 16 years ago by famous researchers Robert Gentleman and Duncan Temple Lang -  “reproducible research are papers with accompanying software tools that allow the reader to directly reproduce methods that are presented in the research paper.”</p>
+<h3 id="i-give-you-a-grade-of-3---you-are-the-best">I give you a grade of 3 - you are the best!</h3>
+<p>To analyze large number of scientific articles package CodeExtractorR was used - it allowed to save time and keep results reproducible. Authors used 4-step scale to grade papers - they gave marks in order: 0 for absolute non-reproductiveness, 1 for somewhat reproducible, 2 for generally satisfactory and 3 for just perfect. The three wise men also tried to be as objective as they could - all 3 of them graded each article without to minimize their subjectivity.</p>
+<h3 id="unexpected-results">Unexpected results</h3>
+<p>Two hundred and eighty articles from R Journal were analyzed. This is by far the biggest number of analyzed papers in topic of reproducibility and it’s pretty impressive. The results apply only to articles from 2010-2019, which gives almost a decade of scientific progress.
+Codes have been reproduced, points were assigned and now it’s time for reveal! To our annoyance the final result turned out to be quite surprising. Huge differences between 2019 and 2010? Not this time. There is not very big differences between today&rsquo;s times and the long long time ago in early 2010s. Maybe it is true that full reproduction in the latest works was present much more often than in the good old days, but the trend is rather only for the era after Stephen Hawkings. Want play an in-depth analysis of bars with a trend unlike anything? Check out the brilliant article of our three men!</p>
+<h3 id="now-weve-all-become-smarter">Now we&rsquo;ve all become smarter</h3>
+<p>I think that after this short lesson, we can all came up wise conclusions: the world has not changed so much in the past 10 years, but the matter of reproducibility began to attract much more needed attention. Hopefully in year to come more and more scientific papers will be reproducible.</p>
+
+    </div>
+</article>
+
+
+<div class="license markdown-body">
+    <blockquote>
+        <p>Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)</a>.</p>
+    </blockquote>
+</div>
+
+
+
+
+
+
+            </div>
+            
+            <div class="col-md-3 col-12 float-left link-alter" id="sidebar">
+                
+
+<div class="widget-toc">
+    <h5>TOC</h5>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#sometimes-we-forget-about-what-is-really-important">Sometimes we forget about what is really important&hellip;</a></li>
+        <li><a href="#reproducibility-like-wine-or-vice-versa">Reproducibility, like wine? Or vice versa?</a></li>
+        <li><a href="#how-to-compare-reproducibility">How to compare reproducibility?</a></li>
+        <li><a href="#i-give-you-a-grade-of-3---you-are-the-best">I give you a grade of 3 - you are the best!</a></li>
+        <li><a href="#unexpected-results">Unexpected results</a></li>
+        <li><a href="#now-weve-all-become-smarter">Now we&rsquo;ve all become smarter</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+
+
+<div class="widget-pages">
+    <h5>Pages</h5>
+    <ul>
+        
+        
+        <li>
+            <a href="/2020L-WB-Blog/">Home</a>
+        </li>
+        
+        <li>
+            <a href="/2020L-WB-Blog/archives/">Archives</a>
+        </li>
+        
+        <li>
+            <a href="/2020L-WB-Blog/about/">About</a>
+        </li>
+        
+    </ul>
+</div>
+
+<div class="widget-tags">
+    <h5>Tags</h5>
+    <div>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/active-development/">active development</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/article/">article</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/article-rating/">article rating</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/automated-regression/">automated regression</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/black-box/">black-box</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/black-boxes/">black-boxes</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/computer-vision/">computer vision</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/dataset/">dataset</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/embedding/">embedding</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/features-engineering/">features engineering</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/features-importance/">features importance</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/features-transformations/">features transformations</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/glass-box/">glass-box</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/imputation/">Imputation</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/interpretability/">interpretability</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/machine-learning/">Machine Learning</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/magazines/">magazines</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/missing-data/">Missing data</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/missings/">missings</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/ml/">ML</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/openml/">OpenML</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/package/">package</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/r-journal/">R journal</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/r-packages/">R packages</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/reproducibility/">reproducibility</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/scientific-papers/">scientific papers</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/the-r-journal/">The R Journal</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/tutorial/">tutorial</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/updating/">updating</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/version-control/">version control</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/xai/">XAI</a>
+        </span>
+        
+    </div>
+</div>
+
+<div class="widget-links">
+    <h5>Links</h5>
+    <ul>
+        
+        <li>
+            <a href="https://mini-pw.github.io/2020L-WB-Book/" target="_blank"><span>ML Case Studies Book</span></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/mini-pw/2020L-WarsztatyBadawcze-Reprodukowalnosc" target="_blank"><span>Reproducibility repo (in Polish)</span></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/mini-pw/2020L-WarsztatyBadawcze-Imputacja" target="_blank"><span>Imputation repo (in Polish)</span></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/mini-pw/2020L-WarsztatyBadawcze-InzynieriaCech" target="_blank"><span>Interpretability repo (in Polish)</span></a>
+        </li>
+        
+    </ul>
+</div>
+
+
+            </div>
+            
+            
+            
+            <div id="scroll-top">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+    <div class="container-lg text-center">
+        <p>&copy; 2020 <a href="/2020L-WB-Blog/"></a> | Powered by <a href="https://github.com/amzrk2/hugo-theme-fuji/" target="_blank">Fuji</a> & <a href="https://gohugo.io/" target="_blank">Hugo</a> </p>
+    </div>
+    <script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+</footer>
+    
+<script>
+    $(function () {
+        mediumZoom('.img-zoomable', {
+            margin: 32
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+<script>
+    $('.widget-toc a').click(function () {
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        });
+    });
+</script>
+
+
+
+<script>
+    $('#scroll-top').click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+
+</html>

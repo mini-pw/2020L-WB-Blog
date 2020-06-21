@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.72.0" />
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/favicon-16x16.png" />
+<link rel="manifest" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/site.webmanifest" />
+<link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/safari-pinned-tab.svg" color="#8aa2d3" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/favicon.ico" />
+<meta name="msapplication-TileColor" content="#8aa2d3" />
+<meta name="msapplication-config" content="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/browserconfig.xml" />
+<meta name="theme-color" content="#ffffff" />
+
+
+
+<title>Correlation between reproducibility of research papers and their objective - Machine Learning Case Studies</title>
+
+<meta name="author" content="" />
+<meta name="description" content="Introduction In this blog, we summarize the work of our colleagues from the same faculty: Correlation between reproducibility of research papers and their objective. They used more than 30 papers coming from The R Journal in order to do research on the reproducibility of scientific papers.
+But what is reproducibility? The easiest way to describe reproducibility is &lsquo;the part&rsquo; of the given article that we can obtain by ourselves using the attached code in its chunks. By &lsquo;the part&rsquo; can be meant the real fraction of the article (the same plots and tables) or simply the existence of sources and creating approximated results - just to show the tendency of some variables in a data set." />
+
+<meta name="keywords" content="reproducibility" />
+
+<meta property="og:title" content="Correlation between reproducibility of research papers and their objective" />
+<meta property="og:description" content="Introduction In this blog, we summarize the work of our colleagues from the same faculty: Correlation between reproducibility of research papers and their objective. They used more than 30 papers coming from The R Journal in order to do research on the reproducibility of scientific papers.
+But what is reproducibility? The easiest way to describe reproducibility is &lsquo;the part&rsquo; of the given article that we can obtain by ourselves using the attached code in its chunks. By &lsquo;the part&rsquo; can be meant the real fraction of the article (the same plots and tables) or simply the existence of sources and creating approximated results - just to show the tendency of some variables in a data set." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2020L-WB-Blog/2020-06-16-correlation-between-reproducibility-of-research-papers-and-their-objective/" />
+<meta property="og:image" content="/2020L-WB-Blog/img/og.png"/>
+<meta property="article:published_time" content="2020-06-16T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-06-16T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/2020L-WB-Blog/img/og.png"/>
+
+<meta name="twitter:title" content="Correlation between reproducibility of research papers and their objective"/>
+<meta name="twitter:description" content="Introduction In this blog, we summarize the work of our colleagues from the same faculty: Correlation between reproducibility of research papers and their objective. They used more than 30 papers coming from The R Journal in order to do research on the reproducibility of scientific papers.
+But what is reproducibility? The easiest way to describe reproducibility is &lsquo;the part&rsquo; of the given article that we can obtain by ourselves using the attached code in its chunks. By &lsquo;the part&rsquo; can be meant the real fraction of the article (the same plots and tables) or simply the existence of sources and creating approximated results - just to show the tendency of some variables in a data set."/>
+
+
+
+
+
+
+<link rel="stylesheet" href="/2020L-WB-Blog/css/main.min.css" />
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js" integrity="sha256-h2tMEmhemR2IN4wbbdNjj9LaDIjzwk2hralQwfJmBOE=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.5/dist/medium-zoom.min.js" integrity="sha256-Jd9xef1tT52aCb+cAqhElj/9D3c99lQvEjyKOuPn3S4=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<body class="d-flex flex-column h-100">
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 link-primary">
+            <a class="main-title" href="/2020L-WB-Blog/">Machine Learning Case Studies</a>
+            
+            <span class="sub-title">by Evidence Based Machine Learning Lab</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-md-9 col-12 float-left" id="content">
+                
+<article>
+    
+    <h4 class="post-title">
+        <a href="/2020L-WB-Blog/2020-06-16-correlation-between-reproducibility-of-research-papers-and-their-objective/">Correlation between reproducibility of research papers and their objective</a>
+    </h4>
+    <div>
+        <span>
+            
+                Patryk Wrona;
+            
+                Marceli Korbin;
+            
+                Mikołaj Jakubowski;
+            
+        </span>
+    </div>
+    <div class="post-meta link-alter">
+        <time><i class="fas fa-calendar-day"></i>&nbsp;2020-06-16</time><span><i class="fas fa-file-alt"></i>&nbsp;502 words</span><span><i class="fas fa-tag"></i>&nbsp;<a href="/tags/reproducibility/">reproducibility</a> </span>
+    </div>
+    
+    
+    <div class="post-content markdown-body">
+        <h2 id="introduction">Introduction</h2>
+<p>In this blog, we summarize the work of our colleagues from the same faculty: <em>Correlation between reproducibility of research papers and their objective</em>. They used more than 30 papers coming from <a href="https://journal.r-project.org">The R Journal</a> in order to do research on the reproducibility of scientific papers.</p>
+<h2 id="but-what-is-reproducibility">But what is reproducibility?</h2>
+<p><img src="/2020L-WB-Blog/2020-06-16-correlation-between-reproducibility-of-research-papers-and-their-objective/back.png" alt=""></p>
+<p>The easiest way to describe reproducibility is &lsquo;the part&rsquo; of the given article that we can obtain by ourselves using the attached code in its chunks. By &lsquo;the part&rsquo; can be meant the real fraction of the article (the same plots and tables) or simply the existence of sources and creating approximated results - just to show the tendency of some variables in a data set. That is why high reproducibility leads to high credibility of each scientific paper, and vice versa.</p>
+<h2 id="how-was-reproducibility-measured">How was reproducibility measured?</h2>
+<p>To create a better comparison, authors measured reproducibility using 1-5 scale. The &lsquo;5&rsquo; score meant that the article could not be re-created at all and the &lsquo;1&rsquo; score was attached only to completely reproducible scientific papers. The range of reproducibility across the given article also varied in order to get a better insight. Our colleagues considered reproducibility measurements in 3 levels:</p>
+<ul>
+<li>the goal of the article (e.g. package review)</li>
+<li>the collective purpose of a group of chunks (e.g. generating a table)</li>
+<li>each chunk&rsquo;s individual objective (e.g. loading data, transforming data)</li>
+</ul>
+<p>There were considered 6, 9 and 17 different goals respectively for each level of reproducibility measurement.</p>
+<h2 id="why-using-the-correlation">Why using the correlation?</h2>
+<p>If the reproducibility measures are dependent (or correlated), considering both of them is unnecessary beacause of their redundance. The example of such situation is creating a table and a plot with the same data but in different chunks. If the used data set was already unavailable, both chunks would lose their credibility. In order to make the research more concise, the repetitions have to be avoided. Such dependent variables cannot be often found without difficulties and that is why the correlation matrix is used: to confirm there were no correlated variables.</p>
+<h2 id="results">Results</h2>
+<h3 id="reproducibility-table-for-each-chunk">Reproducibility table for each chunk</h3>
+<p><img src="/2020L-WB-Blog/2020-06-16-correlation-between-reproducibility-of-research-papers-and-their-objective/csv.png" alt=""></p>
+<h3 id="mean-reproducibility-depending-on-individual-objectives">Mean reproducibility depending on individual objectives</h3>
+<p><img src="https://mini-pw.github.io/2020L-WB-Book/1-6-files/reprodukowalnosc_celu_chunki.png" alt=""></p>
+<h3 id="correlation-matrices">Correlation matrices</h3>
+<h4 id="purposes">Purposes</h4>
+<p><img src="https://mini-pw.github.io/2020L-WB-Book/1-6-files/korelacje_celu_chunki2.png" alt=""></p>
+<h4 id="groups">Groups</h4>
+<p><img src="https://mini-pw.github.io/2020L-WB-Book/1-6-files/korelacje_celu_grupy.png" alt=""></p>
+<h4 id="articles">Articles</h4>
+<p><img src="https://mini-pw.github.io/2020L-WB-Book/1-6-files/korelacje_celu_artykoly.png" alt=""></p>
+<h3 id="conclusions">Conclusions</h3>
+<p>There is little correlation between any two chunks&rsquo; individual purposes, which suggests the chunks being correctly chosen. Moreover, there has been no relation between reproducibility and purpose detected, which may be nonetheless depending on a dataset.</p>
+<h2 id="opinions">Opinions</h2>
+<p>Overall, the research was performed precisely: charts are simply made and easly readable, while all of the methods used were carefully explained pointing to details. The only flaw that we could notice is, that an article about reproducibility actually lacks some reproducibility capabilities. Precisely speaking, there are some shortages about &lsquo;csv&rsquo; files used for generating results. As readers, we can get a basic idea of how they were made, but to reproduce the results we would need these information provided in more specified way.</p>
+<p>Then again, it is only a tiny detail to correct in the future, which does not change the fact that the article remains a solid research.</p>
+
+    </div>
+</article>
+
+
+<div class="license markdown-body">
+    <blockquote>
+        <p>Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)</a>.</p>
+    </blockquote>
+</div>
+
+
+
+
+
+
+            </div>
+            
+            <div class="col-md-3 col-12 float-left link-alter" id="sidebar">
+                
+
+<div class="widget-toc">
+    <h5>TOC</h5>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#but-what-is-reproducibility">But what is reproducibility?</a></li>
+    <li><a href="#how-was-reproducibility-measured">How was reproducibility measured?</a></li>
+    <li><a href="#why-using-the-correlation">Why using the correlation?</a></li>
+    <li><a href="#results">Results</a>
+      <ul>
+        <li><a href="#reproducibility-table-for-each-chunk">Reproducibility table for each chunk</a></li>
+        <li><a href="#mean-reproducibility-depending-on-individual-objectives">Mean reproducibility depending on individual objectives</a></li>
+        <li><a href="#correlation-matrices">Correlation matrices</a></li>
+        <li><a href="#conclusions">Conclusions</a></li>
+      </ul>
+    </li>
+    <li><a href="#opinions">Opinions</a></li>
+  </ul>
+</nav>
+</div>
+
+
+<div class="widget-pages">
+    <h5>Pages</h5>
+    <ul>
+        
+        
+        <li>
+            <a href="/2020L-WB-Blog/">Home</a>
+        </li>
+        
+        <li>
+            <a href="/2020L-WB-Blog/archives/">Archives</a>
+        </li>
+        
+        <li>
+            <a href="/2020L-WB-Blog/about/">About</a>
+        </li>
+        
+    </ul>
+</div>
+
+<div class="widget-tags">
+    <h5>Tags</h5>
+    <div>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/active-development/">active development</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/article/">article</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/article-rating/">article rating</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/automated-regression/">automated regression</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/black-box/">black-box</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/black-boxes/">black-boxes</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/computer-vision/">computer vision</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/dataset/">dataset</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/embedding/">embedding</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/features-engineering/">features engineering</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/features-importance/">features importance</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/features-transformations/">features transformations</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/glass-box/">glass-box</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/imputation/">Imputation</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/interpretability/">interpretability</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/machine-learning/">Machine Learning</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/magazines/">magazines</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/missing-data/">Missing data</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/missings/">missings</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/ml/">ML</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/openml/">OpenML</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/package/">package</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/r-journal/">R journal</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/r-packages/">R packages</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/reproducibility/">reproducibility</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/scientific-papers/">scientific papers</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/the-r-journal/">The R Journal</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/tutorial/">tutorial</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/updating/">updating</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/version-control/">version control</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/xai/">XAI</a>
+        </span>
+        
+    </div>
+</div>
+
+<div class="widget-links">
+    <h5>Links</h5>
+    <ul>
+        
+        <li>
+            <a href="https://mini-pw.github.io/2020L-WB-Book/" target="_blank"><span>ML Case Studies Book</span></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/mini-pw/2020L-WarsztatyBadawcze-Reprodukowalnosc" target="_blank"><span>Reproducibility repo (in Polish)</span></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/mini-pw/2020L-WarsztatyBadawcze-Imputacja" target="_blank"><span>Imputation repo (in Polish)</span></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/mini-pw/2020L-WarsztatyBadawcze-InzynieriaCech" target="_blank"><span>Interpretability repo (in Polish)</span></a>
+        </li>
+        
+    </ul>
+</div>
+
+
+            </div>
+            
+            
+            
+            <div id="scroll-top">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+    <div class="container-lg text-center">
+        <p>&copy; 2020 <a href="/2020L-WB-Blog/"></a> | Powered by <a href="https://github.com/amzrk2/hugo-theme-fuji/" target="_blank">Fuji</a> & <a href="https://gohugo.io/" target="_blank">Hugo</a> </p>
+    </div>
+    <script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+</footer>
+    
+<script>
+    $(function () {
+        mediumZoom('.img-zoomable', {
+            margin: 32
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+<script>
+    $('.widget-toc a').click(function () {
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        });
+    });
+</script>
+
+
+
+<script>
+    $('#scroll-top').click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+
+</html>

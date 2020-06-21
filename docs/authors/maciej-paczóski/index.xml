@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maciej Paczóski on Machine Learning Case Studies</title>
+    <link>/2020L-WB-Blog/authors/maciej-pacz%C3%B3ski/</link>
+    <description>Recent content in Maciej Paczóski on Machine Learning Case Studies</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 16 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/2020L-WB-Blog/authors/maciej-pacz%C3%B3ski/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Can you build an explainable model outperforming black box?</title>
+      <link>/2020L-WB-Blog/2020-06-16-can-you-build-an-explainable-model-overperforming-black-box/</link>
+      <pubDate>Tue, 16 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020L-WB-Blog/2020-06-16-can-you-build-an-explainable-model-overperforming-black-box/</guid>
+      <description>A word about black boxes Nowadays a fierce competition can be observed – scientists are surpassing each other in creating better regression models. As those models are getting more complex, it is becoming almost impossible to illustrate results relation with data, in a way humans understand. They are commonly called ‘black boxes’. ‘Machine learning is frequently referred to as a black box—data goes in, decisions come out, but the processes between input and output are opaque’ ~ The Lancet. Despite their excellent performance, sometimes models with easily interpretable output can be more desired, e.g. in banking.
+What can be done? Results ready for further human analysis can be achieved with explainable models (linear models, decision trees, etc.</description>
+    </item>
+    
+  </channel>
+</rss>

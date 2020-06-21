@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.72.0" />
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/favicon-16x16.png" />
+<link rel="manifest" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/site.webmanifest" />
+<link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/safari-pinned-tab.svg" color="#8aa2d3" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/favicon.ico" />
+<meta name="msapplication-TileColor" content="#8aa2d3" />
+<meta name="msapplication-config" content="https://cdn.jsdelivr.net/gh/amzrk2/poal-jsdelivr@1.2.0/favicons/browserconfig.xml" />
+<meta name="theme-color" content="#ffffff" />
+
+
+
+<title>Can you build an explainable model outperforming black box? - Machine Learning Case Studies</title>
+
+<meta name="author" content="" />
+<meta name="description" content="A word about black boxes Nowadays a fierce competition can be observed – scientists are surpassing each other in creating better regression models. As those models are getting more complex, it is becoming almost impossible to illustrate results relation with data, in a way humans understand. They are commonly called ‘black boxes’. ‘Machine learning is frequently referred to as a black box—data goes in, decisions come out, but the processes between input and output are opaque’ ~ The Lancet. Despite their excellent performance, sometimes models with easily interpretable output can be more desired, e.g. in banking.
+What can be done? Results ready for further human analysis can be achieved with explainable models (linear models, decision trees, etc." />
+
+<meta name="keywords" content="XAI, black-boxes, interpretability" />
+
+<meta property="og:title" content="Can you build an explainable model outperforming black box?" />
+<meta property="og:description" content="A word about black boxes Nowadays a fierce competition can be observed – scientists are surpassing each other in creating better regression models. As those models are getting more complex, it is becoming almost impossible to illustrate results relation with data, in a way humans understand. They are commonly called ‘black boxes’. ‘Machine learning is frequently referred to as a black box—data goes in, decisions come out, but the processes between input and output are opaque’ ~ The Lancet. Despite their excellent performance, sometimes models with easily interpretable output can be more desired, e.g. in banking.
+What can be done? Results ready for further human analysis can be achieved with explainable models (linear models, decision trees, etc." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2020L-WB-Blog/2020-06-16-can-you-build-an-explainable-model-overperforming-black-box/" />
+<meta property="og:image" content="/2020L-WB-Blog/img/og.png"/>
+<meta property="article:published_time" content="2020-06-16T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-06-16T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/2020L-WB-Blog/img/og.png"/>
+
+<meta name="twitter:title" content="Can you build an explainable model outperforming black box?"/>
+<meta name="twitter:description" content="A word about black boxes Nowadays a fierce competition can be observed – scientists are surpassing each other in creating better regression models. As those models are getting more complex, it is becoming almost impossible to illustrate results relation with data, in a way humans understand. They are commonly called ‘black boxes’. ‘Machine learning is frequently referred to as a black box—data goes in, decisions come out, but the processes between input and output are opaque’ ~ The Lancet. Despite their excellent performance, sometimes models with easily interpretable output can be more desired, e.g. in banking.
+What can be done? Results ready for further human analysis can be achieved with explainable models (linear models, decision trees, etc."/>
+
+
+
+
+
+
+<link rel="stylesheet" href="/2020L-WB-Blog/css/main.min.css" />
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js" integrity="sha256-h2tMEmhemR2IN4wbbdNjj9LaDIjzwk2hralQwfJmBOE=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.5/dist/medium-zoom.min.js" integrity="sha256-Jd9xef1tT52aCb+cAqhElj/9D3c99lQvEjyKOuPn3S4=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<body class="d-flex flex-column h-100">
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 link-primary">
+            <a class="main-title" href="/2020L-WB-Blog/">Machine Learning Case Studies</a>
+            
+            <span class="sub-title">by Evidence Based Machine Learning Lab</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-md-9 col-12 float-left" id="content">
+                
+<article>
+    
+    <h4 class="post-title">
+        <a href="/2020L-WB-Blog/2020-06-16-can-you-build-an-explainable-model-overperforming-black-box/">Can you build an explainable model outperforming black box?</a>
+    </h4>
+    <div>
+        <span>
+            
+                Mikołaj Malec;
+            
+                Maciej Paczóski;
+            
+                Bartosz Rożek;
+            
+        </span>
+    </div>
+    <div class="post-meta link-alter">
+        <time><i class="fas fa-calendar-day"></i>&nbsp;2020-06-16</time><span><i class="fas fa-file-alt"></i>&nbsp;391 words</span><span><i class="fas fa-tag"></i>&nbsp;<a href="/tags/xai/">XAI</a> <a href="/tags/black-boxes/">black-boxes</a> <a href="/tags/interpretability/">interpretability</a> </span>
+    </div>
+    
+    
+    <div class="post-content markdown-body">
+        <h2 id="a-word-about-black-boxes">A word about black boxes</h2>
+<p>Nowadays a fierce competition can be observed – scientists are surpassing each other in creating better regression models. As those models are getting more complex, it is becoming almost impossible to illustrate results relation with data, in a way humans understand. They are commonly called ‘black boxes’. ‘Machine learning is frequently referred to as a black box—data goes in, decisions come out, but the processes between input and output are opaque’ ~
+<a href="https://www.thelancet.com/journals/lanres/article/PIIS2213-2600%2818%2930425-9/fulltext">The Lancet</a>. Despite their excellent performance, sometimes models with easily interpretable output can be more desired, e.g. in banking.</p>
+<h2 id="what-can-be-done">What can be done?</h2>
+<p>Results ready for further human analysis can be achieved with explainable models (linear models, decision trees, etc.) and adequate data preparation. This subject was taken up by the Warsaw University of Technology students in their brilliant <a href="https://mini-pw.github.io/2020L-WB-Book/building-an-explainable-model-for-ordinal-classification-on-eucalyptus-dataset-meeting-black-box-model-performance-levels-.html">article</a>. Their experiments were conducted using ‘eucalyptus’ OpenML dataset. The target variable is a utility with values: ‘low’, ‘average’, ‘good’, and ‘best’. To compare models authors used AUC measure, which can is represented as an area under the ROC curve.</p>
+<h2 id="black-box-vs-white-box">Black box vs white box</h2>
+<p>As a representative model of black boxes, the extreme gradient boosting algorithm was chosen. The authors compared it with the tree model. To improve white box performance, the following actions were taken:</p>
+<ul>
+<li>splitting a 4-class classification problem into 3 binary classification problems</li>
+<li>transforming the target variable into numeric values</li>
+<li>imputing missing data in the training set</li>
+<li>selecting variables</li>
+<li>transforming variable</li>
+</ul>
+<h2 id="results">Results</h2>
+<p>The results are shown in the tables below.</p>
+<p>Explainable models:
+<img src="/2020L-WB-Blog/2020-06-16-can-you-build-an-explainable-model-overperforming-black-box/1.png" alt="Explainable models"></p>
+<p>Black box models:
+<img src="/2020L-WB-Blog/2020-06-16-can-you-build-an-explainable-model-overperforming-black-box/2.png" alt="Black box models"></p>
+<p>As presented on charts, the best result was obtained by explainable model - decision tree with selected variables.</p>
+<h2 id="so-how-can-we-explain-the-final-model">So, how can we explain the final model?</h2>
+<p>As previously stated, the model that outperformed the competition is a simple decision tree regression, which can be quite easily shown on a tree plot. The plot is interpreted, by starting in the root node and going to the next nodes via edge which suits our observation. At the end of this path can be found a leaf with the predicted value.</p>
+<p><img src="/2020L-WB-Blog/2020-06-16-can-you-build-an-explainable-model-overperforming-black-box/3.png" alt="Tree plot"></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Authors&rsquo; research proved that black boxes are not always the best performing models and with some effort, the easily explainable output can be achieved. Surely, the discussed dataset was not a complicated machine learning problem, but the described article is very informative and the results are thought-provoking.</p>
+
+    </div>
+</article>
+
+
+<div class="license markdown-body">
+    <blockquote>
+        <p>Unless otherwise noted, the content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)</a>.</p>
+    </blockquote>
+</div>
+
+
+
+
+
+
+            </div>
+            
+            <div class="col-md-3 col-12 float-left link-alter" id="sidebar">
+                
+
+<div class="widget-toc">
+    <h5>TOC</h5>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#a-word-about-black-boxes">A word about black boxes</a></li>
+    <li><a href="#what-can-be-done">What can be done?</a></li>
+    <li><a href="#black-box-vs-white-box">Black box vs white box</a></li>
+    <li><a href="#results">Results</a></li>
+    <li><a href="#so-how-can-we-explain-the-final-model">So, how can we explain the final model?</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+</div>
+
+
+<div class="widget-pages">
+    <h5>Pages</h5>
+    <ul>
+        
+        
+        <li>
+            <a href="/2020L-WB-Blog/">Home</a>
+        </li>
+        
+        <li>
+            <a href="/2020L-WB-Blog/archives/">Archives</a>
+        </li>
+        
+        <li>
+            <a href="/2020L-WB-Blog/about/">About</a>
+        </li>
+        
+    </ul>
+</div>
+
+<div class="widget-tags">
+    <h5>Tags</h5>
+    <div>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/active-development/">active development</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/article/">article</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/article-rating/">article rating</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/automated-regression/">automated regression</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/black-box/">black-box</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/black-boxes/">black-boxes</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/computer-vision/">computer vision</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/dataset/">dataset</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/embedding/">embedding</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/features-engineering/">features engineering</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/features-importance/">features importance</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/features-transformations/">features transformations</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/glass-box/">glass-box</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/imputation/">Imputation</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/interpretability/">interpretability</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/machine-learning/">Machine Learning</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/magazines/">magazines</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/missing-data/">Missing data</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/missings/">missings</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/ml/">ML</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/openml/">OpenML</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/package/">package</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/r-journal/">R journal</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/r-packages/">R packages</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/reproducibility/">reproducibility</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/scientific-papers/">scientific papers</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/the-r-journal/">The R Journal</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/tutorial/">tutorial</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/updating/">updating</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/version-control/">version control</a>
+        </span>
+        
+        <span>
+            <a href="/2020L-WB-Blog/tags/xai/">XAI</a>
+        </span>
+        
+    </div>
+</div>
+
+<div class="widget-links">
+    <h5>Links</h5>
+    <ul>
+        
+        <li>
+            <a href="https://mini-pw.github.io/2020L-WB-Book/" target="_blank"><span>ML Case Studies Book</span></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/mini-pw/2020L-WarsztatyBadawcze-Reprodukowalnosc" target="_blank"><span>Reproducibility repo (in Polish)</span></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/mini-pw/2020L-WarsztatyBadawcze-Imputacja" target="_blank"><span>Imputation repo (in Polish)</span></a>
+        </li>
+        
+        <li>
+            <a href="https://github.com/mini-pw/2020L-WarsztatyBadawcze-InzynieriaCech" target="_blank"><span>Interpretability repo (in Polish)</span></a>
+        </li>
+        
+    </ul>
+</div>
+
+
+            </div>
+            
+            
+            
+            <div id="scroll-top">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+    <div class="container-lg text-center">
+        <p>&copy; 2020 <a href="/2020L-WB-Blog/"></a> | Powered by <a href="https://github.com/amzrk2/hugo-theme-fuji/" target="_blank">Fuji</a> & <a href="https://gohugo.io/" target="_blank">Hugo</a> </p>
+    </div>
+    <script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+</footer>
+    
+<script>
+    $(function () {
+        mediumZoom('.img-zoomable', {
+            margin: 32
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+<script>
+    $('.widget-toc a').click(function () {
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        });
+    });
+</script>
+
+
+
+<script>
+    $('#scroll-top').click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+
+</html>
