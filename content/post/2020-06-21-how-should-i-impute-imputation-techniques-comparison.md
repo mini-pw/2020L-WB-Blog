@@ -68,9 +68,9 @@ Secondly, the authors didn't explicitly provide us with information what fractio
   * *eucalyptus* - 4% of missing data
   * *echoMonths* - 7% of missing data
   
-Having that data presented directly, we are a bit surprised the authors decided to divide the datasets into groups having <1%, 1-15%, >15% of missing data, while only one dataset has less than one percent of missing data and only two datasets have more than 15% of missing data, while they differ greatly in the fraction (16.3% and 33.6%). We wish that the authors divided the datasets differently or presented the results on more datasets, as some results may be quite unreliable.
+Having that data presented directly, we are a bit surprised the authors decided to divide the datasets into groups having <1%, 1-15%, >15% of missing data, while only one dataset has less than one percent of missing data and only two datasets have more than 15% of missing data, while they differ greatly in the fraction (16.3% and 33.6%). We wish that the authors divided the datasets differently or presented the results on more datasets, as some results may be quite unreliable. Another solution would be to simply compare datasets generally without any grouping.
 
-Finally, the authors unfortunately did not inform us which datasets are *medium* in size - the only bit of information we found was that the datasets were *big* if they contained at least 10000 values. We wish that the rule of such division was presented explicitly. 
+Finally, the authors unfortunately did not inform us which datasets are *medium* in size - the only bit of information we found was that the datasets were *big* if they contained at least 10000 values. We wish that the rule of such division was presented explicitly. We also believe that while 10000 values may be perceived as indeed a lot in a dataset, there are much bigger datasets available and a similar comparison with them would be beneficial.
 
 ### Summary
 
