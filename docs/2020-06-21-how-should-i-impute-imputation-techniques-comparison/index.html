@@ -7,7 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
-<meta name="generator" content="Hugo 0.72.0" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 
 
@@ -158,7 +158,7 @@
 <p>Authors suggest that the safest method to choose is MissForest. Interesingly, there was no task where <em>mean</em>, <em>median</em> or <em>dominant</em> performed the best, which shows that the simplest imputation methods don&rsquo;t perform well compared to more complex algorithms.</p>
 <p>Another considered aspect is time. <em>IRMI</em> needed much more time on average to make calculations. However, authors the stated that none of these algorithms is highly time consuming. Nonetheless, if you are dealing with a huge dataset and need to calculate things quickly, <em>IRMI</em> may not be the best choice, perhaps <em>MissForest</em> would perform better.</p>
 <h3 id="things-to-improve">Things to improve</h3>
-<p>While we enjoyed the article greatly, we noticed some parts of the article which could be improved to make it even better.
+<p>While we enjoyed the article greatly, we noticed some parts of the article which could be improved to make it even better. 
 First of all, we wish there was some info on the models&rsquo; hyperparameters available - while we deduce from the article that the models used default hyperparameters from the <em>mlr</em> package, we suspect that changing hyperparameters could be used to perform a more extensive comparison of the models, as we don&rsquo;t really know that an imputation method would still perform alike after tuning the hyperparameters.</p>
 <p>Secondly, the authors didn&rsquo;t explicitly provide us with information what fraction of the dataset was missing data. We were able to calculate the percentage of missing data in the dataset, but we believe that including that piece of information would increase the article&rsquo;s readability greatly - especially if the authors propose various methods of imputation depending on the percentage of missing data. We therefore present here the calculated fractions for each dataset:</p>
 <ul>
