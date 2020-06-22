@@ -8,6 +8,7 @@ This blog is the result of student projects for Case Studies course at the Warsa
 
 
 
+
 ## How to render a blog locally
 
 ```
