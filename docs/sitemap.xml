@@ -218,6 +218,11 @@
   </url>
   
   <url>
+    <loc>/2020L-WB-Blog/tags/article/</loc>
+    <lastmod>2020-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2020L-WB-Blog/tags/article-rating/</loc>
     <lastmod>2020-06-15T00:00:00+00:00</lastmod>
   </url>
@@ -373,11 +378,6 @@
   </url>
   
   <url>
-    <loc>/2020L-WB-Blog/tags/article/</loc>
-    <lastmod>2020-06-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/2020L-WB-Blog/tags/automated-regression/</loc>
     <lastmod>2020-06-11T00:00:00+00:00</lastmod>
   </url>
@@ -470,6 +470,21 @@
   <url>
     <loc>/2020L-WB-Blog/authors/zuzanna-mr%C3%B3z/</loc>
     <lastmod>2020-06-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/authors/hubert-baniecki/</loc>
+    <lastmod>2020-06-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/2020-06-07-imputation-whizzkids/</loc>
+    <lastmod>2020-06-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020L-WB-Blog/authors/mateusz-polakowski/</loc>
+    <lastmod>2020-06-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
