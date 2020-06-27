@@ -26,9 +26,9 @@ Although Authors tested only small and medium-size datasets (5K observations isn
 
 Many conclusions can be driven out of the mentioned research but one takes the first place. What turned out is that simple, basic imputation methods (except harsh column removing) perform the best across datasets and models (even random fill!). Furthermore, the Authors created another contest metric - the time of calculations, which is fair, because imputations taking several hours or days to finish are relatively not usable at all.
 
-![Imputation methods ranking (averaged by model)](https://mini-pw.github.io/2020L-WB-Blog/2020-06-07-Imputation-whizzkids/results.png)
+![Imputation methods ranking (averaged by model)](/2020L-WB-Blog/2020-06-07-imputation-whizzkids/results.png)
 
-![Time distribution of imputation methods](https://mini-pw.github.io/2020L-WB-Blog/2020-06-07-Imputation-whizzkids/results_time.png)
+![Time distribution of imputation methods](/2020L-WB-Blog/2020-06-07-imputation-whizzkids/results_time.png)
 
 No hardcore data scientist is necessary to interpret the above graphics properly. As mentioned, basic imputation methods create presumably the biggest gains compared to final classifiers' performance. 
 
