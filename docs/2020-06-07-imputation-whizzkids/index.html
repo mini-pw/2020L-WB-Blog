@@ -7,7 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
-<meta name="generator" content="Hugo 0.70.0" />
+<meta name="generator" content="Hugo 0.73.0" />
 
 
 
@@ -114,8 +114,8 @@ Fortunately, the group consisting of Paulina Przybyłek, Renata Rólkiewicz, Jak
 <p>Although Authors tested only small and medium-size datasets (5K observations isn&rsquo;t that big) obtained results can be at ease applied broadly.</p>
 <h1 id="what-___-the-results">What ___ the results?</h1>
 <p>Many conclusions can be driven out of the mentioned research but one takes the first place. What turned out is that simple, basic imputation methods (except harsh column removing) perform the best across datasets and models (even random fill!). Furthermore, the Authors created another contest metric - the time of calculations, which is fair, because imputations taking several hours or days to finish are relatively not usable at all.</p>
-<p><img src="https://mini-pw.github.io/2020L-WB-Blog/2020-06-07-Imputation-whizzkids/results.png" alt="Imputation methods ranking (averaged by model)"></p>
-<p><img src="https://mini-pw.github.io/2020L-WB-Blog/2020-06-07-Imputation-whizzkids/results_time.png" alt="Time distribution of imputation methods"></p>
+<p><img src="/2020L-WB-Blog/2020-06-07-imputation-whizzkids/results.png" alt="Imputation methods ranking (averaged by model)"></p>
+<p><img src="/2020L-WB-Blog/2020-06-07-imputation-whizzkids/results_time.png" alt="Time distribution of imputation methods"></p>
 <p>No hardcore data scientist is necessary to interpret the above graphics properly. As mentioned, basic imputation methods create presumably the biggest gains compared to final classifiers&rsquo; performance.</p>
 <p>What was lacking is the business and real-life interpretations of those best methods. It is totally fine to get a median in the Iris dataset sepal length feature but shouldn&rsquo;t be freely considered in more sophisticated data e.g. medicine, or sensitive business processes. Anyway, that niche can be filled with more complicated methods like mice or missForest, which create bigger variance and more thoughtful values to impute with.</p>
 <h1 id="summing-__">Summing __</h1>
