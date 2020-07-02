@@ -101,7 +101,7 @@ But what is reproducibility? The easiest way to describe reproducibility is &lsq
         </span>
     </div>
     <div class="post-meta link-alter">
-        <time><i class="fas fa-calendar-day"></i>&nbsp;2020-06-16</time><span><i class="fas fa-file-alt"></i>&nbsp;502 words</span><span><i class="fas fa-tag"></i>&nbsp;<a href="/tags/reproducibility/">reproducibility</a> </span>
+        <time><i class="fas fa-calendar-day"></i>&nbsp;2020-06-16</time><span><i class="fas fa-file-alt"></i>&nbsp;655 words</span><span><i class="fas fa-tag"></i>&nbsp;<a href="/tags/reproducibility/">reproducibility</a> </span>
     </div>
     
     
@@ -124,17 +124,21 @@ But what is reproducibility? The easiest way to describe reproducibility is &lsq
 <h2 id="results">Results</h2>
 <h3 id="reproducibility-table-for-each-chunk">Reproducibility table for each chunk</h3>
 <p><img src="/2020L-WB-Blog/2020-06-16-correlation-between-reproducibility-of-research-papers-and-their-objective/csv.png" alt=""></p>
+<p>Each row here represents a chunk. The table denotes the length of each chunk, its reproducibility scale and one-hot encoded purposes. For example: the first chunk (of length 5) is reproducible with a slight error, while functioning as a &ldquo;functional example&rdquo;, but not necessarily as a &ldquo;foreign error&rdquo; or &ldquo;data preparation&rdquo;.</p>
 <h3 id="mean-reproducibility-depending-on-individual-objectives">Mean reproducibility depending on individual objectives</h3>
 <p><img src="https://mini-pw.github.io/2020L-WB-Book/1-6-files/reprodukowalnosc_celu_chunki.png" alt=""></p>
+<p>Chunks focused on <strong>results processing</strong> maintain full reproducibility, with the mean of 1. Other highly reproductive chunks are the ones dedicated to presentation of results or foreign error, while the lowest reproducibility is noticed in chunks for <strong>generating files</strong>.</p>
+<p>Other than that, there has been no relation between reproducibility and purpose detected, which may be nonetheless depending on a dataset.</p>
 <h3 id="correlation-matrices">Correlation matrices</h3>
 <h4 id="purposes">Purposes</h4>
 <p><img src="https://mini-pw.github.io/2020L-WB-Book/1-6-files/korelacje_celu_chunki2.png" alt=""></p>
+<p>The first matrix presents little correlation between any two chunks&rsquo; individual purposes, which suggests the chunks being correctly chosen. Four pairs were completely uncorrelated (with a correlation 0); on the other hand, there was an understandable correlation of 0.35 for the pair <em>plot</em> - <em>aesthetic.example</em>.</p>
 <h4 id="groups">Groups</h4>
 <p><img src="https://mini-pw.github.io/2020L-WB-Book/1-6-files/korelacje_celu_grupy.png" alt=""></p>
+<p>Chunks&rsquo; groups have no significant correlations either.</p>
 <h4 id="articles">Articles</h4>
 <p><img src="https://mini-pw.github.io/2020L-WB-Book/1-6-files/korelacje_celu_artykoly.png" alt=""></p>
-<h3 id="conclusions">Conclusions</h3>
-<p>There is little correlation between any two chunks&rsquo; individual purposes, which suggests the chunks being correctly chosen. Moreover, there has been no relation between reproducibility and purpose detected, which may be nonetheless depending on a dataset.</p>
+<p>There can be seen a noticeable correlation between chunks in articles focusing on introduction to a subject and method implementation. The correlation is undefined for package overview.</p>
 <h2 id="opinions">Opinions</h2>
 <p>Overall, the research was performed precisely: charts are simply made and easly readable, while all of the methods used were carefully explained pointing to details. The only flaw that we could notice is, that an article about reproducibility actually lacks some reproducibility capabilities. Precisely speaking, there are some shortages about &lsquo;csv&rsquo; files used for generating results. As readers, we can get a basic idea of how they were made, but to reproduce the results we would need these information provided in more specified way.</p>
 <p>Then again, it is only a tiny detail to correct in the future, which does not change the fact that the article remains a solid research.</p>
@@ -172,7 +176,6 @@ But what is reproducibility? The easiest way to describe reproducibility is &lsq
         <li><a href="#reproducibility-table-for-each-chunk">Reproducibility table for each chunk</a></li>
         <li><a href="#mean-reproducibility-depending-on-individual-objectives">Mean reproducibility depending on individual objectives</a></li>
         <li><a href="#correlation-matrices">Correlation matrices</a></li>
-        <li><a href="#conclusions">Conclusions</a></li>
       </ul>
     </li>
     <li><a href="#opinions">Opinions</a></li>
