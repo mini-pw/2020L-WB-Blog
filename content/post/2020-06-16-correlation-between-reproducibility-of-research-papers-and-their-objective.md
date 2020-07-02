@@ -35,9 +35,15 @@ If the reproducibility measures are dependent (or correlated), considering both 
 
 ![](/2020L-WB-Blog/2020-06-16-correlation-between-reproducibility-of-research-papers-and-their-objective/csv.png)
 
+Each row here represents a chunk. The table denotes the length of each chunk, its reproducibility scale and one-hot encoded purposes. For example: the first chunk (of length 5) is reproducible with a slight error, while functioning as a "functional example", but not necessarily as a "foreign error" or "data preparation".
+
 ### Mean reproducibility depending on individual objectives
 
 ![](https://mini-pw.github.io/2020L-WB-Book/1-6-files/reprodukowalnosc_celu_chunki.png)
+
+Chunks focused on **results processing** maintain full reproducibility, with the mean of 1. Other highly reproductive chunks are the ones dedicated to presentation of results or foreign error, while the lowest reproducibility is noticed in chunks for **generating files**.
+
+Other than that, there has been no relation between reproducibility and purpose detected, which may be nonetheless depending on a dataset.
 
 ### Correlation matrices
 
@@ -45,17 +51,19 @@ If the reproducibility measures are dependent (or correlated), considering both 
 
 ![](https://mini-pw.github.io/2020L-WB-Book/1-6-files/korelacje_celu_chunki2.png)
 
+The first matrix presents little correlation between any two chunks' individual purposes, which suggests the chunks being correctly chosen. Four pairs were completely uncorrelated (with a correlation 0); on the other hand, there was an understandable correlation of 0.35 for the pair _plot_ - _aesthetic.example_.
+
 #### Groups
 
 ![](https://mini-pw.github.io/2020L-WB-Book/1-6-files/korelacje_celu_grupy.png)
+
+Chunks' groups have no significant correlations either.
 
 #### Articles
 
 ![](https://mini-pw.github.io/2020L-WB-Book/1-6-files/korelacje_celu_artykoly.png)
 
-### Conclusions
-
-There is little correlation between any two chunks' individual purposes, which suggests the chunks being correctly chosen. Moreover, there has been no relation between reproducibility and purpose detected, which may be nonetheless depending on a dataset.
+There can be seen a noticeable correlation between chunks in articles focusing on introduction to a subject and method implementation. The correlation is undefined for package overview.
 
 ## Opinions
 
