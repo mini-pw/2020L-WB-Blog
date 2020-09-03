@@ -21,7 +21,7 @@
   "devDependencies": {
     "@primer/css": "14.3.0",
     "@fortawesome/fontawesome-free": "5.13.0",
-    "lazysizes": "5.2.0",
+    "lazysizes": "5.2.2",
     "aplayer": "1.10.1",
     "medium-zoom": "1.0.5"
   }
